@@ -1,6 +1,22 @@
 'use strict';
 const $=id=>document.getElementById(id);
-let payload,records=[],selected=new Set(),sending=false,currentPreviewId=null,overrides={},originals=new Map();
+let payload, payloadEclass, payload7Edu, records=[],selected=new Set(),sending=false,currentPreviewId=null,overrides={},overridesEclass={},overrides7Edu={},originals=new Map();
+const READY_7EDU=new Set(['pronto_para_conferencia','revisao_pedagogica','proposta_para_aprovacao']);
+function setSystemRecords(){
+ payload = system()==='7edu' ? payload7Edu : payloadEclass;
+ overrides = system()==='7edu' ? overrides7Edu : overridesEclass;
+ records=payload.postagens.map(p=>({...p,...(overrides[p.id]||{})}));
+ // Status, horários e origem são apenas da base de auditoria, nunca de sobrescritas do editor.
+ if(system()==='7edu')records.forEach((p,i)=>{
+  p.status=payload.postagens[i].status;
+  p['7edu']=payload.postagens[i]['7edu'];
+  p.data=payload.postagens[i].data;
+  p.horario=payload.postagens[i].horario;
+  p.quantidade_periodos=payload.postagens[i].quantidade_periodos;
+ });
+ originals=new Map(payload.postagens.map(p=>[p.id,structuredClone(p)]));
+}
+
 function system(){return $('system').value;}
 function convert7EduHtml(html){
  const doc=new DOMParser().parseFromString(String(html||''),'text/html');
@@ -29,12 +45,19 @@ function updateSystemUI(){
  $('publishMode').hidden=seven;
  $('calendarTools').hidden=!seven;
  $('systemNote').textContent=seven
- ? '7Edu usa calendário próprio. Exporte as datas reais primeiro. Nenhum lançamento é feito em datas futuras ou que não constem na grade; todos os itens do lote são pré-validados antes da primeira gravação.'
+ ? '7Edu: base independente do E-Class, consultada em 19/11/2026. Datas registradas, domingos atípicos ou sem plano estão BLOQUEADAS. Não presuma que as datas após 19/11 já estejam disponíveis. Todos os itens do lote são revalidados ao vivo.'
  : 'E-Class mantém o fluxo anterior com rascunho/publicação de HTML. Abra o calendário do portal e selecione o ano 2026 e a unidade correta.';
  $('publish').textContent=seven?'Lançar seleção no 7Edu':'Enviar seleção ao E-Class';
  $('testConnection').textContent=seven?'Testar 7Edu (sem lançar)':'Testar conexão (sem publicar)';
 }
 function summary(){
+ if(system()==='7edu'){
+  const ok=records.filter(x=>READY_7EDU.has(x.status)).length;
+  const cards=[['datas no 7Edu',records.length],['períodos na grade',records.reduce((s,x)=>s+x.quantidade_periodos,0)],
+   ['com plano da mesma data',ok],['bloqueadas',records.length-ok],['já registradas',records.filter(x=>x['7edu']?.situacao_portal==='Registrado').length]];
+  $('stats').innerHTML=cards.map(([n,v])=>`<div class="stat"><b>${v}</b><small>${n}</small></div>`).join('');
+  return;
+ }
  const s=payload.estatisticas;
  const n=k=>records.filter(x=>x.status===k).length;
  const cards=[['postagens totais',records.length],['períodos programados',records.reduce((s,x)=>s+x.quantidade_periodos,0)],['aulas de Matemática',records.filter(x=>x.disciplina==='Matemática').length],['condensadas',n('revisao_pedagogica')],['propostas a revisar',n('proposta_para_aprovacao')]];
@@ -49,7 +72,10 @@ function filtered(){
 }
 function localToday(){const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');}
 function isFuture7Edu(item){return system()==='7edu' && item.data>localToday();}
-function canSelect(item){return !isFuture7Edu(item) && (item.status==='pronto_para_conferencia'||(item.status==='revisao_pedagogica'&&$('approveCondensed').checked)||(item.status==='proposta_para_aprovacao'&&$('approveProposals').checked));}
+function canSelect(item){
+ if(system()==='7edu' && (!item['7edu'] || item['7edu'].mapeamento!=='exato' || item['7edu'].situacao_portal!=='Pendente' || !item.html?.trim()))return false;
+ return !isFuture7Edu(item) && (item.status==='pronto_para_conferencia'||(item.status==='revisao_pedagogica'&&$('approveCondensed').checked)||(item.status==='proposta_para_aprovacao'&&$('approveProposals').checked));
+}
 function render(){
  const list=filtered();$('records').replaceChildren();
  for(const item of list){
@@ -59,10 +85,17 @@ function render(){
   const body=document.createElement('div');
   const title=document.createElement('b');title.textContent=`${item.data.split('-').reverse().join('/')} · ${item.turma} · ${item.disciplina}`;
   const tag=document.createElement('span');tag.className='tag'+(item.status==='revisao_pedagogica'?' warning':item.status==='proposta_para_aprovacao'?' block':'');
-  tag.textContent=isFuture7Edu(item)?'Futura / bloqueada':item.status==='revisao_pedagogica'?'Condensada':item.status==='proposta_para_aprovacao'?'Proposta':'Conferir';title.append(tag);
+  tag.textContent=isFuture7Edu(item)?'Futura / bloqueada':system()==='7edu'&&!READY_7EDU.has(item.status)?
+  ({registrado_7edu:'Já registrada',domingo_atipico:'Data atípica / domingo',sem_plano_7edu:'Sem plano',divergencia_periodos_7edu:'Períodos divergentes',divergencia_horarios_7edu:'Horários divergentes',futuro_7edu:'Futura'}[item.status]||'Bloqueada'):
+  item.status==='revisao_pedagogica'?'Condensada':item.status==='proposta_para_aprovacao'?'Proposta':'Conferir';title.append(tag);
   const sub=document.createElement('div');sub.className='subtitle';sub.textContent=`${item.quantidade_periodos} período(s) · ${item.horario.map(x=>x.inicio+'–'+x.fim).join(', ')} · Planos: ${item.planos_originais.join(', ')||'não fornecidos'}`;
   const topic=document.createElement('small');topic.textContent=item.titulo.slice(0,185);
   body.append(title,sub,topic);
+  if(system()==='7edu' && !READY_7EDU.has(item.status)){
+   const note=document.createElement('small');note.className='waiting';
+   note.textContent=`Não selecionável: ${item.observacao||'revisão de calendário pendente'}`;
+   body.append(note);
+  }
   if(isFuture7Edu(item)){const waiting=document.createElement('small');waiting.className='waiting';waiting.textContent='7Edu não permite lançar esta data antes do dia da aula.';body.append(waiting);}
   const btn=document.createElement('button');btn.className='secondary';btn.textContent='Prévia';btn.addEventListener('click',()=>{
    currentPreviewId=item.id; $('editor').hidden=true; $('saveEditor').hidden=true; $('restoreOriginal').hidden=true; $('toggleEditor').textContent='Editar HTML/título';
@@ -88,7 +121,8 @@ async function refreshSession(){
  catch(e){$('context').className='pane error';$('context').textContent=`Sessão não disponível: ${e.message}`;}
 }
 async function testConnection(){
- const item=filtered().find(x=>x.disciplina==='Matemática')||filtered()[0]||records.find(x=>x.disciplina==='Matemática');
+ const readable=x=>system()!=='7edu'||(x['7edu']?.mapeamento==='exato' && x.html?.trim());
+ const item=filtered().find(x=>readable(x)&&x.disciplina==='Matemática')||filtered().find(readable)||records.find(readable);
  if(!item){$('progress').textContent='Nenhum registro disponível para testar.';return;}
  const button=$('testConnection');button.disabled=true;
  $('progress').textContent=`Testando acesso de leitura: ${item.turma}, ${item.disciplina}, ${item.data}…`;
@@ -130,6 +164,9 @@ async function exportCalendar(scope){
 async function sendSelection(){
  if(sending)return;
  const chosen=records.filter(x=>selected.has(x.id));
+ if(system()==='7edu'&&chosen.some(x=>!x['7edu']||x['7edu'].mapeamento!=='exato'||x['7edu'].situacao_portal!=='Pendente')){
+  alert('Mapeamento do 7Edu não validado. Nenhuma aula foi lançada.');return;
+ }
  if(chosen.some(x=>!canSelect(x))){alert('Uma ou mais aulas escolhidas estão bloqueadas. Revise a seleção.');return;}
  const approve=$('approveCondensed').checked,approveProposals=$('approveProposals').checked,publish=$('publishNow').checked;
  const seven=system()==='7edu';
@@ -181,14 +218,16 @@ async function sendSelection(){
  $('progress').textContent+=conflicts?` — ${conflicts} conflito(s) requer(em) revisão. Nenhum registro em conflito foi enviado.`:` — Fim do lote sem falhas.`;
 }
 async function init(){
- payload=await (await fetch(chrome.runtime.getURL('data/aulas_4bim_2026.json'))).json();
- originals=new Map(payload.postagens.map(p=>[p.id,structuredClone(p)]));
- overrides=(await chrome.storage.local.get('aula_overrides')).aula_overrides||{};
- records=payload.postagens.map(p=>({...p,...(overrides[p.id]||{})}));
+ [payloadEclass,payload7Edu]=await Promise.all([
+  fetch(chrome.runtime.getURL('data/aulas_4bim_2026.json')).then(r=>{if(!r.ok)throw Error('Base E-Class ausente');return r.json()}),
+  fetch(chrome.runtime.getURL('data/aulas_7edu_4bim_2026.json')).then(r=>{if(!r.ok)throw Error('Base 7Edu ausente');return r.json()})
+ ]);
+ const storage=await chrome.storage.local.get(['aula_overrides','aula_overrides_7edu']);
+ overridesEclass=storage.aula_overrides||{};overrides7Edu=storage.aula_overrides_7edu||{};
  const [tab]=await chrome.tabs.query({active:true,currentWindow:true});
  if(tab?.url?.startsWith('https://7edu-br.educadventista.org/'))$('system').value='7edu';
- updateSystemUI();summary();render();refreshSession();
- $('system').addEventListener('change',()=>{if(sending)return;selected.clear();updateSystemUI();render();refreshSession();$('progress').textContent='';});
+ setSystemRecords();updateSystemUI();summary();render();refreshSession();
+ $('system').addEventListener('change',()=>{if(sending)return;selected.clear();setSystemRecords();updateSystemUI();summary();render();refreshSession();$('progress').textContent='';});
  for(const el of document.querySelectorAll('.filters input,.filters select'))el.addEventListener('change',render);
  $('approveCondensed').addEventListener('change',()=>{
   if(!$('approveCondensed').checked){for(const p of records)if(p.status==='revisao_pedagogica')selected.delete(p.id);}
@@ -205,19 +244,22 @@ async function init(){
  $('exportCurrent7Edu').onclick=()=>exportCalendar('current');
  $('exportAll7Edu').onclick=()=>exportCalendar('all');
  $('closePreview').onclick=()=>$('preview').close();
- $('toggleEditor').onclick=()=>{const show=$('editor').hidden;$('editor').hidden=!show;$('saveEditor').hidden=!show;$('restoreOriginal').hidden=!show;$('toggleEditor').textContent=show?'Ocultar editor':'Editar HTML/título';};
+ $('toggleEditor').onclick=()=>{
+  const item=records.find(x=>x.id===currentPreviewId);
+  if(system()==='7edu' && !READY_7EDU.has(item?.status)){alert('Data bloqueada. Ajuste o mapeamento e gere nova base antes de editar para envio.');return;}
+  const show=$('editor').hidden;$('editor').hidden=!show;$('saveEditor').hidden=!show;$('restoreOriginal').hidden=!show;$('toggleEditor').textContent=show?'Ocultar editor':'Editar HTML/título';};
  $('saveEditor').onclick=async()=>{
   const post=records.find(x=>x.id===currentPreviewId);if(!post)return;
   const h=$('htmlEditor').value.trim(),t=$('titleEditor').value.trim();
   if(!h||!t){alert('Título e HTML não podem estar vazios.');return;}
   post.html=h;post.titulo=t;overrides[post.id]={html:h,titulo:t};
-  await chrome.storage.local.set({aula_overrides:overrides});
+  await chrome.storage.local.set({[system()==='7edu'?'aula_overrides_7edu':'aula_overrides']:overrides});
   $('previewTitle').textContent=t;$('previewFrame').srcdoc=`<meta charset="utf-8"><body style="padding:20px;max-width:760px;margin:auto;font:15px/1.6 Arial">${h}</body>`;if(system()==='7edu')$('plainPreview').textContent=forSystem(post).conteudo_7edu;
   render();alert('Revisão salva localmente no navegador. O JSON original não foi alterado.');
  };
  $('restoreOriginal').onclick=async()=>{
   const post=records.find(x=>x.id===currentPreviewId),src=originals.get(currentPreviewId);if(!post||!src)return;
-  post.html=src.html;post.titulo=src.titulo;delete overrides[post.id];await chrome.storage.local.set({aula_overrides:overrides});
+  post.html=src.html;post.titulo=src.titulo;delete overrides[post.id];await chrome.storage.local.set({[system()==='7edu'?'aula_overrides_7edu':'aula_overrides']:overrides});
   $('htmlEditor').value=post.html;$('titleEditor').value=post.titulo;$('previewTitle').textContent=post.titulo;
   $('previewFrame').srcdoc=`<meta charset="utf-8"><body style="padding:20px;max-width:760px;margin:auto;font:15px/1.6 Arial">${post.html}</body>`;if(system()==='7edu')$('plainPreview').textContent=forSystem(post).conteudo_7edu;render();
  };

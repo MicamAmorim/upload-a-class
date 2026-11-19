@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Aulas — E-Class + 7Edu · 4º Bimestre 2026",
-  "version": "1.0.7",
-  "description": "Lançamento supervisionado no E-Class e 7Edu, leitura e exportação do calendário real 7Edu, bloqueio de datas futuras e pré-validação integral de lotes.",
+  "version": "1.0.8",
+  "description": "E-Class e 7Edu com calendários independentes; mapeamento auditado de 14 disciplinas, bloqueio de datas registradas, domingo atípico e ausências de plano.",
   "permissions": [
     "storage",
     "tabs",

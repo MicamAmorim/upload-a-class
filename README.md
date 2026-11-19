@@ -1,3 +1,12 @@
+## Versão 1.0.8 — Mapeamento auditado do 7Edu (19/11/2026)
+
+- Mantém o arquivo E-Class original `extension/data/aulas_4bim_2026.json` (**284 postagens**) sem alterações.
+- Usa `extension/data/aulas_7edu_4bim_2026.json` (**221 datas de 14 disciplinas**) somente no modo 7Edu.
+- Somente datas com coincidência exata no planejamento original e horários/quantidade compatíveis são elegíveis; condições pedagógicas anteriores ainda exigem aprovação.
+- Aulas já registradas, domingos atípicos (27/09), datas sem plano-fonte e datas futuras ficam bloqueadas.
+- Exportação `.md` continua disponível para coletar novos dias abertos pelo 7Edu.
+- Detalhes em `CORRECAO_v1.0.8_REMAPEAMENTO_7EDU.md` e `relatorios/auditoria_remapeamento_7edu_2026.md`.
+
 > **Versão atual: 1.0.7 (19/11/2026).** Correção de segurança e calendário do 7Edu: exportação `.md` por disciplina ou de todas as disciplinas, com data, número de aulas, horários e situação. O 7Edu passa a pré-validar todo o lote antes da primeira gravação. O calendário do E-Class segue **independente**. Leia [`CORRECAO_v1.0.7_CALENDARIO_7EDU.md`](CORRECAO_v1.0.7_CALENDARIO_7EDU.md).
 
 > **Histórico: 1.0.6 (19/11/2026).** A extensão agora lança aulas no E-Class **e** no 7Edu. O E-Class manteve seu fluxo; o 7Edu usa o diário de "Aulas Ministradas" e o formato de gravação identificado no HAR. **Leia `CORRECAO_v1.0.6_7EDU.md` para instalar, testar e conhecer as limitações.** Os parágrafos abaixo descrevem a origem e o histórico da versão 1.0.4/1.0.5.

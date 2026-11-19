@@ -10,6 +10,7 @@ const id = (n) => guid(n.toString(16));
 const fixture = {employee:id(1),term:id(2),section:id(3),group:id(4),subterm:id(5),item:id(6),schedule:id(7),template:id(8),saved:id(9)};
 const post = {id:'teste_2ma_filosofia_20261020', turma:'2MA',disciplina:'Filosofia',data:'2026-10-20',
   titulo:'Tema ético',html:'<p>Estudo da ética</p>',conteudo_7edu:'Tema ético\n\nEstudo da ética',
+  status:'pronto_para_conferencia','7edu':{mapeamento:'exato',situacao_portal:'Pendente'},
   horario:[{inicio:'09:15',fim:'10:00'}],quantidade_periodos:1};
 const homeHtml = `<html><body>teacherportal<input name="academicTermSelectedId" value="${fixture.term}"><script>"Code": "2026-AL"</script></body></html>`;
 const classHtml = `<html><body>teacherportal<select name="SectionItemId"><option selected value="${fixture.item}" data-attendancetype="0">Filosofia</option></select></body></html>`;
@@ -64,6 +65,11 @@ function harness(opts={}) {
  });
  await run('check: leitura e duplicata ainda pendente nao bloqueia',async()=>{
   const t=harness();const r=await t.execute('check');assert.equal(r.ok,true);assert.equal(r.data.aulas_no_dia,0);
+  assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
+ });
+ await run('preflight: rejeita mapeamento ausente ou bloqueado',async()=>{
+  const t=harness();const r=await t.execute('preflight',{...post,'7edu':{mapeamento:'bloqueado',situacao_portal:'Pendente'}});
+  assert.equal(r.ok,false);assert.match(r.error,/mapeamento validado/);
   assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
  });
  await run('publish: payload completo e gravacao unica',async()=>{

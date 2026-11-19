@@ -221,6 +221,9 @@ async function sevenEduPageOperation(input) {
       throw new Error('Aula, turma ou data não corresponde ao calendário autorizado de 2026.');
     if (!['Matemática', 'Investigação Matemática', 'Filosofia'].includes(post.disciplina))
       throw new Error('Disciplina não contemplada pelo calendário.');
+    if (input.action !== 'check' && (!post['7edu'] || post['7edu'].mapeamento!=='exato' ||
+      post['7edu'].situacao_portal!=='Pendente' || !['pronto_para_conferencia','revisao_pedagogica','proposta_para_aprovacao'].includes(post.status)))
+      throw new Error('Registro sem mapeamento validado no 7Edu. Nenhuma gravação permitida.');
     if (!safe(post.titulo).trim() || !safe(post.conteudo_7edu).trim())
       throw new Error('O título ou conteúdo convertido para o diário do 7Edu está vazio.');
     if (!Array.isArray(post.horario) || post.horario.length === 0 || post.horario.length !== post.quantidade_periodos)
@@ -308,6 +311,8 @@ async function sevenEduPageOperation(input) {
 async function sevenEduPublish(item, options = {}) {
   if (!item || !/^[123]M[AB]$/.test(item.turma || '') || !item.html?.trim())
     throw new Error('Aula inválida no pacote de planejamento.');
+  if (!item['7edu'] || item['7edu'].mapeamento!=='exato' || item['7edu'].situacao_portal!=='Pendente')
+    throw new Error('Aula sem correspondência exata no calendário 7Edu; envio bloqueado.');
   if (item.status === 'revisao_pedagogica' && !options.approveCondensed)
     throw new Error('A condensação precisa de aprovação explícita.');
   if (item.status === 'proposta_para_aprovacao' && !options.approveProposals)
