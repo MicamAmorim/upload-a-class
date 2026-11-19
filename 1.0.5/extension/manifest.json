@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "E-Class — Planejamento 4º Bimestre 2026",
+  "version": "1.0.5",
+  "description": "E-Class 4º bimestre: separação Aula/Atividade na prevenção de duplicatas, autenticação renovável e envio supervisionado.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://portal.educacaoadventista.org.br/*",
+    "https://api-eclass.educacaoadventista.org.br/*",
+    "https://api-usuario.educacaoadventista.org.br/*"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "action": {
+    "default_title": "Aulas 4º Bimestre",
+    "default_popup": "popup.html"
+  }
+}

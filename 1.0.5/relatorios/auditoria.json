@@ -1,0 +1,780 @@
+{
+  "estatisticas": [
+    {
+      "turma": "1MA",
+      "matematica_periodos": 20,
+      "matematica_encontros": 10,
+      "planos_base_distribuidos": 40,
+      "deficit_vs_40": 20,
+      "planos_condensados": 10,
+      "encontros_complementares": 0,
+      "datas_avaliacoes": {
+        "19": "2026-10-19",
+        "20": "2026-10-26",
+        "39": "2026-11-30",
+        "40": "2026-12-07"
+      },
+      "investigacao_periodos": 22,
+      "filosofia_periodos": 0
+    },
+    {
+      "turma": "1MB",
+      "matematica_periodos": 34,
+      "matematica_encontros": 34,
+      "planos_base_distribuidos": 40,
+      "deficit_vs_40": 6,
+      "planos_condensados": 6,
+      "encontros_complementares": 0,
+      "datas_avaliacoes": {
+        "19": "2026-10-27",
+        "20": "2026-10-28",
+        "39": "2026-12-09",
+        "40": "2026-12-11"
+      },
+      "investigacao_periodos": 12,
+      "filosofia_periodos": 0
+    },
+    {
+      "turma": "2MA",
+      "matematica_periodos": 44,
+      "matematica_encontros": 34,
+      "planos_base_distribuidos": 40,
+      "deficit_vs_40": -4,
+      "planos_condensados": 0,
+      "encontros_complementares": 4,
+      "datas_avaliacoes": {
+        "19": "2026-10-28",
+        "20": "2026-10-29",
+        "39": "2026-12-10",
+        "40": "2026-12-11"
+      },
+      "investigacao_periodos": 0,
+      "filosofia_periodos": 12
+    },
+    {
+      "turma": "2MB",
+      "matematica_periodos": 44,
+      "matematica_encontros": 34,
+      "planos_base_distribuidos": 40,
+      "deficit_vs_40": -4,
+      "planos_condensados": 0,
+      "encontros_complementares": 4,
+      "datas_avaliacoes": {
+        "19": "2026-10-27",
+        "20": "2026-10-28",
+        "39": "2026-12-08",
+        "40": "2026-12-09"
+      },
+      "investigacao_periodos": 10,
+      "filosofia_periodos": 12
+    },
+    {
+      "turma": "3MA",
+      "matematica_periodos": 44,
+      "matematica_encontros": 34,
+      "planos_base_distribuidos": 40,
+      "deficit_vs_40": -4,
+      "planos_condensados": 0,
+      "encontros_complementares": 4,
+      "datas_avaliacoes": {
+        "19": "2026-10-28",
+        "20": "2026-10-29",
+        "39": "2026-12-09",
+        "40": "2026-12-10"
+      },
+      "investigacao_periodos": 24,
+      "filosofia_periodos": 0
+    },
+    {
+      "turma": "3MB",
+      "matematica_periodos": 48,
+      "matematica_encontros": 24,
+      "planos_base_distribuidos": 40,
+      "deficit_vs_40": -8,
+      "planos_condensados": 0,
+      "encontros_complementares": 8,
+      "datas_avaliacoes": {
+        "19": "2026-10-27",
+        "20": "2026-10-29",
+        "39": "2026-12-08",
+        "40": "2026-12-10"
+      },
+      "investigacao_periodos": 22,
+      "filosofia_periodos": 0
+    }
+  ],
+  "alertas": [
+    {
+      "id": "2026-09-21_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-21_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-22_1MB_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-22_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-22_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-22_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-23_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-23_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-24_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-24_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-25_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-25_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-28_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-28_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-29_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-29_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-29_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-30_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-09-30_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-01_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-01_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-02_1MB_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-02_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-02_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-05_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-05_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-06_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-06_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-06_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-07_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-07_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-08_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-08_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-09_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-09_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-13_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-13_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-13_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-14_1MB_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-14_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-14_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-15_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-15_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-16_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-16_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-19_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-19_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-20_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-20_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-20_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-21_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-21_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-22_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-22_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-23_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-23_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-26_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-26_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-27_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-27_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-27_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-28_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-28_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-29_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-10-29_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-03_1MB_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-03_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-03_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-03_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-04_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-04_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-05_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-05_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-06_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-06_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-09_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-09_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-10_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-10_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-10_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-11_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-11_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-12_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-12_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-13_1MB_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-13_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-13_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-16_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-16_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-17_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-17_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-17_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-18_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-18_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-19_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-19_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-23_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-23_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-24_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-24_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-24_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-25_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-25_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-26_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-26_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-27_1MB_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-27_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-27_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-30_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-11-30_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-01_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-01_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-01_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-02_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-02_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-03_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-03_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-04_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-04_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-07_1MA_MAT",
+      "motivo": "condensação de aulas originais em tempo menor",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-07_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-08_1MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-08_1MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-08_2MA_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-09_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-09_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-10_2MB_FIL",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-10_3MA_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-11_3MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    },
+    {
+      "id": "2026-12-11_2MB_INV",
+      "motivo": "conteúdo proposto sem plano-fonte completo; exige revisão",
+      "bloqueado": true
+    }
+  ],
+  "feriados": [
+    {
+      "data": "2026-10-12",
+      "descricao": "Nossa Senhora Aparecida — feriado nacional"
+    },
+    {
+      "data": "2026-10-30",
+      "descricao": "Dia do Comerciário — feriado municipal (Itabuna)"
+    },
+    {
+      "data": "2026-11-02",
+      "descricao": "Finados — feriado nacional"
+    },
+    {
+      "data": "2026-11-15",
+      "descricao": "Proclamação da República — nacional (domingo)"
+    },
+    {
+      "data": "2026-11-20",
+      "descricao": "Dia Nacional de Zumbi e da Consciência Negra — nacional"
+    }
+  ]
+}
