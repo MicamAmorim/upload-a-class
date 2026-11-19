@@ -219,6 +219,12 @@ def generated_post(row,parts,consulted,history_before=False,holidays=None):
                     if u.get(field):htmlparts.append('<p>'+label+': '+html.escape(u[field])+'</p>')
             else:htmlparts.append('<p>'+html.escape(u['texto']).replace('\n','<br>')+'</p>')
     if not has_content:htmlparts.append('<p>[SEM PLANO: revisão necessária]</p>')
+    # 7Edu: conteúdo padronizado de Investigação Matemática fornecido pelo professor.
+    # Preserva o calendário, os IDs das unidades e as aprovações/bloqueios da auditoria.
+    if disc=='Investigação Matemática':
+        title='Atividades propostas'
+        plain='Atividades propostas'
+        htmlparts=['<p>Atividades propostas</p>']
     note=('Dia atípico: domingo, requer conferência. ' if sunday else '')+('Conteúdo já registrado: o calendário NÃO informa o que foi ensinado. ' if registered else '')+('Data projetada, NÃO aberta no portal. ' if projected else '')+('Data identificada como feriado no planejamento E-Class: conferir se houve aula no 7Edu. ' if holiday else '')+('Planejamento associado à data real (não necessariamente efetivamente ministrado).')
     return {'id':f'7EDU_{date}_{turma}_{ {"Matemática":"MAT","Investigação Matemática":"INV","Filosofia":"FIL"}[disc]}',
       'turma':turma,'disciplina':disc,'data':date,'dia_semana':row['dia_semana'],
@@ -271,10 +277,10 @@ def generate(calendar,sourcefile,individualsfile,output,report):
           'unidades_reservadas':nplanned,'unidades_aguardando_data':len(remainder),
           'situacoes':dict(kind)})
         stats.update(kind)
-    archive={'versao':'1.0.10','sistema':'7edu','ano':2026,'periodo':'4º bimestre',
+    archive={'versao':'1.0.11','sistema':'7edu','ano':2026,'periodo':'4º bimestre',
       'fonte_consulta':{'data':consulted.isoformat(),'sha256_markdown':sha,
         'projecoes_nao_oficiais':True,'requer_nova_exportacao_antes_de_publicar':True},
-      'metodologia':'Redistribuição cronológica de unidades dos planos DOCX e propostas de Investigação Matemática do E-Class; Filosofia usa os módulos 8 a 12 fornecidos pelo docente, alternando aulas expositivas e práticas de exercícios. Projeções sem autorização de postagem; registros anteriores não comprovam conteúdo.',
+      'metodologia':'Redistribuição cronológica de unidades dos planos DOCX e propostas de Investigação Matemática do E-Class; Filosofia usa os módulos 8 a 12 fornecidos pelo docente, alternando aulas expositivas e práticas de exercícios. Investigação Matemática tem texto uniforme de publicação "Atividades propostas"; unidades-fonte preservadas apenas para rastreabilidade. Projeções sem autorização de postagem; registros anteriores não comprovam conteúdo.',
       'estatisticas':{'por_situacao':dict(stats),'datas_reais':len(real),
         'datas_projetadas':len(forecast),'periodos_reais':sum(r['quantidade_periodos'] for r in real),
         'periodos_projetados':sum(r['quantidade_periodos'] for r in forecast)},
@@ -287,7 +293,7 @@ def generate(calendar,sourcefile,individualsfile,output,report):
       '> **PLANEJAMENTO PROPOSTO, NÃO COMPROVANTE DE AULAS MINISTRADAS.** As linhas registradas são bloqueadas e seu conteúdo verdadeiro precisa ser conferido no diário.',
       '',f'- Calendário oficial consultado em: **{consulted.strftime("%d/%m/%Y")}**',
       f'- Datas no calendário exportado: **{len(real)}**',f'- Datas projetadas por recorrência semanal até {end.strftime("%d/%m/%Y")}: **{len(forecast)}**, SEM confirmação do 7Edu',
-      '- O E-Class original não foi alterado. Matemática usa 40 planos individuais por série; Investigação Matemática mantém propostas do E-Class; Filosofia usa cinco módulos informados pelo professor, com expositivas e práticas de exercícios.',
+      '- O E-Class original não foi alterado. Matemática usa 40 planos individuais por série; Investigação Matemática envia somente o texto "Atividades propostas" no 7Edu (com a sequência original retida para auditoria); Filosofia usa cinco módulos informados pelo professor, com expositivas e práticas de exercícios.',
       '- 2MA / Investigação Matemática recebe **proposta adaptada** da sequência 2MB e exige aprovação expressa.',
       '- Registros anteriores consomem posições na sequência apenas **como hipótese**, não como demonstração de conteúdo efetivamente ministrado. Verifique o histórico antes de publicar aulas subsequentes.',
       '- Cada período recebe até duas unidades do plano; encontros com duas unidades em um período exigem aprovação de condensação.',

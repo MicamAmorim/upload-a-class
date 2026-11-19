@@ -12,7 +12,7 @@ sys.path.insert(0,str(ROOT/'ferramentas'))
 import redistribuir_aulas_7edu as gen
 units=gen.make_units(parent,json.loads(base.read_text()))
 assert len(parent['postagens'])==284
-assert out['versao']=='1.0.10'
+assert out['versao']=='1.0.11'
 assert out['estatisticas']['datas_reais']==221
 assert out['estatisticas']['periodos_reais']==277
 assert out['estatisticas']['datas_projetadas']>0
@@ -37,7 +37,10 @@ for p in out['postagens']:
         assert p['7edu']['situacao_portal']=='Pendente'
         assert p['data']<='2026-11-19'
         assert p['html'] and p['conteudo_7edu']
-        assert str(p['data'][8:10]+'/'+p['data'][5:7]+'/'+p['data'][:4]) in p['html']
+        if p['disciplina']=='Investigação Matemática':
+            assert p['conteudo_7edu']=='Atividades propostas' and p['html']=='<p>Atividades propostas</p>'
+        else:
+            assert str(p['data'][8:10]+'/'+p['data'][5:7]+'/'+p['data'][:4]) in p['html']
         assert p['status'] in ('pronto_para_conferencia','revisao_pedagogica','proposta_para_aprovacao')
     for row in allocation:
         if len(row)==2:

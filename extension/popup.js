@@ -13,6 +13,13 @@ function setSystemRecords(){
   p.data=payload.postagens[i].data;
   p.horario=payload.postagens[i].horario;
   p.quantidade_periodos=payload.postagens[i].quantidade_periodos;
+  // O conteúdo padronizado de Investigação 7Edu prevalece sobre edições locais antigas,
+  // sem apagar o armazenamento ou alterar nenhuma postagem do E-Class.
+  if(p.disciplina==='Investigação Matemática'){
+   p.titulo=payload.postagens[i].titulo;
+   p.html=payload.postagens[i].html;
+   p.conteudo_7edu=payload.postagens[i].conteudo_7edu;
+  }
  });
  originals=new Map(payload.postagens.map(p=>[p.id,structuredClone(p)]));
 }
@@ -38,6 +45,10 @@ function convert7EduHtml(html){
 }
 function forSystem(item){
  if(system()!=='7edu')return item;
+ // Texto exato solicitado para todas as aulas de Investigação no 7Edu,
+ // independentemente de títulos/HTML antigos existentes no armazenamento local.
+ if(item.disciplina==='Investigação Matemática')
+  return {...item,titulo:'Atividades propostas',html:'<p>Atividades propostas</p>',conteudo_7edu:'Atividades propostas'};
  return {...item,conteudo_7edu:`${item.titulo}\n\n${convert7EduHtml(item.html)}`.trim()};
 }
 function updateSystemUI(){
@@ -255,6 +266,10 @@ async function init(){
  $('closePreview').onclick=()=>$('preview').close();
  $('toggleEditor').onclick=()=>{
   const item=records.find(x=>x.id===currentPreviewId);
+  if(system()==='7edu' && item?.disciplina==='Investigação Matemática'){
+   alert('Investigação Matemática no 7Edu usa o texto padronizado: Atividades propostas. Para mudar essa regra, atualize a base de planejamento.');
+   return;
+  }
   if(system()==='7edu' && !READY_7EDU.has(item?.status)){alert('Data bloqueada. Ajuste o mapeamento e gere nova base antes de editar para envio.');return;}
   const show=$('editor').hidden;$('editor').hidden=!show;$('saveEditor').hidden=!show;$('restoreOriginal').hidden=!show;$('toggleEditor').textContent=show?'Ocultar editor':'Editar HTML/título';};
  $('saveEditor').onclick=async()=>{

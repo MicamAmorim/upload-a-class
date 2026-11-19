@@ -35,7 +35,7 @@ function harness(opts={}) {
   assert.equal(options.credentials,'same-origin');
   let result,mime='application/json';
   if (uri.pathname==='/teacherportal/') {result=opts.wrongYear?homeHtml.replace('2026-AL','2025-AL'):homeHtml;mime='text/html';}
-  else if (uri.pathname.endsWith('GetListOpenedSectionByEmployee')) result={Data:opts.emptyClasses?[]:[section],Total:1,Errors:null};
+  else if (uri.pathname.endsWith('GetListOpenedSectionByEmployee')) result={Data:opts.emptyClasses?[]:[{...section,Name:opts.discipline||'Filosofia'}],Total:1,Errors:null};
   else if (uri.pathname==='/teacherportal/ClassMeeting') {result=classHtml;mime='text/html';}
   else if (uri.pathname.endsWith('Grid_Read')) {
    const row=opts.duplicate ? {RealizedDate:'2026/10/20 00:00:00'} :
@@ -80,6 +80,21 @@ function harness(opts={}) {
   assert.equal(p.SectionItemId,fixture.item);assert.equal(p.CourseOfferingSectionSubtermId,fixture.subterm);
   assert.equal(p.ClassMeetingList.length,1);assert.equal(p.ClassMeetingList[0].RealizedSchedule.Identity,fixture.schedule);
   assert.equal(p.Identity,'00000000-0000-0000-0000-000000000000');
+ });
+ await run('publish: Investigação transmite a expressão exata',async()=>{
+  const p={...post,disciplina:'Investigação Matemática',titulo:'Atividades propostas',html:'<p>Atividades propostas</p>',conteudo_7edu:'Atividades propostas'};
+  const t=harness({discipline:'Investigação Matemática'});
+  const r=await t.execute('publish',p);
+  assert.equal(r.ok,true,r.error);
+  assert.equal(t.saved().RealizedContentAll,'Atividades propostas');
+  assert.equal(t.calls.filter(x=>x.path.endsWith('/Save')).length,1);
+ });
+ await run('publish: Investigação recusa conteúdo antigo',async()=>{
+  const p={...post,disciplina:'Investigação Matemática',conteudo_7edu:'Conteúdo antigo detalhado'};
+  const t=harness({discipline:'Investigação Matemática'});
+  const r=await t.execute('publish',p);
+  assert.equal(r.ok,false);assert.match(r.error,/Atividades propostas/);
+  assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
  });
  await run('preflight: agenda e horários validam sem gravar',async()=>{
   const t=harness();const r=await t.execute('preflight');assert.equal(r.ok,true,r.error);

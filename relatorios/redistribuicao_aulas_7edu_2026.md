@@ -5,7 +5,7 @@
 - Calendário oficial consultado em: **19/11/2026**
 - Datas no calendário exportado: **221**
 - Datas projetadas por recorrência semanal até 11/12/2026: **78**, SEM confirmação do 7Edu
-- O E-Class original não foi alterado. Matemática usa 40 planos individuais por série; Investigação Matemática mantém propostas do E-Class; Filosofia usa cinco módulos informados pelo professor, com expositivas e práticas de exercícios.
+- O E-Class original não foi alterado. Matemática usa 40 planos individuais por série; Investigação Matemática envia somente o texto "Atividades propostas" no 7Edu (com a sequência original retida para auditoria); Filosofia usa cinco módulos informados pelo professor, com expositivas e práticas de exercícios.
 - 2MA / Investigação Matemática recebe **proposta adaptada** da sequência 2MB e exige aprovação expressa.
 - Registros anteriores consomem posições na sequência apenas **como hipótese**, não como demonstração de conteúdo efetivamente ministrado. Verifique o histórico antes de publicar aulas subsequentes.
 - Cada período recebe até duas unidades do plano; encontros com duas unidades em um período exigem aprovação de condensação.
@@ -34,16 +34,16 @@
 
 | Turma / disciplina | Data | Períodos | Estado | Tópicos redistribuídos |
 |---|---|---:|---|---|
-| 1MA / Investigação Matemática | 2026-09-21 | 1 | revisao_pedagogica | 2026-09-21_1MA_INV; 2026-09-22_1MA_INV — Questão de investigação e formulação de hipóteses — função quadrática e transformações geométricas; Estratégias de resolução e comparação de caminhos — função quadrática  |
-| 1MA / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 1MA / Investigação Matemática | 2026-09-28 | 1 | revisao_pedagogica | 2026-09-28_1MA_INV; 2026-09-29_1MA_INV — Revisão ENEM — interpretação e modelagem — função quadrática e transformações geométricas; Investigação prática e registro de dados — função quadrática e transformações g |
-| 1MA / Investigação Matemática | 2026-10-05 | 1 | revisao_pedagogica | 2026-10-05_1MA_INV; 2026-10-06_1MA_INV — Conjecturas, exemplos e contraexemplos — função quadrática e transformações geométricas; Trabalho colaborativo: padrões e regularidades — função quadrática e transformaçõ |
-| 1MA / Investigação Matemática | 2026-10-26 | 1 | revisao_pedagogica | 2026-10-13_1MA_INV; 2026-10-19_1MA_INV — Revisão ENEM — resolução orientada — função quadrática e transformações geométricas; Comunicação dos resultados da investigação — função quadrática e transformações geomé |
-| 1MA / Investigação Matemática | 2026-11-09 | 1 | revisao_pedagogica | 2026-10-20_1MA_INV; 2026-10-26_1MA_INV — Oficina de revisão ENEM — diagnóstico e correção — função quadrática e transformações geométricas; Síntese investigativa e autoavaliação — função quadrática e transformaç |
-| 1MA / Investigação Matemática | 2026-11-16 | 1 | revisao_pedagogica | 2026-10-27_1MA_INV; 2026-11-03_1MA_INV — Questão de investigação e formulação de hipóteses — função quadrática e transformações geométricas; Estratégias de resolução e comparação de caminhos — estatística e anál |
-| 1MA / Investigação Matemática | 2026-11-23 | 1 | projecao_nao_aberta | 2026-11-09_1MA_INV; 2026-11-10_1MA_INV — Revisão ENEM — interpretação e modelagem — estatística e análise de dados; Investigação prática e registro de dados — estatística e análise de dados |
-| 1MA / Investigação Matemática | 2026-11-30 | 1 | projecao_nao_aberta | 2026-11-16_1MA_INV; 2026-11-17_1MA_INV — Conjecturas, exemplos e contraexemplos — estatística e análise de dados; Trabalho colaborativo: padrões e regularidades — estatística e análise de dados |
-| 1MA / Investigação Matemática | 2026-12-07 | 1 | projecao_nao_aberta | 2026-11-23_1MA_INV; 2026-11-24_1MA_INV — Revisão ENEM — resolução orientada — estatística e análise de dados; Comunicação dos resultados da investigação — estatística e análise de dados |
+| 1MA / Investigação Matemática | 2026-09-21 | 1 | revisao_pedagogica | 2026-09-21_1MA_INV; 2026-09-22_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-09-28 | 1 | revisao_pedagogica | 2026-09-28_1MA_INV; 2026-09-29_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-10-05 | 1 | revisao_pedagogica | 2026-10-05_1MA_INV; 2026-10-06_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-10-26 | 1 | revisao_pedagogica | 2026-10-13_1MA_INV; 2026-10-19_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-11-09 | 1 | revisao_pedagogica | 2026-10-20_1MA_INV; 2026-10-26_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-11-16 | 1 | revisao_pedagogica | 2026-10-27_1MA_INV; 2026-11-03_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-11-23 | 1 | projecao_nao_aberta | 2026-11-09_1MA_INV; 2026-11-10_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-11-30 | 1 | projecao_nao_aberta | 2026-11-16_1MA_INV; 2026-11-17_1MA_INV — Atividades propostas |
+| 1MA / Investigação Matemática | 2026-12-07 | 1 | projecao_nao_aberta | 2026-11-23_1MA_INV; 2026-11-24_1MA_INV — Atividades propostas |
 | 1MA / Matemática | 2026-09-21 | 2 | registrado_7edu | PLANO_1_01; PLANO_1_02; PLANO_1_03 — Simetria da parábola: leitura do gráfico e eixo de simetria; Coordenada do vértice: determinação de x_v; Coordenada do vértice: determinação de y_v |
 | 1MA / Matemática | 2026-09-22 | 1 | pronto_para_conferencia | PLANO_1_04 — Esboço da parábola a partir de informações-chave |
 | 1MA / Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
@@ -66,19 +66,19 @@
 | 1MA / Matemática | 2026-12-01 | 1 | projecao_nao_aberta | PLANO_1_36 — Circunferência: forma reduzida |
 | 1MA / Matemática | 2026-12-07 | 2 | projecao_nao_aberta | PLANO_1_37; PLANO_1_38; PLANO_1_39 — Circunferência: forma geral e reconhecimento; Lista II: revisão integrada de Estatística e Geometria Analítica; SIMULADO DA PROVA — 40 questões |
 | 1MA / Matemática | 2026-12-08 | 1 | projecao_nao_aberta | PLANO_1_40 — PROVA DE MATEMÁTICA — 20 questões |
-| 1MB / Investigação Matemática | 2026-09-22 | 1 | proposta_para_aprovacao | 2026-09-22_1MB_INV — Questão de investigação e formulação de hipóteses — função quadrática e transformações geométricas |
-| 1MB / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 1MB / Investigação Matemática | 2026-09-29 | 1 | proposta_para_aprovacao | 2026-09-29_1MB_INV — Estratégias de resolução e comparação de caminhos — função quadrática e transformações geométricas |
-| 1MB / Investigação Matemática | 2026-10-06 | 1 | proposta_para_aprovacao | 2026-10-06_1MB_INV — Revisão ENEM — interpretação e modelagem — função quadrática e transformações geométricas |
-| 1MB / Investigação Matemática | 2026-10-13 | 1 | proposta_para_aprovacao | 2026-10-13_1MB_INV — Investigação prática e registro de dados — função quadrática e transformações geométricas |
-| 1MB / Investigação Matemática | 2026-10-20 | 1 | proposta_para_aprovacao | 2026-10-20_1MB_INV — Conjecturas, exemplos e contraexemplos — função quadrática e transformações geométricas |
-| 1MB / Investigação Matemática | 2026-10-27 | 1 | proposta_para_aprovacao | 2026-10-27_1MB_INV — Trabalho colaborativo: padrões e regularidades — função quadrática e transformações geométricas |
-| 1MB / Investigação Matemática | 2026-11-03 | 1 | proposta_para_aprovacao | 2026-11-03_1MB_INV — Revisão ENEM — resolução orientada — estatística e análise de dados |
-| 1MB / Investigação Matemática | 2026-11-10 | 1 | proposta_para_aprovacao | 2026-11-10_1MB_INV — Comunicação dos resultados da investigação — estatística e análise de dados |
-| 1MB / Investigação Matemática | 2026-11-17 | 1 | proposta_para_aprovacao | 2026-11-17_1MB_INV — Oficina de revisão ENEM — diagnóstico e correção — estatística e análise de dados |
-| 1MB / Investigação Matemática | 2026-11-24 | 1 | projecao_nao_aberta | 2026-11-24_1MB_INV — Síntese investigativa e autoavaliação — estatística e análise de dados |
-| 1MB / Investigação Matemática | 2026-12-01 | 1 | projecao_nao_aberta | 2026-12-01_1MB_INV — Questão de investigação e formulação de hipóteses — estatística e análise de dados |
-| 1MB / Investigação Matemática | 2026-12-08 | 1 | projecao_nao_aberta | 2026-12-08_1MB_INV — Estratégias de resolução e comparação de caminhos — estatística e análise de dados |
+| 1MB / Investigação Matemática | 2026-09-22 | 1 | proposta_para_aprovacao | 2026-09-22_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-09-29 | 1 | proposta_para_aprovacao | 2026-09-29_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-10-06 | 1 | proposta_para_aprovacao | 2026-10-06_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-10-13 | 1 | proposta_para_aprovacao | 2026-10-13_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-10-20 | 1 | proposta_para_aprovacao | 2026-10-20_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-10-27 | 1 | proposta_para_aprovacao | 2026-10-27_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-11-03 | 1 | proposta_para_aprovacao | 2026-11-03_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-11-10 | 1 | proposta_para_aprovacao | 2026-11-10_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-11-17 | 1 | proposta_para_aprovacao | 2026-11-17_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-11-24 | 1 | projecao_nao_aberta | 2026-11-24_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-12-01 | 1 | projecao_nao_aberta | 2026-12-01_1MB_INV — Atividades propostas |
+| 1MB / Investigação Matemática | 2026-12-08 | 1 | projecao_nao_aberta | 2026-12-08_1MB_INV — Atividades propostas |
 | 1MB / Matemática | 2026-09-22 | 1 | registrado_7edu | PLANO_1_01 — Simetria da parábola: leitura do gráfico e eixo de simetria |
 | 1MB / Matemática | 2026-09-23 | 1 | registrado_7edu | PLANO_1_02 — Coordenada do vértice: determinação de x_v |
 | 1MB / Matemática | 2026-09-25 | 1 | registrado_7edu | PLANO_1_03; PLANO_1_04 — Coordenada do vértice: determinação de y_v; Esboço da parábola a partir de informações-chave |
@@ -127,17 +127,17 @@
 | 2MA / Filosofia | 2026-11-24 | 1 | projecao_nao_aberta | FIL_7EDU_2MA_10_M12-P — Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios |
 | 2MA / Filosofia | 2026-12-01 | 1 | projecao_nao_aberta | FIL_7EDU_2MA_11_SINT-P1 — Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho |
 | 2MA / Filosofia | 2026-12-08 | 1 | projecao_nao_aberta | FIL_7EDU_2MA_12_SINT-P2 — Aula prática de exercícios — Oficina de revisão final — argumentação filosófica e resolução de exercícios |
-| 2MA / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_2MB_INV — Questão de investigação e formulação de hipóteses — cilindro, cone e esfera |
-| 2MA / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 2MA / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_2MB_INV — Estratégias de resolução e comparação de caminhos — cilindro, cone e esfera |
-| 2MA / Investigação Matemática | 2026-10-09 | 1 | proposta_para_aprovacao | 2026-10-09_2MB_INV — Revisão ENEM — interpretação e modelagem — cilindro, cone e esfera |
-| 2MA / Investigação Matemática | 2026-10-23 | 1 | proposta_para_aprovacao | 2026-10-16_2MB_INV — Investigação prática e registro de dados — cilindro, cone e esfera |
-| 2MA / Investigação Matemática | 2026-10-30 | 1 | feriado_a_conferir | 2026-10-23_2MB_INV — Conjecturas, exemplos e contraexemplos — cilindro, cone e esfera |
-| 2MA / Investigação Matemática | 2026-11-06 | 1 | proposta_para_aprovacao | 2026-11-06_2MB_INV — Trabalho colaborativo: padrões e regularidades — geometria e relações espaciais |
-| 2MA / Investigação Matemática | 2026-11-13 | 1 | proposta_para_aprovacao | 2026-11-13_2MB_INV — Revisão ENEM — resolução orientada — geometria e relações espaciais |
-| 2MA / Investigação Matemática | 2026-11-27 | 1 | projecao_nao_aberta | 2026-11-27_2MB_INV — Comunicação dos resultados da investigação — geometria e relações espaciais |
-| 2MA / Investigação Matemática | 2026-12-04 | 1 | projecao_nao_aberta | 2026-12-04_2MB_INV — Oficina de revisão ENEM — diagnóstico e correção — geometria e relações espaciais |
-| 2MA / Investigação Matemática | 2026-12-11 | 1 | projecao_nao_aberta | 2026-12-11_2MB_INV — Síntese investigativa e autoavaliação — geometria e relações espaciais |
+| 2MA / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-10-09 | 1 | proposta_para_aprovacao | 2026-10-09_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-10-23 | 1 | proposta_para_aprovacao | 2026-10-16_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-10-30 | 1 | feriado_a_conferir | 2026-10-23_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-11-06 | 1 | proposta_para_aprovacao | 2026-11-06_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-11-13 | 1 | proposta_para_aprovacao | 2026-11-13_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-11-27 | 1 | projecao_nao_aberta | 2026-11-27_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-12-04 | 1 | projecao_nao_aberta | 2026-12-04_2MB_INV — Atividades propostas |
+| 2MA / Investigação Matemática | 2026-12-11 | 1 | projecao_nao_aberta | 2026-12-11_2MB_INV — Atividades propostas |
 | 2MA / Matemática | 2026-09-23 | 1 | pronto_para_conferencia | PLANO_2_01 — Cilindro: definição, elementos e classificação |
 | 2MA / Matemática | 2026-09-24 | 1 | pronto_para_conferencia | PLANO_2_02 — Área lateral e área total do cilindro |
 | 2MA / Matemática | 2026-09-25 | 2 | pronto_para_conferencia | PLANO_2_03; PLANO_2_04 — Volume do cilindro e princípio de Cavalieri; Cilindro: problemas aplicados |
@@ -184,17 +184,17 @@
 | 2MB / Filosofia | 2026-11-26 | 1 | projecao_nao_aberta | FIL_7EDU_2MB_09_M12-E — Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade |
 | 2MB / Filosofia | 2026-12-03 | 1 | projecao_nao_aberta | FIL_7EDU_2MB_10_M12-P — Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios |
 | 2MB / Filosofia | 2026-12-10 | 1 | projecao_nao_aberta | FIL_7EDU_2MB_11_SINT-P1 — Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho |
-| 2MB / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_2MB_INV — Questão de investigação e formulação de hipóteses — cilindro, cone e esfera |
-| 2MB / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 2MB / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_2MB_INV — Estratégias de resolução e comparação de caminhos — cilindro, cone e esfera |
-| 2MB / Investigação Matemática | 2026-10-09 | 1 | proposta_para_aprovacao | 2026-10-09_2MB_INV — Revisão ENEM — interpretação e modelagem — cilindro, cone e esfera |
-| 2MB / Investigação Matemática | 2026-10-23 | 1 | proposta_para_aprovacao | 2026-10-16_2MB_INV — Investigação prática e registro de dados — cilindro, cone e esfera |
-| 2MB / Investigação Matemática | 2026-10-30 | 1 | feriado_a_conferir | 2026-10-23_2MB_INV — Conjecturas, exemplos e contraexemplos — cilindro, cone e esfera |
-| 2MB / Investigação Matemática | 2026-11-06 | 1 | proposta_para_aprovacao | 2026-11-06_2MB_INV — Trabalho colaborativo: padrões e regularidades — geometria e relações espaciais |
-| 2MB / Investigação Matemática | 2026-11-13 | 1 | proposta_para_aprovacao | 2026-11-13_2MB_INV — Revisão ENEM — resolução orientada — geometria e relações espaciais |
-| 2MB / Investigação Matemática | 2026-11-27 | 1 | projecao_nao_aberta | 2026-11-27_2MB_INV — Comunicação dos resultados da investigação — geometria e relações espaciais |
-| 2MB / Investigação Matemática | 2026-12-04 | 1 | projecao_nao_aberta | 2026-12-04_2MB_INV — Oficina de revisão ENEM — diagnóstico e correção — geometria e relações espaciais |
-| 2MB / Investigação Matemática | 2026-12-11 | 1 | projecao_nao_aberta | 2026-12-11_2MB_INV — Síntese investigativa e autoavaliação — geometria e relações espaciais |
+| 2MB / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-10-09 | 1 | proposta_para_aprovacao | 2026-10-09_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-10-23 | 1 | proposta_para_aprovacao | 2026-10-16_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-10-30 | 1 | feriado_a_conferir | 2026-10-23_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-11-06 | 1 | proposta_para_aprovacao | 2026-11-06_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-11-13 | 1 | proposta_para_aprovacao | 2026-11-13_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-11-27 | 1 | projecao_nao_aberta | 2026-11-27_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-12-04 | 1 | projecao_nao_aberta | 2026-12-04_2MB_INV — Atividades propostas |
+| 2MB / Investigação Matemática | 2026-12-11 | 1 | projecao_nao_aberta | 2026-12-11_2MB_INV — Atividades propostas |
 | 2MB / Matemática | 2026-09-21 | 2 | pronto_para_conferencia | PLANO_2_01; PLANO_2_02 — Cilindro: definição, elementos e classificação; Área lateral e área total do cilindro |
 | 2MB / Matemática | 2026-09-22 | 1 | pronto_para_conferencia | PLANO_2_03 — Volume do cilindro e princípio de Cavalieri |
 | 2MB / Matemática | 2026-09-23 | 1 | pronto_para_conferencia | PLANO_2_04 — Cilindro: problemas aplicados |
@@ -229,30 +229,30 @@
 | 2MB / Matemática | 2026-12-07 | 2 | projecao_nao_aberta | PLANO_2_39; PLANO_2_40 — SIMULADO DA PROVA — 40 questões; PROVA DE MATEMÁTICA — 20 questões |
 | 2MB / Matemática | 2026-12-08 | 1 | projecao_nao_aberta | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
 | 2MB / Matemática | 2026-12-09 | 1 | projecao_nao_aberta | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 3MA / Investigação Matemática | 2026-09-23 | 1 | proposta_para_aprovacao | 2026-09-23_3MA_INV — Questão de investigação e formulação de hipóteses — números complexos |
-| 3MA / Investigação Matemática | 2026-09-24 | 1 | proposta_para_aprovacao | 2026-09-24_3MA_INV — Estratégias de resolução e comparação de caminhos — números complexos |
-| 3MA / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 3MA / Investigação Matemática | 2026-09-30 | 1 | proposta_para_aprovacao | 2026-09-30_3MA_INV — Revisão ENEM — interpretação e modelagem — números complexos |
-| 3MA / Investigação Matemática | 2026-10-01 | 1 | proposta_para_aprovacao | 2026-10-01_3MA_INV — Investigação prática e registro de dados — números complexos |
-| 3MA / Investigação Matemática | 2026-10-07 | 1 | proposta_para_aprovacao | 2026-10-07_3MA_INV — Conjecturas, exemplos e contraexemplos — números complexos |
-| 3MA / Investigação Matemática | 2026-10-08 | 1 | proposta_para_aprovacao | 2026-10-08_3MA_INV — Trabalho colaborativo: padrões e regularidades — números complexos |
-| 3MA / Investigação Matemática | 2026-10-14 | 1 | proposta_para_aprovacao | 2026-10-14_3MA_INV — Revisão ENEM — resolução orientada — números complexos |
-| 3MA / Investigação Matemática | 2026-10-21 | 1 | proposta_para_aprovacao | 2026-10-15_3MA_INV — Comunicação dos resultados da investigação — números complexos |
-| 3MA / Investigação Matemática | 2026-10-22 | 1 | proposta_para_aprovacao | 2026-10-21_3MA_INV — Oficina de revisão ENEM — diagnóstico e correção — números complexos |
-| 3MA / Investigação Matemática | 2026-10-28 | 1 | proposta_para_aprovacao | 2026-10-22_3MA_INV — Síntese investigativa e autoavaliação — números complexos |
-| 3MA / Investigação Matemática | 2026-10-29 | 1 | proposta_para_aprovacao | 2026-10-28_3MA_INV — Questão de investigação e formulação de hipóteses — números complexos |
-| 3MA / Investigação Matemática | 2026-11-04 | 1 | revisao_pedagogica | 2026-10-29_3MA_INV; 2026-11-04_3MA_INV — Estratégias de resolução e comparação de caminhos — números complexos; Revisão ENEM — interpretação e modelagem — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-11-05 | 1 | proposta_para_aprovacao | 2026-11-05_3MA_INV — Investigação prática e registro de dados — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-11-11 | 1 | proposta_para_aprovacao | 2026-11-11_3MA_INV — Conjecturas, exemplos e contraexemplos — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-11-12 | 1 | proposta_para_aprovacao | 2026-11-12_3MA_INV — Trabalho colaborativo: padrões e regularidades — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-11-18 | 1 | proposta_para_aprovacao | 2026-11-18_3MA_INV — Revisão ENEM — resolução orientada — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-11-19 | 1 | proposta_para_aprovacao | 2026-11-19_3MA_INV — Comunicação dos resultados da investigação — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-11-25 | 1 | projecao_nao_aberta | 2026-11-25_3MA_INV — Oficina de revisão ENEM — diagnóstico e correção — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-11-26 | 1 | projecao_nao_aberta | 2026-11-26_3MA_INV — Síntese investigativa e autoavaliação — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-12-02 | 1 | projecao_nao_aberta | 2026-12-02_3MA_INV — Questão de investigação e formulação de hipóteses — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-12-03 | 1 | projecao_nao_aberta | 2026-12-03_3MA_INV — Estratégias de resolução e comparação de caminhos — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-12-09 | 1 | projecao_nao_aberta | 2026-12-09_3MA_INV — Revisão ENEM — interpretação e modelagem — polinômios e suas raízes |
-| 3MA / Investigação Matemática | 2026-12-10 | 1 | projecao_nao_aberta | 2026-12-10_3MA_INV — Investigação prática e registro de dados — polinômios e suas raízes |
+| 3MA / Investigação Matemática | 2026-09-23 | 1 | proposta_para_aprovacao | 2026-09-23_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-09-24 | 1 | proposta_para_aprovacao | 2026-09-24_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-09-30 | 1 | proposta_para_aprovacao | 2026-09-30_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-01 | 1 | proposta_para_aprovacao | 2026-10-01_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-07 | 1 | proposta_para_aprovacao | 2026-10-07_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-08 | 1 | proposta_para_aprovacao | 2026-10-08_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-14 | 1 | proposta_para_aprovacao | 2026-10-14_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-21 | 1 | proposta_para_aprovacao | 2026-10-15_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-22 | 1 | proposta_para_aprovacao | 2026-10-21_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-28 | 1 | proposta_para_aprovacao | 2026-10-22_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-10-29 | 1 | proposta_para_aprovacao | 2026-10-28_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-04 | 1 | revisao_pedagogica | 2026-10-29_3MA_INV; 2026-11-04_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-05 | 1 | proposta_para_aprovacao | 2026-11-05_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-11 | 1 | proposta_para_aprovacao | 2026-11-11_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-12 | 1 | proposta_para_aprovacao | 2026-11-12_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-18 | 1 | proposta_para_aprovacao | 2026-11-18_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-19 | 1 | proposta_para_aprovacao | 2026-11-19_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-25 | 1 | projecao_nao_aberta | 2026-11-25_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-11-26 | 1 | projecao_nao_aberta | 2026-11-26_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-12-02 | 1 | projecao_nao_aberta | 2026-12-02_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-12-03 | 1 | projecao_nao_aberta | 2026-12-03_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-12-09 | 1 | projecao_nao_aberta | 2026-12-09_3MA_INV — Atividades propostas |
+| 3MA / Investigação Matemática | 2026-12-10 | 1 | projecao_nao_aberta | 2026-12-10_3MA_INV — Atividades propostas |
 | 3MA / Matemática | 2026-09-21 | 2 | pronto_para_conferencia | PLANO_3_01; PLANO_3_02 — Números complexos: origem e unidade imaginária; Conjugado e igualdade entre complexos |
 | 3MA / Matemática | 2026-09-23 | 1 | pronto_para_conferencia | PLANO_3_03 — Adição e subtração de números complexos |
 | 3MA / Matemática | 2026-09-24 | 1 | pronto_para_conferencia | PLANO_3_04 — Multiplicação de números complexos |
@@ -286,29 +286,29 @@
 | 3MA / Matemática | 2026-12-07 | 2 | projecao_nao_aberta | PLANO_3_38; PLANO_3_39 — Método da bisseção; SIMULADO DA PROVA — 40 questões |
 | 3MA / Matemática | 2026-12-09 | 1 | projecao_nao_aberta | PLANO_3_40 — PROVA DE MATEMÁTICA — 20 questões |
 | 3MA / Matemática | 2026-12-10 | 1 | projecao_nao_aberta | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 3MB / Investigação Matemática | 2026-09-23 | 1 | proposta_para_aprovacao | 2026-09-23_3MB_INV — Questão de investigação e formulação de hipóteses — números complexos |
-| 3MB / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_3MB_INV — Estratégias de resolução e comparação de caminhos — números complexos |
-| 3MB / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 3MB / Investigação Matemática | 2026-09-30 | 1 | proposta_para_aprovacao | 2026-09-30_3MB_INV — Revisão ENEM — interpretação e modelagem — números complexos |
-| 3MB / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_3MB_INV — Investigação prática e registro de dados — números complexos |
-| 3MB / Investigação Matemática | 2026-10-07 | 1 | proposta_para_aprovacao | 2026-10-07_3MB_INV — Conjecturas, exemplos e contraexemplos — números complexos |
-| 3MB / Investigação Matemática | 2026-10-09 | 1 | proposta_para_aprovacao | 2026-10-09_3MB_INV — Trabalho colaborativo: padrões e regularidades — números complexos |
-| 3MB / Investigação Matemática | 2026-10-14 | 1 | proposta_para_aprovacao | 2026-10-14_3MB_INV — Revisão ENEM — resolução orientada — números complexos |
-| 3MB / Investigação Matemática | 2026-10-21 | 1 | proposta_para_aprovacao | 2026-10-16_3MB_INV — Comunicação dos resultados da investigação — números complexos |
-| 3MB / Investigação Matemática | 2026-10-23 | 1 | proposta_para_aprovacao | 2026-10-21_3MB_INV — Oficina de revisão ENEM — diagnóstico e correção — números complexos |
-| 3MB / Investigação Matemática | 2026-10-28 | 1 | proposta_para_aprovacao | 2026-10-23_3MB_INV — Síntese investigativa e autoavaliação — números complexos |
-| 3MB / Investigação Matemática | 2026-10-30 | 1 | feriado_a_conferir | 2026-10-28_3MB_INV — Questão de investigação e formulação de hipóteses — números complexos |
-| 3MB / Investigação Matemática | 2026-11-04 | 1 | proposta_para_aprovacao | 2026-11-04_3MB_INV — Estratégias de resolução e comparação de caminhos — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-11-06 | 1 | proposta_para_aprovacao | 2026-11-06_3MB_INV — Revisão ENEM — interpretação e modelagem — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-11-11 | 1 | proposta_para_aprovacao | 2026-11-11_3MB_INV — Investigação prática e registro de dados — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-11-13 | 1 | proposta_para_aprovacao | 2026-11-13_3MB_INV — Conjecturas, exemplos e contraexemplos — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-11-18 | 1 | proposta_para_aprovacao | 2026-11-18_3MB_INV — Trabalho colaborativo: padrões e regularidades — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-11-25 | 1 | projecao_nao_aberta | 2026-11-25_3MB_INV — Revisão ENEM — resolução orientada — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-11-27 | 1 | projecao_nao_aberta | 2026-11-27_3MB_INV — Comunicação dos resultados da investigação — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-12-02 | 1 | projecao_nao_aberta | 2026-12-02_3MB_INV — Oficina de revisão ENEM — diagnóstico e correção — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-12-04 | 1 | projecao_nao_aberta | 2026-12-04_3MB_INV — Síntese investigativa e autoavaliação — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-12-09 | 1 | projecao_nao_aberta | 2026-12-09_3MB_INV — Questão de investigação e formulação de hipóteses — polinômios e suas raízes |
-| 3MB / Investigação Matemática | 2026-12-11 | 1 | projecao_nao_aberta | 2026-12-11_3MB_INV — Estratégias de resolução e comparação de caminhos — polinômios e suas raízes |
+| 3MB / Investigação Matemática | 2026-09-23 | 1 | proposta_para_aprovacao | 2026-09-23_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-09-30 | 1 | proposta_para_aprovacao | 2026-09-30_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-07 | 1 | proposta_para_aprovacao | 2026-10-07_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-09 | 1 | proposta_para_aprovacao | 2026-10-09_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-14 | 1 | proposta_para_aprovacao | 2026-10-14_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-21 | 1 | proposta_para_aprovacao | 2026-10-16_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-23 | 1 | proposta_para_aprovacao | 2026-10-21_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-28 | 1 | proposta_para_aprovacao | 2026-10-23_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-10-30 | 1 | feriado_a_conferir | 2026-10-28_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-11-04 | 1 | proposta_para_aprovacao | 2026-11-04_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-11-06 | 1 | proposta_para_aprovacao | 2026-11-06_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-11-11 | 1 | proposta_para_aprovacao | 2026-11-11_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-11-13 | 1 | proposta_para_aprovacao | 2026-11-13_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-11-18 | 1 | proposta_para_aprovacao | 2026-11-18_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-11-25 | 1 | projecao_nao_aberta | 2026-11-25_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-11-27 | 1 | projecao_nao_aberta | 2026-11-27_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-12-02 | 1 | projecao_nao_aberta | 2026-12-02_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-12-04 | 1 | projecao_nao_aberta | 2026-12-04_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-12-09 | 1 | projecao_nao_aberta | 2026-12-09_3MB_INV — Atividades propostas |
+| 3MB / Investigação Matemática | 2026-12-11 | 1 | projecao_nao_aberta | 2026-12-11_3MB_INV — Atividades propostas |
 | 3MB / Matemática | 2026-09-22 | 2 | pronto_para_conferencia | PLANO_3_01; PLANO_3_02 — Números complexos: origem e unidade imaginária; Conjugado e igualdade entre complexos |
 | 3MB / Matemática | 2026-09-24 | 2 | pronto_para_conferencia | PLANO_3_03; PLANO_3_04 — Adição e subtração de números complexos; Multiplicação de números complexos |
 | 3MB / Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |

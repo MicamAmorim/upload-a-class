@@ -1,3 +1,9 @@
+## Versão 1.0.11 — Investigação Matemática (7Edu)
+
+Nas seis turmas do 7Edu, todas as 92 entradas de **Investigação Matemática** têm **título e conteúdo enviados ao diário exatamente iguais a `Atividades propostas`**, incluindo datas apenas previstas (que continuam bloqueadas). O gerador preserva essa regra ao atualizar o calendário; `extension/popup.js` evita que revisões antigas no navegador reintroduzam o texto anterior. A sequência interna e os bloqueios de segurança são preservados. **Não altera a base do E-Class, nem Matemática ou Filosofia do 7Edu**. Consulte `CORRECAO_v1.0.11_INVESTIGACAO_7EDU.md`.
+
+---
+
 ## Versão 1.0.10 — Filosofia (7Edu)
 
 O 7Edu usa uma sequência própria para Filosofia nas turmas 2MA e 2MB, com os **módulos 8 a 12**, alternando **aulas expositivas e práticas de exercícios**. São **12 encontros na 2MA** (5 expositivos / 7 práticos) e **11 na 2MB** (5 expositivos / 6 práticos), com propostas detalhadas e exercícios. Datas ainda não abertas permanecem projetadas e bloqueadas. Não foi atribuída prova ou teste a uma data sem confirmação.
@@ -23,7 +29,7 @@ Fontes: `extension/data/plano_filosofia_7edu_2026.json`, `relatorios/plano_filos
 
 > **Atualização 1.0.3:** a extensão agora usa o token da sessão do próprio portal exclusivamente no contexto da página. Consulte `CORRECAO_v1.0.3.md` para a explicação e precauções.
 
-# Aulas do 4º bimestre de 2026 — E-Class + 7Edu (extensão v1.0.10)
+# Aulas do 4º bimestre de 2026 — E-Class + 7Edu (extensão v1.0.11)
 
 **Colégio Adventista de Itabuna · Prof. Miquéias Amorim · 21/09 a 11/12/2026**
 

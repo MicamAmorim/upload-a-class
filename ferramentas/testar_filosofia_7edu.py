@@ -8,7 +8,7 @@ src=json.loads((ROOT/'extension/data/plano_filosofia_7edu_2026.json').read_text(
 out=json.loads((ROOT/'extension/data/aulas_7edu_4bim_2026.json').read_text(encoding='utf8'))
 eclass=(ROOT/'extension/data/aulas_4bim_2026.json').read_bytes()
 assert len(json.loads(eclass)['postagens'])==284
-assert out['versao']=='1.0.10'
+assert out['versao']=='1.0.11'
 assert out['estatisticas']['datas_reais']==221
 assert out['estatisticas']['periodos_reais']==277
 assert out['estatisticas']['datas_projetadas']==78

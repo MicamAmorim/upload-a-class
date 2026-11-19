@@ -226,6 +226,8 @@ async function sevenEduPageOperation(input) {
       throw new Error('Registro sem mapeamento validado no 7Edu. Nenhuma gravação permitida.');
     if (!safe(post.titulo).trim() || !safe(post.conteudo_7edu).trim())
       throw new Error('O título ou conteúdo convertido para o diário do 7Edu está vazio.');
+    if (post.disciplina==='Investigação Matemática' && safe(post.conteudo_7edu)!=='Atividades propostas')
+      throw new Error('Conteúdo de Investigação Matemática deve ser exatamente: Atividades propostas.');
     if (!Array.isArray(post.horario) || post.horario.length === 0 || post.horario.length !== post.quantidade_periodos)
       throw new Error('A quantidade de períodos não confere com o horário da aula; lançamento bloqueado.');
     const wantedGroup = `EMERE0${post.turma[0]}M${post.turma[2]}`;
