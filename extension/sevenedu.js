@@ -221,7 +221,7 @@ async function sevenEduPageOperation(input) {
       throw new Error('Aula, turma ou data não corresponde ao calendário autorizado de 2026.');
     if (!['Matemática', 'Investigação Matemática', 'Filosofia'].includes(post.disciplina))
       throw new Error('Disciplina não contemplada pelo calendário.');
-    if (input.action !== 'check' && (!post['7edu'] || post['7edu'].mapeamento!=='exato' ||
+    if (input.action !== 'check' && (!post['7edu'] || post['7edu'].mapeamento!=='redistribuido' ||
       post['7edu'].situacao_portal!=='Pendente' || !['pronto_para_conferencia','revisao_pedagogica','proposta_para_aprovacao'].includes(post.status)))
       throw new Error('Registro sem mapeamento validado no 7Edu. Nenhuma gravação permitida.');
     if (!safe(post.titulo).trim() || !safe(post.conteudo_7edu).trim())
@@ -311,12 +311,14 @@ async function sevenEduPageOperation(input) {
 async function sevenEduPublish(item, options = {}) {
   if (!item || !/^[123]M[AB]$/.test(item.turma || '') || !item.html?.trim())
     throw new Error('Aula inválida no pacote de planejamento.');
-  if (!item['7edu'] || item['7edu'].mapeamento!=='exato' || item['7edu'].situacao_portal!=='Pendente')
+  if (!item['7edu'] || item['7edu'].mapeamento!=='redistribuido' || item['7edu'].situacao_portal!=='Pendente')
     throw new Error('Aula sem correspondência exata no calendário 7Edu; envio bloqueado.');
-  if (item.status === 'revisao_pedagogica' && !options.approveCondensed)
+  if (item['7edu'].requer?.condensacao && !options.approveCondensed)
     throw new Error('A condensação precisa de aprovação explícita.');
-  if (item.status === 'proposta_para_aprovacao' && !options.approveProposals)
+  if (item['7edu'].requer?.proposta && !options.approveProposals)
     throw new Error('As propostas sem plano-fonte precisam de aprovação explícita.');
+  if (item['7edu'].requer?.historico && !options.approveHistory) throw new Error('Confirme os conteúdos históricos do 7Edu antes de publicar a continuação.');
+  if (item['7edu'].requer?.avaliacao_data && !options.approveAssessments) throw new Error('A data da avaliação deve ser confirmada antes de publicar.');
   if (!['pronto_para_conferencia', 'revisao_pedagogica', 'proposta_para_aprovacao'].includes(item.status))
     throw new Error('Registro sem situação pedagógica autorizada.');
   const key = `posted_7edu_${item.id}`;

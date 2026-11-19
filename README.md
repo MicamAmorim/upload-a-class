@@ -98,3 +98,11 @@ A API `GET /posts` também retorna Atividades. A consulta de duplicatas agora us
 No popup, escolha **Sistema de destino**: E-Class ou 7Edu. Para o 7Edu, abra uma disciplina em `https://7edu-br.educadventista.org/teacherportal/` e acesse **Aulas Ministradas**. A extensão usa exclusivamente a sessão autenticada no navegador, identifica turmas e horários no cadastro do 7Edu, converte o conteúdo HTML para texto simples e bloqueia horários não correspondentes, datas futuras e aulas já ministradas. É obrigatório fazer uma leitura de teste e conferir **um lançamento isolado** antes de enviar lotes. O 7Edu não tem a opção de rascunho nesse fluxo.
 
 O processo completo, a atualização que preserva o armazenamento da v1.0.5, os endpoints confirmados no HAR e as limitações constam em `CORRECAO_v1.0.6_7EDU.md`.
+
+## 7Edu — redistribuição cronológica v1.0.9
+
+A base `extension/data/aulas_7edu_4bim_2026.json` agora distribui conteúdos **por período real** nas datas do 7Edu, e não pela coincidência de datas com o E-Class. Usamos os 40 planos individuais de Matemática por série e as propostas existentes de Investigação Matemática/Filosofia. A base E-Class original não é alterada.
+
+Datas futuras são projeções da recorrência semanal **não confirmadas pelo portal** e aparecem bloqueadas, até nova exportação do calendário. Datas registradas e dias atípicos também ficam bloqueados. Há uma fila de conteúdos sem data quando a previsão de períodos é insuficiente.
+
+Consulte `CORRECAO_v1.0.9_REDISTRIBUICAO_7EDU.md` e `relatorios/redistribuicao_aulas_7edu_2026.md` antes de publicar. O script para remapear após novas datas está em `ferramentas/redistribuir_aulas_7edu.py`.

@@ -42,19 +42,21 @@ function forSystem(item){
 }
 function updateSystemUI(){
  const seven=system()==='7edu';
- $('publishMode').hidden=seven;
+ $('publishMode').hidden=seven; $('historyApproval').hidden=!seven; $('assessmentApproval').hidden=!seven;
  $('calendarTools').hidden=!seven;
  $('systemNote').textContent=seven
- ? '7Edu: base independente do E-Class, consultada em 19/11/2026. Datas registradas, domingos atípicos ou sem plano estão BLOQUEADAS. Não presuma que as datas após 19/11 já estejam disponíveis. Todos os itens do lote são revalidados ao vivo.'
+ ? '7Edu: conteúdos redistribuídos por período e por ordem do planejamento. Datas projetadas (após 19/11/2026), domingos, registros e conteúdos indefinidos ficam BLOQUEADOS. Conferir históricos e avaliações antes de lançar.'
  : 'E-Class mantém o fluxo anterior com rascunho/publicação de HTML. Abra o calendário do portal e selecione o ano 2026 e a unidade correta.';
  $('publish').textContent=seven?'Lançar seleção no 7Edu':'Enviar seleção ao E-Class';
  $('testConnection').textContent=seven?'Testar 7Edu (sem lançar)':'Testar conexão (sem publicar)';
 }
 function summary(){
  if(system()==='7edu'){
-  const ok=records.filter(x=>READY_7EDU.has(x.status)).length;
-  const cards=[['datas no 7Edu',records.length],['períodos na grade',records.reduce((s,x)=>s+x.quantidade_periodos,0)],
-   ['com plano da mesma data',ok],['bloqueadas',records.length-ok],['já registradas',records.filter(x=>x['7edu']?.situacao_portal==='Registrado').length]];
+  const real=records.filter(x=>!x['7edu']?.projecao_nao_confirmada);
+  const ok=records.filter(x=>x['7edu']?.mapeamento==='redistribuido').length;
+  const cards=[['datas reais no 7Edu',real.length],['datas futuras estimadas',records.length-real.length],
+   ['planejadas para revisão',ok],['registradas',records.filter(x=>x['7edu']?.situacao_portal==='Registrado').length],
+   ['conteúdo ainda sem encaixe',Object.values(payload.fila_sem_data||{}).reduce((n,arr)=>n+arr.length,0)]];
   $('stats').innerHTML=cards.map(([n,v])=>`<div class="stat"><b>${v}</b><small>${n}</small></div>`).join('');
   return;
  }
@@ -73,7 +75,12 @@ function filtered(){
 function localToday(){const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');}
 function isFuture7Edu(item){return system()==='7edu' && item.data>localToday();}
 function canSelect(item){
- if(system()==='7edu' && (!item['7edu'] || item['7edu'].mapeamento!=='exato' || item['7edu'].situacao_portal!=='Pendente' || !item.html?.trim()))return false;
+ if(system()==='7edu'){
+  const seven=item['7edu'],checks=seven?.requer||{};
+  if(!seven||seven.mapeamento!=='redistribuido'||seven.situacao_portal!=='Pendente'||!item.html?.trim()||isFuture7Edu(item)||!READY_7EDU.has(item.status))return false;
+  return (!checks.condensacao||$('approveCondensed').checked) && (!checks.proposta||$('approveProposals').checked) &&
+    (!checks.historico||$('approveHistory').checked) && (!checks.avaliacao_data||$('approveAssessments').checked);
+ }
  return !isFuture7Edu(item) && (item.status==='pronto_para_conferencia'||(item.status==='revisao_pedagogica'&&$('approveCondensed').checked)||(item.status==='proposta_para_aprovacao'&&$('approveProposals').checked));
 }
 function render(){
@@ -121,7 +128,7 @@ async function refreshSession(){
  catch(e){$('context').className='pane error';$('context').textContent=`Sessão não disponível: ${e.message}`;}
 }
 async function testConnection(){
- const readable=x=>system()!=='7edu'||(x['7edu']?.mapeamento==='exato' && x.html?.trim());
+ const readable=x=>system()!=='7edu'||(x['7edu']?.mapeamento==='redistribuido' && x.html?.trim());
  const item=filtered().find(x=>readable(x)&&x.disciplina==='Matemática')||filtered().find(readable)||records.find(readable);
  if(!item){$('progress').textContent='Nenhum registro disponível para testar.';return;}
  const button=$('testConnection');button.disabled=true;
@@ -164,14 +171,14 @@ async function exportCalendar(scope){
 async function sendSelection(){
  if(sending)return;
  const chosen=records.filter(x=>selected.has(x.id));
- if(system()==='7edu'&&chosen.some(x=>!x['7edu']||x['7edu'].mapeamento!=='exato'||x['7edu'].situacao_portal!=='Pendente')){
+ if(system()==='7edu'&&chosen.some(x=>!x['7edu']||x['7edu'].mapeamento!=='redistribuido'||x['7edu'].situacao_portal!=='Pendente')){
   alert('Mapeamento do 7Edu não validado. Nenhuma aula foi lançada.');return;
  }
  if(chosen.some(x=>!canSelect(x))){alert('Uma ou mais aulas escolhidas estão bloqueadas. Revise a seleção.');return;}
- const approve=$('approveCondensed').checked,approveProposals=$('approveProposals').checked,publish=$('publishNow').checked;
+ const approve=$('approveCondensed').checked,approveProposals=$('approveProposals').checked,approveHistory=$('approveHistory').checked,approveAssessments=$('approveAssessments').checked,publish=$('publishNow').checked;
  const seven=system()==='7edu';
  const prompt=seven
- ? `Lançar ${chosen.length} aula(s) no 7Edu como AULAS MINISTRADAS?\nNão há rascunhos nesse fluxo. O conteúdo será convertido de HTML para texto simples.\n${approve?'Condensação autorizada.':'Sem condensação autorizada.'}\n${approveProposals?'Propostas sem plano-fonte autorizadas.':'Sem aprovação das propostas.'}\n\nConfira as datas, horários e conteúdos. Não serão alteradas aulas já lançadas.`
+ ? `Lançar ${chosen.length} aula(s) no 7Edu como AULAS MINISTRADAS?\nNão há rascunhos nesse fluxo. O conteúdo será convertido de HTML para texto simples.\n${approve?'Condensação autorizada.':'Sem condensação autorizada.'}\n${approveProposals?'Propostas sem plano-fonte autorizadas.':'Sem aprovação das propostas.'}\n${approveHistory?'Sequência com histórico anterior conferida.':'Histórico não conferido.'}\n${approveAssessments?'Datas de avaliações conferidas.':'Datas de avaliações não conferidas.'}\n\nConfira as datas, horários e conteúdos. Não serão alteradas aulas já lançadas.`
  : `Enviar ${chosen.length} postagem(ns) ao E-Class?\nModo: ${publish?'PUBLICAR imediatamente':'CRIAR RASCUNHOS'}.\n${approve?'A condensação pedagógica foi autorizada.':'Sem condensação autorizada.'}\n${approveProposals?'As propostas de Investigação/Filosofia foram autorizadas nesta operação.':'Sem aprovação das propostas sem plano-fonte.'}\n\nNão serão sobrescritas postagens já existentes.\nEsta ação altera o portal de verdade.`;
  if(!confirm(prompt))return;
  sending=true;$('system').disabled=true;render();let done=0,skipped=0,conflicts=0,failed=0,lastNote='';
@@ -202,7 +209,7 @@ async function sendSelection(){
  for(const [i,item] of ready.entries()){
   $('progress').textContent=`Enviando ${i+1}/${ready.length}: ${item.turma} em ${item.data}…`;
   try{
-   const r=await request('publish',{post:forSystem(item),options:{approveCondensed:approve,approveProposals,published:publish}});
+   const r=await request('publish',{post:forSystem(item),options:{approveCondensed:approve,approveProposals,approveHistory,approveAssessments,published:publish}});
    if(r.result.status==='criado'){done++;selected.delete(item.id);}
    else if(r.result.status==='conflito'){conflicts++;lastNote=`CONFLITO — ${item.turma}, ${item.data}: ${r.result.detail}`;console.warn(lastNote);}
    else {skipped++;lastNote=`Ignorada — ${item.turma}, ${item.data}: ${r.result.detail||r.result.status}`;selected.delete(item.id);}
@@ -230,13 +237,15 @@ async function init(){
  $('system').addEventListener('change',()=>{if(sending)return;selected.clear();setSystemRecords();updateSystemUI();summary();render();refreshSession();$('progress').textContent='';});
  for(const el of document.querySelectorAll('.filters input,.filters select'))el.addEventListener('change',render);
  $('approveCondensed').addEventListener('change',()=>{
-  if(!$('approveCondensed').checked){for(const p of records)if(p.status==='revisao_pedagogica')selected.delete(p.id);}
+  if(!$('approveCondensed').checked){for(const p of records)if(system()==='7edu' ? p['7edu']?.requer?.condensacao : p.status==='revisao_pedagogica')selected.delete(p.id);}
   render();
  });
  $('approveProposals').addEventListener('change',()=>{
-  if(!$('approveProposals').checked){for(const p of records)if(p.status==='proposta_para_aprovacao')selected.delete(p.id);}
+  if(!$('approveProposals').checked){for(const p of records)if(system()==='7edu' ? p['7edu']?.requer?.proposta : p.status==='proposta_para_aprovacao')selected.delete(p.id);}
   render();
  });
+ $('approveHistory').addEventListener('change',()=>{if(!$('approveHistory').checked)for(const p of records)if(p['7edu']?.requer?.historico)selected.delete(p.id);render();});
+ $('approveAssessments').addEventListener('change',()=>{if(!$('approveAssessments').checked)for(const p of records)if(p['7edu']?.requer?.avaliacao_data)selected.delete(p.id);render();});
  $('selectAll').onclick=()=>{for(const x of filtered())if(canSelect(x))selected.add(x.id);render();};
  $('clear').onclick=()=>{selected.clear();render();};
  $('publish').onclick=sendSelection;
