@@ -36,7 +36,12 @@ function harness(opts={}) {
   if (uri.pathname==='/teacherportal/') {result=opts.wrongYear?homeHtml.replace('2026-AL','2025-AL'):homeHtml;mime='text/html';}
   else if (uri.pathname.endsWith('GetListOpenedSectionByEmployee')) result={Data:opts.emptyClasses?[]:[section],Total:1,Errors:null};
   else if (uri.pathname==='/teacherportal/ClassMeeting') {result=classHtml;mime='text/html';}
-  else if (uri.pathname.endsWith('Grid_Read')) result={Data:opts.duplicate?[{RealizedDate:'2026/10/20 00:00:00'}]:[{ExpectedDate:'2026/10/20 00:00:00',RealizedDate:null}],Total:1,Errors:null};
+  else if (uri.pathname.endsWith('Grid_Read')) {
+   const row=opts.duplicate ? {RealizedDate:'2026/10/20 00:00:00'} :
+    {ExpectedDate:opts.wrongDate?'2026/10/19 00:00:00':'2026/10/20 00:00:00',RealizedDate:null};
+   result={Data:[{...row,ClassMeetingList:opts.twoPeriods?
+       [{RealizedSchedule:slot},{RealizedSchedule:{...slot,Priority:5}}]:[{RealizedSchedule:slot}]}],Total:1,Errors:null};
+  }
   else if (uri.pathname.endsWith('GetListScheduleTemplateItemByTerm')) result=opts.mismatch?[{...slot,StartTime:'10:20:01'}]:[slot];
   else if (uri.pathname.endsWith('/Save')) {saveBody=JSON.parse(options.body);result=fixture.saved;}
   else throw new Error('Mock: rota não prevista: '+uri.pathname);
@@ -44,10 +49,10 @@ function harness(opts={}) {
  }
  const context=vm.createContext({URL,URLSearchParams,DOMParser:Parser,fetch,location:{
    origin:'https://7edu-br.educadventista.org',pathname:'/teacherportal/ClassMeeting',
-   href:`https://7edu-br.educadventista.org/teacherportal/ClassMeeting?employeeId=${fixture.employee}`
+   href:`https://7edu-br.educadventista.org/teacherportal/ClassMeeting?employeeId=${fixture.employee}&sectionId=${fixture.section}&groupId=${fixture.group}`
  }});
  vm.runInContext(code,context,{filename:'sevenedu.js'});
- const execute=async(action,p=post)=>vm.runInContext('sevenEduPageOperation',context)({action,post:p});
+ const execute=async(action,p=post,options={})=>vm.runInContext('sevenEduPageOperation',context)({action,post:p,options});
  return {execute,calls,saved:()=>saveBody};
 }
 (async()=>{
@@ -69,6 +74,34 @@ function harness(opts={}) {
   assert.equal(p.SectionItemId,fixture.item);assert.equal(p.CourseOfferingSectionSubtermId,fixture.subterm);
   assert.equal(p.ClassMeetingList.length,1);assert.equal(p.ClassMeetingList[0].RealizedSchedule.Identity,fixture.schedule);
   assert.equal(p.Identity,'00000000-0000-0000-0000-000000000000');
+ });
+ await run('preflight: agenda e horários validam sem gravar',async()=>{
+  const t=harness();const r=await t.execute('preflight');assert.equal(r.ok,true,r.error);
+  assert.equal(r.data.status,'apto');assert.equal(r.data.aulas_previstas,1);
+  assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
+ });
+ await run('calendar: exporta dias e numero de periodos sem gravação',async()=>{
+  const t=harness({twoPeriods:true});const r=await t.execute('calendar',null,{scope:'current'});
+  assert.equal(r.ok,true,r.error);assert.equal(r.data.count,1);
+  assert.equal(r.data.entries[0].turma,'2MA');assert.equal(r.data.entries[0].aulas,2);
+  assert.equal(r.data.entries[0].status,'pendente');assert.equal(r.data.entries[0].horarios.length,2);
+  assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
+  assert.equal(JSON.stringify(r.data).includes(fixture.employee),false);
+ });
+ await run('calendar: exporta todas as turmas elegíveis sem gravação',async()=>{
+  const t=harness();const r=await t.execute('calendar',null,{scope:'all'});
+  assert.equal(r.ok,true,r.error);assert.equal(r.data.sections_checked,1);
+  assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
+ });
+ await run('preflight: data não prevista bloqueia o lote',async()=>{
+  const t=harness({wrongDate:true});const r=await t.execute('preflight');
+  assert.equal(r.ok,false);assert.match(r.error,/não consta/);
+  assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
+ });
+ await run('preflight: quantidade de períodos incorreta bloqueia',async()=>{
+  const t=harness({twoPeriods:true});const r=await t.execute('preflight');
+  assert.equal(r.ok,false);assert.match(r.error,/contém 2 aula/);
+  assert.equal(t.calls.some(x=>x.path.endsWith('/Save')),false);
  });
  await run('publish: registros ja realizados nao sao duplicados',async()=>{
   const t=harness({duplicate:true});const r=await t.execute('publish');assert.equal(r.ok,true);

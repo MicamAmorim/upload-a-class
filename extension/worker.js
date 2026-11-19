@@ -220,6 +220,8 @@ chrome.runtime.onMessage.addListener((message,sender,sendResponse)=>{
     if (message.system === '7edu') {
       if (message.action === 'status') return {ok:true, ...(await sevenEduCall('status'))};
       if (message.action === 'check') return {ok:true, result:await sevenEduCall('check', message.post)};
+      if (message.action === 'preflight') return {ok:true, result:await sevenEduCall('preflight', message.post)};
+      if (message.action === 'calendar') return {ok:true, result:await sevenEduCall('calendar', null, message.options || {})};
       if (message.action === 'publish') return {ok:true, result:await sevenEduPublish(message.post, message.options)};
       throw new Error('Ação indisponível no 7Edu.');
     }

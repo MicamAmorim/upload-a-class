@@ -8,3 +8,11 @@
 .system-picker .note{font-size:11px;line-height:1.45;margin:8px 0 10px}
 #plainPreview{white-space:pre-wrap;overflow:auto;height:calc(90vh - 118px);margin:0;padding:20px;font:13px/1.65 Arial,sans-serif;background:white;color:#1e2b38}
 #publishMode[hidden],#plainPreview[hidden],#previewFrame[hidden]{display:none}
+
+/* Calendário real / segurança v1.0.7 */
+.calendar-tools{margin:12px 18px;padding:12px;border:1px solid #b9d7ed;border-radius:9px;background:#eef7ff;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.calendar-tools[hidden]{display:none}
+.calendar-tools>div{flex:1;min-width:260px}
+.calendar-tools .note{margin:4px 0 0;color:#365d7b}
+.calendar-tools button{white-space:normal}
+.rec .waiting{color:#936422;font-size:11px}

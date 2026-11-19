@@ -46,7 +46,7 @@ async function sevenEduPageOperation(input) {
       throw new Error('Use a aba original de Aulas Ministradas do 7Edu.');
     const employeeId = new URL(location.href).searchParams.get('employeeId');
     if (!ID.test(employeeId || '')) throw new Error('Identificação de docente inválida na página atual.');
-    if (!['status', 'check', 'publish'].includes(input.action)) throw new Error('Operação não autorizada.');
+    if (!['status', 'check', 'preflight', 'publish', 'calendar'].includes(input.action)) throw new Error('Operação não autorizada.');
     const safe = (value) => String(value ?? '');
     const norm = (value) => safe(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '')
       .toLowerCase().replace(/\s+/g, ' ').trim();
@@ -103,7 +103,13 @@ async function sevenEduPageOperation(input) {
         method: 'POST', credentials: 'same-origin', cache: 'no-store', redirect: 'error',
         headers, ...(body === undefined ? {} : {body})
       });
-      if (!response.ok) throw new Error(`7Edu respondeu HTTP ${response.status}. Verifique a sessão e as permissões.`);
+      if (!response.ok) {
+        const stage = isSave ? 'gravação (Save)' : 'consulta';
+        // Não revelar corpo de erro, URLs de sessão, cookies ou dados de aluno.
+        throw new Error(`7Edu respondeu HTTP ${response.status} na ${stage}. ` +
+          (isSave ? 'O resultado do envio é incerto: confira a aula no diário antes de qualquer nova tentativa.' :
+           'Confira a sessão, a disciplina e o calendário ativo.'));
+      }
       const text = await response.text();
       if (responseType === 'html') {
         if (!text.includes('teacherportal') || !text.includes('<'))
@@ -135,6 +141,81 @@ async function sevenEduPageOperation(input) {
     if (!classes.length) throw new Error('Nenhuma disciplina de 2026 foi localizada para este docente no 7Edu.');
     if (input.action === 'status')
       return {ok: true, data: {status: 'conexao_ok', year: '2026', sections: classes.length}};
+    const eligibleClass = row => /^EMERE0[123]M[AB]$/.test(safe(row.CourseOfferingGroup)) &&
+      ['matematica', 'investigacao matematica', 'filosofia'].includes(norm(row.Name));
+    const sectionClass = row => {
+      const m = /^EMERE0([123])M([AB])$/.exec(safe(row.CourseOfferingGroup));
+      return m ? `${m[1]}M${m[2]}` : '';
+    };
+    const findSubterm = section => (section.SectionSubtermList || []).filter(s =>
+      s?.AcademicSubterm?.StandardSubtermCode === 'BIM04' && ID.test(s.Identity || ''));
+    async function sectionItem(section) {
+      const sectionUrl = `/teacherportal/ClassMeeting?employeeId=${encodeURIComponent(employeeId)}` +
+        `&sectionId=${encodeURIComponent(section.Identity)}&groupId=${encodeURIComponent(section.TermCourseOfferingGroupId)}`;
+      const classHtml = await request(sectionUrl, null, 'html');
+      const classDoc = new DOMParser().parseFromString(classHtml, 'text/html');
+      const choices = Array.from(classDoc.querySelectorAll('select[name="SectionItemId"] option[value]')).filter(el => ID.test(el.value));
+      const chosen = choices.filter(el => el.hasAttribute('selected'));
+      const selected = chosen.length === 1 ? chosen[0] : choices.length === 1 ? choices[0] : null;
+      if (!selected) throw new Error('Há várias disciplinas-filhas; escolha uma disciplina no 7Edu.');
+      if (selected.getAttribute('data-attendancetype') !== '0')
+        throw new Error('Controle de presença diferente do fluxo autorizado para esta disciplina.');
+      return selected.value;
+    }
+    async function gridFor(sectionItemId, subtermId) {
+      const grid = await request('/teacherportal/ClassMeeting/Grid_Read', {
+        sort: '', group: '', filter: '', sectionItemId,
+        courseOfferingSectionSubtermId: subtermId, employeeId
+      });
+      if (!Array.isArray(grid?.Data) || grid.Errors || !Number.isInteger(grid.Total) || grid.Total > grid.Data.length)
+        throw new Error('O 7Edu não devolveu uma lista completa de aulas. Nenhuma gravação permitida.');
+      return grid.Data;
+    }
+    if (input.action === 'calendar') {
+      const scope = input.options?.scope === 'all' ? 'all' : 'current';
+      const currentSectionId = new URL(location.href).searchParams.get('sectionId');
+      const targets = scope === 'all' ? classes.filter(eligibleClass) :
+        classes.filter(row => eligibleClass(row) && row.Identity === currentSectionId);
+      if (scope === 'current' && targets.length !== 1)
+        throw new Error('Não identifiquei a disciplina aberta. Reabra Aulas Ministradas pelo menu do 7Edu.');
+      if (!targets.length) throw new Error('Nenhuma turma ou disciplina elegível foi encontrada na sessão atual.');
+      const entries = [], warnings = [];
+      for (const section of targets) {
+        const turma = sectionClass(section), disciplina = safe(section.Name);
+        const subterms = findSubterm(section);
+        if (subterms.length !== 1) {
+          warnings.push(`${turma} / ${disciplina}: 4º bimestre ausente ou ambíguo.`);
+          continue;
+        }
+        try {
+          const itemId = await sectionItem(section);
+          const grid = await gridFor(itemId, subterms[0].Identity);
+          for (const row of grid) {
+            const date = asIsoDate(row.RealizedDate || row.ExpectedDate || row.MeetingDate);
+            if (!date || !/^2026-(09|10|11|12)-\d{2}$/.test(date)) {
+              warnings.push(`${turma} / ${disciplina}: linha sem data do 4º bimestre; confira o diário.`);
+              continue;
+            }
+            const schedules = Array.isArray(row.ClassMeetingList) ? row.ClassMeetingList : [];
+            const periods = schedules.map(x => x?.RealizedSchedule || x?.ExpectedSchedule)
+              .filter(Boolean).map(x => ({numero: Number.isInteger(x.Priority) ? x.Priority : null,
+                inicio: safe(x.StartTime).slice(0, 5), fim: safe(x.EndTime).slice(0, 5)}));
+            const count = schedules.length;
+            entries.push({turma, disciplina, data: date, aulas: count,
+              status: row.RealizedDate ? 'registrado' : date > today() ? 'futuro' : 'pendente',
+              horarios: periods, total_horarios: periods.length});
+          }
+        } catch(e) {
+          warnings.push(`${turma} / ${disciplina}: consulta falhou (${safe(e.message).slice(0, 110)}).`);
+          if (scope === 'current') throw e;
+        }
+      }
+      if (!entries.length) throw new Error('Nenhuma data do 4º bimestre foi retornada. Nenhum arquivo vazio será exportado.');
+      entries.sort((a, b) => a.turma.localeCompare(b.turma) || a.disciplina.localeCompare(b.disciplina) ||
+        a.data.localeCompare(b.data));
+      return {ok: true, data: {year: '2026', bimestre: '4º', scope, count: entries.length,
+        sections_checked: targets.length, warnings, entries, consulted_at: today()}};
+    }
     const post = input.post;
     if (!post || !/^[123]M[AB]$/.test(safe(post.turma)) || !/^2026-(09|10|11|12)-\d\d$/.test(safe(post.data)))
       throw new Error('Aula, turma ou data não corresponde ao calendário autorizado de 2026.');
@@ -148,36 +229,28 @@ async function sevenEduPageOperation(input) {
     const matching = classes.filter(row => row.CourseOfferingGroup === wantedGroup && norm(row.Name) === norm(post.disciplina));
     if (matching.length !== 1) throw new Error(`Não foi possível identificar sem ambiguidade ${post.turma} / ${post.disciplina} no cadastro do 7Edu.`);
     const section = matching[0];
-    const subterms = (section.SectionSubtermList || []).filter(s => s?.AcademicSubterm?.StandardSubtermCode === 'BIM04' &&
-      asIsoDate(s.AcademicSubterm.StartDate) <= post.data && asIsoDate(s.AcademicSubterm.EndDate) >= post.data && ID.test(s.Identity || ''));
+    const subterms = findSubterm(section).filter(s =>
+      asIsoDate(s.AcademicSubterm.StartDate) <= post.data && asIsoDate(s.AcademicSubterm.EndDate) >= post.data);
     if (subterms.length !== 1) throw new Error(`A data ${post.data} não pertence a um único 4º bimestre válido no 7Edu.`);
     const subterm = subterms[0];
-    const sectionUrl = `/teacherportal/ClassMeeting?employeeId=${encodeURIComponent(employeeId)}&sectionId=${encodeURIComponent(section.Identity)}&groupId=${encodeURIComponent(section.TermCourseOfferingGroupId)}`;
-    const classHtml = await request(sectionUrl, null, 'html');
-    const classDoc = new DOMParser().parseFromString(classHtml, 'text/html');
-    const choices = Array.from(classDoc.querySelectorAll('select[name="SectionItemId"] option[value]')).filter(el => ID.test(el.value));
-    const chosen = choices.filter(el => el.hasAttribute('selected'));
-    const selected = chosen.length === 1 ? chosen[0] : choices.length === 1 ? choices[0] : null;
-    if (!selected) throw new Error('O 7Edu apresentou várias disciplinas-filhas. Selecione a disciplina manualmente; não farei um mapeamento incerto.');
-    if (selected.getAttribute('data-attendancetype') !== '0')
-      throw new Error('O tipo de controle de presença difere do fluxo observado. Revise esta turma no 7Edu antes de lançar.');
-    const sectionItemId = selected.value;
-    const grid = await request('/teacherportal/ClassMeeting/Grid_Read', {
-      sort: '', group: '', filter: '', sectionItemId,
-      courseOfferingSectionSubtermId: subterm.Identity, employeeId
-    });
-    if (!Array.isArray(grid?.Data) || grid.Errors || !Number.isInteger(grid.Total) || grid.Total > grid.Data.length)
-      throw new Error('O 7Edu não devolveu a lista completa de aulas. Não é seguro verificar duplicatas.');
-    const existing = grid.Data.filter(row => asIsoDate(row.RealizedDate) === post.data);
+    const sectionItemId = await sectionItem(section);
+    const gridData = await gridFor(sectionItemId, subterm.Identity);
+    const existing = gridData.filter(row => asIsoDate(row.RealizedDate) === post.data);
     const result = {turma: post.turma, disciplina: post.disciplina, data: post.data,
       aulas_no_dia: existing.length, tipo_consultado: '7Edu — Aulas Ministradas',
       status: 'conexao_ok'};
     if (input.action === 'check') return {ok: true, data: result};
-    if (input.action !== 'publish') throw new Error('Ação não reconhecida.');
-    if (existing.length) return {ok: true, data: {status: 'ja_existente', detail: 'Já existe aula realizada nessa data, turma e disciplina no 7Edu. Nenhuma alteração feita.'}};
-    if (post.data > today()) throw new Error('O 7Edu registra aulas ministradas: o lançamento de uma data futura está bloqueado.');
-    // A interface do 7Edu permite lançamento mesmo com linha prevista pendente.
-    // Só RealizedDate indica que uma aula foi efetivamente lançada.
+    if (!['preflight', 'publish'].includes(input.action)) throw new Error('Ação não reconhecida.');
+    if (existing.length) return {ok: true, data: {...result, status: 'ja_existente',
+      detail: 'Já existe aula realizada nessa data, turma e disciplina no 7Edu. Nenhuma alteração feita.'}};
+    if (post.data > today()) throw new Error('Aula futura: 7Edu só permite registrar até a data atual.');
+    const expected = gridData.filter(row => asIsoDate(row.ExpectedDate || row.MeetingDate) === post.data);
+    if (expected.length !== 1)
+      throw new Error(`A data ${post.data} não consta como um único dia previsto no calendário do 7Edu para ${post.turma} / ${post.disciplina}. Exporte o calendário para remapear.`);
+    const expectedPeriods = Array.isArray(expected[0].ClassMeetingList) ? expected[0].ClassMeetingList.length : 0;
+    if (expectedPeriods !== post.quantidade_periodos)
+      throw new Error(`Calendário 7Edu: ${post.data} contém ${expectedPeriods} aula(s), mas o planejamento selecionado contém ${post.quantidade_periodos}. Remapeie antes do lançamento.`);
+    // Os horários saem do próprio 7Edu; o planejamento E-Class ainda precisa ser validado.
     const schedule = await request('/teacherportal/ClassMeeting/GetListScheduleTemplateItemByTerm', {
       sectionItemId, employeeId, realizationDate: asBrDate(post.data),
       courseOfferingSectionId: section.Identity, isBoosterClass: 'false'
@@ -198,6 +271,8 @@ async function sevenEduPageOperation(input) {
       unused.splice(unused.indexOf(matches[0]), 1);
     }
     if (picked.length !== post.quantidade_periodos) throw new Error('Número de períodos incompatível.');
+    if (input.action === 'preflight') return {ok: true, data: {...result, status: 'apto',
+      aulas_previstas: expectedPeriods, horarios_conferidos: picked.length}};
     // O HTML da postagem original não é transmitido: o diário registra texto simples.
     // A conversão é exibida na prévia e viaja no payload. Mantemos a validação do conteúdo.
     const content = safe(post.conteudo_7edu).trim();

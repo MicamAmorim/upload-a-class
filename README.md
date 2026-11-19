@@ -1,10 +1,12 @@
-> **Versão atual: 1.0.6 (19/11/2026).** A extensão agora lança aulas no E-Class **e** no 7Edu. O E-Class manteve seu fluxo; o 7Edu usa o diário de "Aulas Ministradas" e o formato de gravação identificado no HAR. **Leia `CORRECAO_v1.0.6_7EDU.md` para instalar, testar e conhecer as limitações.** Os parágrafos abaixo descrevem a origem e o histórico da versão 1.0.4/1.0.5.
+> **Versão atual: 1.0.7 (19/11/2026).** Correção de segurança e calendário do 7Edu: exportação `.md` por disciplina ou de todas as disciplinas, com data, número de aulas, horários e situação. O 7Edu passa a pré-validar todo o lote antes da primeira gravação. O calendário do E-Class segue **independente**. Leia [`CORRECAO_v1.0.7_CALENDARIO_7EDU.md`](CORRECAO_v1.0.7_CALENDARIO_7EDU.md).
+
+> **Histórico: 1.0.6 (19/11/2026).** A extensão agora lança aulas no E-Class **e** no 7Edu. O E-Class manteve seu fluxo; o 7Edu usa o diário de "Aulas Ministradas" e o formato de gravação identificado no HAR. **Leia `CORRECAO_v1.0.6_7EDU.md` para instalar, testar e conhecer as limitações.** Os parágrafos abaixo descrevem a origem e o histórico da versão 1.0.4/1.0.5.
 
 > **Versão atual: 1.0.4 (17/11/2026).** A extensão agora tenta renovar o Bearer por uma rota oficial do portal se uma consulta GET receber 401. O refresh é feito apenas na aba autenticada; o token não é salvo na extensão. Não há repetição automática de POST. Consulte `CORRECAO_v1.0.4.md`. Informações sobre autenticação de versões anteriores abaixo são históricas e não descrevem integralmente a v1.0.4.
 
 > **Atualização 1.0.3:** a extensão agora usa o token da sessão do próprio portal exclusivamente no contexto da página. Consulte `CORRECAO_v1.0.3.md` para a explicação e precauções.
 
-# Aulas do 4º bimestre de 2026 — E-Class + 7Edu (extensão v1.0.6)
+# Aulas do 4º bimestre de 2026 — E-Class + 7Edu (extensão v1.0.7)
 
 **Colégio Adventista de Itabuna · Prof. Miquéias Amorim · 21/09 a 11/12/2026**
 
@@ -87,12 +89,3 @@ A API `GET /posts` também retorna Atividades. A consulta de duplicatas agora us
 No popup, escolha **Sistema de destino**: E-Class ou 7Edu. Para o 7Edu, abra uma disciplina em `https://7edu-br.educadventista.org/teacherportal/` e acesse **Aulas Ministradas**. A extensão usa exclusivamente a sessão autenticada no navegador, identifica turmas e horários no cadastro do 7Edu, converte o conteúdo HTML para texto simples e bloqueia horários não correspondentes, datas futuras e aulas já ministradas. É obrigatório fazer uma leitura de teste e conferir **um lançamento isolado** antes de enviar lotes. O 7Edu não tem a opção de rascunho nesse fluxo.
 
 O processo completo, a atualização que preserva o armazenamento da v1.0.5, os endpoints confirmados no HAR e as limitações constam em `CORRECAO_v1.0.6_7EDU.md`.
-
-
-## Versionamento no GitHub
-
-- `main`: versao 1.0.6 (E-Class e 7Edu) na raiz do repositorio.
-- `versions-backup-1.0.5`: codigo e materiais originais 1.0.5 em `1.0.5/`.
-- Para instalar a extensao, use a pasta `extension/` na pagina de extensoes do navegador.
-- Arquivos HAR, cookies, tokens e credenciais **nao** sao versionados.
-- Validar o primeiro registro do 7Edu em uma aula antes de realizar um lote.

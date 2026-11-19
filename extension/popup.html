@@ -5,6 +5,11 @@
 <section class="pane" id="context">Verificando a sessão do portal…</section>
 <section class="stats" id="stats"></section>
 <section class="diagnostics"><button id="testConnection" class="secondary" type="button">Testar conexão (sem publicar)</button><p class="note">Teste as permissões e a leitura de turmas, disciplinas e postagens antes de enviar um lote.</p></section>
+<section class="calendar-tools" id="calendarTools" hidden>
+  <div><strong>Calendário real do 7Edu</strong><p class="note">Consulta as datas e períodos cadastrados. Não faz lançamentos. Exporte o relatório e envie-o para ajustar o planejamento.</p></div>
+  <button id="exportCurrent7Edu" type="button" class="secondary">Exportar disciplina aberta (.md)</button>
+  <button id="exportAll7Edu" type="button" class="secondary">Exportar todas minhas disciplinas (.md)</button>
+</section>
 <section class="filters">
 <label>Turma<select id="turma"><option value="">Todas</option><option>1MA</option><option>1MB</option><option>2MA</option><option>2MB</option><option>3MA</option><option>3MB</option></select></label>
 <label>Disciplina<select id="disciplina"><option value="Matemática">Matemática</option><option value="">Todas</option><option>Investigação Matemática</option><option>Filosofia</option></select></label>
@@ -17,4 +22,4 @@
 <section class="records" id="records"></section>
 <footer><span id="selected">0 selecionadas</span><button id="publish" class="primary">Enviar seleção ao E-Class</button></footer>
 <dialog id="preview"><div class="preview-header"><h2 id="previewTitle"></h2><button id="closePreview">Fechar</button></div><div class="editbar"><button id="toggleEditor" class="secondary">Editar HTML/título</button><button id="saveEditor" class="secondary" hidden>Salvar revisão no navegador</button><button id="restoreOriginal" class="secondary" hidden>Restaurar original</button></div><div id="editor" hidden><label>Título <input id="titleEditor" type="text" /></label><label>HTML da aula <textarea id="htmlEditor" spellcheck="false"></textarea></label></div><iframe id="previewFrame" title="Prévia da postagem" sandbox=""></iframe><pre id="plainPreview" hidden></pre></dialog>
-<script src="popup.js"></script></body></html>
+<script src="calendar_export.js"></script><script src="popup.js"></script></body></html>

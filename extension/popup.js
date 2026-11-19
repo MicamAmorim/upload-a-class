@@ -27,8 +27,9 @@ function forSystem(item){
 function updateSystemUI(){
  const seven=system()==='7edu';
  $('publishMode').hidden=seven;
+ $('calendarTools').hidden=!seven;
  $('systemNote').textContent=seven
- ? '7Edu registra Aulas Ministradas em texto simples, sem modo rascunho. Abra uma disciplina → Aulas Ministradas no 7Edu. Os registros são conferidos por turma, disciplina, data e períodos antes da gravação; datas futuras não são lançadas.'
+ ? '7Edu usa calendário próprio. Exporte as datas reais primeiro. Nenhum lançamento é feito em datas futuras ou que não constem na grade; todos os itens do lote são pré-validados antes da primeira gravação.'
  : 'E-Class mantém o fluxo anterior com rascunho/publicação de HTML. Abra o calendário do portal e selecione o ano 2026 e a unidade correta.';
  $('publish').textContent=seven?'Lançar seleção no 7Edu':'Enviar seleção ao E-Class';
  $('testConnection').textContent=seven?'Testar 7Edu (sem lançar)':'Testar conexão (sem publicar)';
@@ -46,7 +47,9 @@ function filtered(){
   (!$('dataInicial').value||x.data>=$('dataInicial').value)&&
   (!$('dataFinal').value||x.data<=$('dataFinal').value));
 }
-function canSelect(item){return item.status==='pronto_para_conferencia'||(item.status==='revisao_pedagogica'&&$('approveCondensed').checked)||(item.status==='proposta_para_aprovacao'&&$('approveProposals').checked);}
+function localToday(){const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');}
+function isFuture7Edu(item){return system()==='7edu' && item.data>localToday();}
+function canSelect(item){return !isFuture7Edu(item) && (item.status==='pronto_para_conferencia'||(item.status==='revisao_pedagogica'&&$('approveCondensed').checked)||(item.status==='proposta_para_aprovacao'&&$('approveProposals').checked));}
 function render(){
  const list=filtered();$('records').replaceChildren();
  for(const item of list){
@@ -56,10 +59,11 @@ function render(){
   const body=document.createElement('div');
   const title=document.createElement('b');title.textContent=`${item.data.split('-').reverse().join('/')} · ${item.turma} · ${item.disciplina}`;
   const tag=document.createElement('span');tag.className='tag'+(item.status==='revisao_pedagogica'?' warning':item.status==='proposta_para_aprovacao'?' block':'');
-  tag.textContent=item.status==='revisao_pedagogica'?'Condensada':item.status==='proposta_para_aprovacao'?'Proposta':'Conferir';title.append(tag);
+  tag.textContent=isFuture7Edu(item)?'Futura / bloqueada':item.status==='revisao_pedagogica'?'Condensada':item.status==='proposta_para_aprovacao'?'Proposta':'Conferir';title.append(tag);
   const sub=document.createElement('div');sub.className='subtitle';sub.textContent=`${item.quantidade_periodos} período(s) · ${item.horario.map(x=>x.inicio+'–'+x.fim).join(', ')} · Planos: ${item.planos_originais.join(', ')||'não fornecidos'}`;
   const topic=document.createElement('small');topic.textContent=item.titulo.slice(0,185);
   body.append(title,sub,topic);
+  if(isFuture7Edu(item)){const waiting=document.createElement('small');waiting.className='waiting';waiting.textContent='7Edu não permite lançar esta data antes do dia da aula.';body.append(waiting);}
   const btn=document.createElement('button');btn.className='secondary';btn.textContent='Prévia';btn.addEventListener('click',()=>{
    currentPreviewId=item.id; $('editor').hidden=true; $('saveEditor').hidden=true; $('restoreOriginal').hidden=true; $('toggleEditor').textContent='Editar HTML/título';
    $('titleEditor').value=item.titulo; $('htmlEditor').value=item.html;
@@ -98,6 +102,31 @@ async function testConnection(){
   console.error('Falha no teste de conexão',err);
  }finally{button.disabled=false;}
 }
+function download7EduMd(markdown, scope){
+ const blob=new Blob([markdown],{type:'text/markdown;charset=utf-8'});
+ const url=URL.createObjectURL(blob);
+ const anchor=document.createElement('a');anchor.href=url;
+ const normalize=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+ const stem=scope==='all'?'todas-disciplinas':`${normalize($('turma').value||'turma')}-disciplina-aberta`;
+ anchor.download=`7edu_calendario_${stem}_4bim_2026.md`;
+ document.body.append(anchor);anchor.click();anchor.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),3000);
+}
+async function exportCalendar(scope){
+ if(sending)return;
+ const button=$(scope==='all'?'exportAll7Edu':'exportCurrent7Edu');
+ $('exportCurrent7Edu').disabled=true;$('exportAll7Edu').disabled=true;
+ $('progress').textContent=scope==='all'?'Consultando todos os diários 7Edu, somente leitura…':'Consultando disciplina aberta no 7Edu, somente leitura…';
+ try{
+  const r=await request('calendar',{options:{scope}});
+  const md=calendar7EduMarkdown(r.result);
+  download7EduMd(md,scope);
+  $('progress').textContent=`Arquivo .md gerado com ${r.result.count} data(s), ${r.result.sections_checked} disciplina(s) consultada(s)`+
+   (r.result.warnings.length?` e ${r.result.warnings.length} alerta(s) a conferir.`:'.')+
+   ' Não foi enviada nenhuma aula.';
+ }catch(err){ $('progress').textContent=`Exportação não realizada: ${err.message}. Nenhuma aula foi enviada.`;}
+ finally{$('exportCurrent7Edu').disabled=false;$('exportAll7Edu').disabled=false;}
+}
 async function sendSelection(){
  if(sending)return;
  const chosen=records.filter(x=>selected.has(x.id));
@@ -109,18 +138,32 @@ async function sendSelection(){
  : `Enviar ${chosen.length} postagem(ns) ao E-Class?\nModo: ${publish?'PUBLICAR imediatamente':'CRIAR RASCUNHOS'}.\n${approve?'A condensação pedagógica foi autorizada.':'Sem condensação autorizada.'}\n${approveProposals?'As propostas de Investigação/Filosofia foram autorizadas nesta operação.':'Sem aprovação das propostas sem plano-fonte.'}\n\nNão serão sobrescritas postagens já existentes.\nEsta ação altera o portal de verdade.`;
  if(!confirm(prompt))return;
  sending=true;$('system').disabled=true;render();let done=0,skipped=0,conflicts=0,failed=0,lastNote='';
- $('progress').textContent='Validando autenticação antes do lote (somente leitura; nenhuma aula enviada)...';
+ $('progress').textContent='Verificando todo o lote antes da primeira gravação (somente leitura)…';
+ const ready=[];let already=0;
  try{
-   // Nunca começar um lote sem um GET bem-sucedido; se a sessão estiver expirada,
-   // interromper ANTES do primeiro POST. Não fazer retry automático de POST.
-   await request('check',{post:forSystem(chosen[0])});
+   // No 7Edu, conferir todas as datas, dias previstos, números de aulas e horários ANTES de alterar o portal.
+   // Se um único item falhar, nenhum POST será disparado neste lote.
+   if(!seven){
+     // Preservar exatamente o fluxo E-Class anterior: testar apenas o primeiro item.
+     await request('check',{post:forSystem(chosen[0])});
+     ready.push(...chosen);
+   }else{
+     for(const [i,item] of chosen.entries()){
+       $('progress').textContent=`Pré-validação ${i+1}/${chosen.length}: ${item.turma}, ${item.disciplina}, ${item.data} (sem gravar)…`;
+       const verified=await request('preflight',{post:forSystem(item)});
+       if(verified.result.status==='ja_existente'){already++;continue;}
+       if(verified.result.status!=='apto')throw new Error(`Estado inesperado na data ${item.data}: verifique o diário.`);
+       ready.push(item);
+     }
+   }
  }catch(err){
    sending=false;$('system').disabled=false;render();
-   $('progress').textContent=`LOTE NÃO INICIADO: ${err.message}. Nenhuma aula foi enviada por esta tentativa.`;
+   $('progress').textContent=`LOTE NÃO INICIADO: ${err.message}. Todos os envios deste lote foram suspensos. Não houve gravação nesta tentativa.`;
    return;
  }
- for(const [i,item] of chosen.entries()){
-  $('progress').textContent=`Enviando ${i+1}/${chosen.length}: ${item.turma} em ${item.data}…`;
+ if(!ready.length){sending=false;$('system').disabled=false;render();$('progress').textContent=`Nada para lançar: ${already} aula(s) já registradas no 7Edu. Nenhuma gravação realizada.`;return;}
+ for(const [i,item] of ready.entries()){
+  $('progress').textContent=`Enviando ${i+1}/${ready.length}: ${item.turma} em ${item.data}…`;
   try{
    const r=await request('publish',{post:forSystem(item),options:{approveCondensed:approve,approveProposals,published:publish}});
    if(r.result.status==='criado'){done++;selected.delete(item.id);}
@@ -128,12 +171,13 @@ async function sendSelection(){
    else {skipped++;lastNote=`Ignorada — ${item.turma}, ${item.data}: ${r.result.detail||r.result.status}`;selected.delete(item.id);}
   }catch(err){
    failed++;console.error('Falha na postagem',item.id,err.message);
-   $('progress').textContent=`LOTE INTERROMPIDO por segurança após ${i+1}/${chosen.length} tentativa(s). Concluídas: ${done}; ignoradas: ${skipped}; conflitos: ${conflicts}; falhas: ${failed}. Erro: ${err.message}. As demais aulas NÃO foram tentadas.`;
+   $('progress').textContent=`LOTE INTERROMPIDO por segurança após ${i+1}/${ready.length} tentativa(s). Concluídas: ${done}; ignoradas: ${skipped}; conflitos: ${conflicts}; falhas: ${failed}. Erro: ${err.message}. As demais aulas NÃO foram tentadas.`;
    sending=false;$('system').disabled=false;render();return;
   }
-  $('progress').textContent=`Concluídas ${done} · Ignoradas ${skipped} · Conflitos ${conflicts} · Falhas ${failed} · ${i+1}/${chosen.length}${lastNote?' — '+lastNote:''}`;
+  $('progress').textContent=`Concluídas ${done} · Ignoradas ${skipped} · Conflitos ${conflicts} · Falhas ${failed} · ${i+1}/${ready.length}${lastNote?' — '+lastNote:''}`;
  }
  sending=false;$('system').disabled=false;render();
+ $('progress').textContent+=already?` — ${already} registro(s) já existentes foram preservados.`:'';
  $('progress').textContent+=conflicts?` — ${conflicts} conflito(s) requer(em) revisão. Nenhum registro em conflito foi enviado.`:` — Fim do lote sem falhas.`;
 }
 async function init(){
@@ -158,6 +202,8 @@ async function init(){
  $('clear').onclick=()=>{selected.clear();render();};
  $('publish').onclick=sendSelection;
  $('testConnection').onclick=testConnection;
+ $('exportCurrent7Edu').onclick=()=>exportCalendar('current');
+ $('exportAll7Edu').onclick=()=>exportCalendar('all');
  $('closePreview').onclick=()=>$('preview').close();
  $('toggleEditor').onclick=()=>{const show=$('editor').hidden;$('editor').hidden=!show;$('saveEditor').hidden=!show;$('restoreOriginal').hidden=!show;$('toggleEditor').textContent=show?'Ocultar editor':'Editar HTML/título';};
  $('saveEditor').onclick=async()=>{
