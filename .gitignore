@@ -1,0 +1,16 @@
+# Dados privados e arquivos locais
+*.har
+.env
+.env.*
+!.env.example
+*.log
+*.token
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.db
+__pycache__/
+node_modules/
+.DS_Store

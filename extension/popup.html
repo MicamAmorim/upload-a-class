@@ -1,0 +1,20 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Aulas 4º bimestre</title><link rel="stylesheet" href="popup.css"/></head>
+<body><header><div class="eyebrow">COLÉGIO ADVENTISTA DE ITABUNA</div><h1>Aulas · 4º bimestre <span>2026</span></h1><p>21 de setembro a 11 de dezembro · prévia e publicação supervisionada</p></header>
+<section class="system-picker"><label>Sistema de destino<select id="system"><option value="eclass">E-Class (postagens de aulas)</option><option value="7edu">7Edu (Aulas Ministradas)</option></select></label><p id="systemNote" class="note"></p></section>
+<section class="pane" id="context">Verificando a sessão do portal…</section>
+<section class="stats" id="stats"></section>
+<section class="diagnostics"><button id="testConnection" class="secondary" type="button">Testar conexão (sem publicar)</button><p class="note">Teste as permissões e a leitura de turmas, disciplinas e postagens antes de enviar um lote.</p></section>
+<section class="filters">
+<label>Turma<select id="turma"><option value="">Todas</option><option>1MA</option><option>1MB</option><option>2MA</option><option>2MB</option><option>3MA</option><option>3MB</option></select></label>
+<label>Disciplina<select id="disciplina"><option value="Matemática">Matemática</option><option value="">Todas</option><option>Investigação Matemática</option><option>Filosofia</option></select></label>
+<label>Situação<select id="situacao"><option value="">Todas</option><option value="pronto_para_conferencia">Prontas para conferir</option><option value="revisao_pedagogica">Condensadas — aprovação necessária</option><option value="proposta_para_aprovacao">Propostas — aprovação necessária</option></select></label>
+<label>Data inicial<input type="date" id="dataInicial" value="2026-09-21"/></label><label>Data final<input type="date" id="dataFinal" value="2026-12-11"/></label>
+</section>
+<div class="controls"><button id="selectAll" class="secondary">Selecionar aptas</button><button id="clear" class="secondary">Limpar</button><label class="approve"><input type="checkbox" id="approveCondensed"/> Aprovo explicitamente a condensação</label><label class="approve"><input type="checkbox" id="approveProposals"/> Aprovo as propostas de Investigação/Filosofia</label><label class="approve" id="publishMode"><input type="checkbox" id="publishNow"/> Publicar (senão, criar rascunhos)</label></div>
+<p class="note">Datas de avaliações são <strong>propostas</strong>, não datas oficiais fornecidas pela escola. Aulas condensadas e propostas sem plano-fonte exigem revisão.</p>
+<div id="progress" role="status" aria-live="polite"></div>
+<section class="records" id="records"></section>
+<footer><span id="selected">0 selecionadas</span><button id="publish" class="primary">Enviar seleção ao E-Class</button></footer>
+<dialog id="preview"><div class="preview-header"><h2 id="previewTitle"></h2><button id="closePreview">Fechar</button></div><div class="editbar"><button id="toggleEditor" class="secondary">Editar HTML/título</button><button id="saveEditor" class="secondary" hidden>Salvar revisão no navegador</button><button id="restoreOriginal" class="secondary" hidden>Restaurar original</button></div><div id="editor" hidden><label>Título <input id="titleEditor" type="text" /></label><label>HTML da aula <textarea id="htmlEditor" spellcheck="false"></textarea></label></div><iframe id="previewFrame" title="Prévia da postagem" sandbox=""></iframe><pre id="plainPreview" hidden></pre></dialog>
+<script src="popup.js"></script></body></html>

@@ -1,0 +1,25 @@
+{
+  "versao": "1.0.6",
+  "data": "2026-11-19",
+  "sistema_adicionado": "7Edu - Aulas Ministradas",
+  "origem_har": "HAR fornecido pelo usuario (nao incluido no pacote)",
+  "rotas_har_validadas": 6,
+  "padrao_requisicao_save_compativel": true,
+  "padrao_lista_disciplinas_compativel": true,
+  "padrao_lista_aulas_compativel": true,
+  "testes_7edu_offline": 8,
+  "testes_eclass_regressao": "PASSOU",
+  "auditoria_calendario": {
+    "postagens": 284,
+    "periodos": 348,
+    "planos_originais_matematica": 120,
+    "integridade_original": "preservada"
+  },
+  "teste_real_autenticado_7edu": "NAO_EXECUTADO",
+  "restricoes": [
+    "somente a sessao do proprio navegador",
+    "sem armazenamento de credenciais ou inclusao do HAR",
+    "sem retry de operacoes de escrita",
+    "bloqueio de datas futuras, duplicatas, periodo letivo errado e horarios divergentes"
+  ]
+}

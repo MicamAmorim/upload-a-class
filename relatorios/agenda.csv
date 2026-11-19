@@ -1,0 +1,285 @@
+﻿Data;Dia;Turma;Disciplina;Períodos;Horários;Planos;Situação;Título
+2026-09-21;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;1, 2;pronto_para_conferencia;"ENCONTRO 01 — 2º MB — 21/09/2026 | Cilindro: definição, elementos e classificação; Área lateral e área total do cilindro"
+2026-09-21;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;1, 2, 3, 4, 5;revisao_pedagogica;"ENCONTRO 01 — 1º MA — 21/09/2026 | Simetria da parábola: leitura do gráfico e eixo de simetria; Coordenada do vértice: determinação de x_v; Coordenada"
+2026-09-21;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;1, 2;pronto_para_conferencia;"ENCONTRO 01 — 3º MA — 21/09/2026 | Números complexos: origem e unidade imaginária; Conjugado e igualdade entre complexos"
+2026-09-21;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 01 — 1º MA — 21/09/2026 | Questão de investigação e formulação de hipóteses — função quadrática e transformações geométricas
+2026-09-22;terça-feira;1MB;Matemática;1;07:00-07:45;1, 2;revisao_pedagogica;"ENCONTRO 01 — 1º MB — 22/09/2026 | Simetria da parábola: leitura do gráfico e eixo de simetria; Coordenada do vértice: determinação de x_v"
+2026-09-22;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 01 — 1º MB — 22/09/2026 | Questão de investigação e formulação de hipóteses — função quadrática e transformações geométricas
+2026-09-22;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 02 — 1º MA — 22/09/2026 | Estratégias de resolução e comparação de caminhos — função quadrática e transformações geométricas
+2026-09-22;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 01 — 2º MA — 22/09/2026 | Módulo 8 — leitura guiada e levantamento de questões
+2026-09-22;terça-feira;2MB;Matemática;1;10:20-11:05;3;pronto_para_conferencia;ENCONTRO 02 — 2º MB — 22/09/2026 | Volume do cilindro e princípio de Cavalieri
+2026-09-22;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;1, 2;pronto_para_conferencia;"ENCONTRO 01 — 3º MB — 22/09/2026 | Números complexos: origem e unidade imaginária; Conjugado e igualdade entre complexos"
+2026-09-23;quarta-feira;1MB;Matemática;1;07:45-08:30;3;pronto_para_conferencia;ENCONTRO 02 — 1º MB — 23/09/2026 | Coordenada do vértice: determinação de y_v
+2026-09-23;quarta-feira;2MB;Matemática;1;08:30-09:15;4;pronto_para_conferencia;ENCONTRO 03 — 2º MB — 23/09/2026 | Cilindro: problemas aplicados
+2026-09-23;quarta-feira;3MA;Matemática;1;09:15-10:00;3;pronto_para_conferencia;ENCONTRO 02 — 3º MA — 23/09/2026 | Adição e subtração de números complexos
+2026-09-23;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 01 — 3º MA — 23/09/2026 | Questão de investigação e formulação de hipóteses — números complexos
+2026-09-23;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 01 — 3º MB — 23/09/2026 | Questão de investigação e formulação de hipóteses — números complexos
+2026-09-23;quarta-feira;2MA;Matemática;1;11:50-12:30;1;pronto_para_conferencia;ENCONTRO 01 — 2º MA — 23/09/2026 | Cilindro: definição, elementos e classificação
+2026-09-24;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 01 — 2º MB — 24/09/2026 | Módulo 8 — leitura guiada e levantamento de questões
+2026-09-24;quinta-feira;3MA;Matemática;1;07:45-08:30;4;pronto_para_conferencia;ENCONTRO 03 — 3º MA — 24/09/2026 | Multiplicação de números complexos
+2026-09-24;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;3, 4;pronto_para_conferencia;"ENCONTRO 02 — 3º MB — 24/09/2026 | Adição e subtração de números complexos; Multiplicação de números complexos"
+2026-09-24;quinta-feira;2MA;Matemática;1;10:20-11:05;2;pronto_para_conferencia;ENCONTRO 02 — 2º MA — 24/09/2026 | Área lateral e área total do cilindro
+2026-09-24;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 02 — 3º MA — 24/09/2026 | Estratégias de resolução e comparação de caminhos — números complexos
+2026-09-25;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;3, 4;pronto_para_conferencia;"ENCONTRO 03 — 2º MA — 25/09/2026 | Volume do cilindro e princípio de Cavalieri; Cilindro: problemas aplicados"
+2026-09-25;sexta-feira;1MB;Matemática;1;09:15-10:00;4;pronto_para_conferencia;ENCONTRO 03 — 1º MB — 25/09/2026 | Esboço da parábola a partir de informações-chave
+2026-09-25;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 02 — 3º MB — 25/09/2026 | Estratégias de resolução e comparação de caminhos — números complexos
+2026-09-25;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 01 — 2º MB — 25/09/2026 | Questão de investigação e formulação de hipóteses — cilindro, cone e esfera
+2026-09-28;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;5, 6;pronto_para_conferencia;"ENCONTRO 04 — 2º MB — 28/09/2026 | Cone: definição, elementos e cone de revolução; Área lateral e área total do cone"
+2026-09-28;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;6, 7, 8, 9;revisao_pedagogica;"ENCONTRO 02 — 1º MA — 28/09/2026 | Pontos extremos: máximo e mínimo de uma função quadrática; Imagem da função quadrática; Otimização: problemas de lu"
+2026-09-28;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;5, 6;pronto_para_conferencia;"ENCONTRO 04 — 3º MA — 28/09/2026 | Divisão de números complexos; Operações integradas e problemas algébricos"
+2026-09-28;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 03 — 1º MA — 28/09/2026 | Revisão ENEM — interpretação e modelagem — função quadrática e transformações geométricas
+2026-09-29;terça-feira;1MB;Matemática;1;07:00-07:45;5;pronto_para_conferencia;ENCONTRO 04 — 1º MB — 29/09/2026 | Aplicações de simetria e vértice
+2026-09-29;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 02 — 1º MB — 29/09/2026 | Estratégias de resolução e comparação de caminhos — função quadrática e transformações geométricas
+2026-09-29;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 04 — 1º MA — 29/09/2026 | Investigação prática e registro de dados — função quadrática e transformações geométricas
+2026-09-29;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 02 — 2º MA — 29/09/2026 | Módulo 8 — situações-problema e argumentação
+2026-09-29;terça-feira;2MB;Matemática;1;10:20-11:05;7;pronto_para_conferencia;ENCONTRO 05 — 2º MB — 29/09/2026 | Volume do cone
+2026-09-29;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;5;pronto_para_conferencia;"ENCONTRO 03 — 3º MB — 29/09/2026 | Divisão de números complexos; Retomada e exercícios: Divisão de números complexos"
+2026-09-30;quarta-feira;1MB;Matemática;1;07:45-08:30;6;pronto_para_conferencia;ENCONTRO 05 — 1º MB — 30/09/2026 | Pontos extremos: máximo e mínimo de uma função quadrática
+2026-09-30;quarta-feira;2MB;Matemática;1;08:30-09:15;8;pronto_para_conferencia;ENCONTRO 06 — 2º MB — 30/09/2026 | Cone: problemas de semelhança e aplicações
+2026-09-30;quarta-feira;3MA;Matemática;1;09:15-10:00;7;pronto_para_conferencia;ENCONTRO 05 — 3º MA — 30/09/2026 | Potências de i: periodicidade
+2026-09-30;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 03 — 3º MA — 30/09/2026 | Revisão ENEM — interpretação e modelagem — números complexos
+2026-09-30;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 03 — 3º MB — 30/09/2026 | Revisão ENEM — interpretação e modelagem — números complexos
+2026-09-30;quarta-feira;2MA;Matemática;1;11:50-12:30;5;pronto_para_conferencia;ENCONTRO 04 — 2º MA — 30/09/2026 | Cone: definição, elementos e cone de revolução
+2026-10-01;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 02 — 2º MB — 01/10/2026 | Módulo 8 — situações-problema e argumentação
+2026-10-01;quinta-feira;3MA;Matemática;1;07:45-08:30;8;pronto_para_conferencia;ENCONTRO 06 — 3º MA — 01/10/2026 | Propriedades de potências em complexos
+2026-10-01;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;6, 7;pronto_para_conferencia;"ENCONTRO 04 — 3º MB — 01/10/2026 | Operações integradas e problemas algébricos; Potências de i: periodicidade"
+2026-10-01;quinta-feira;2MA;Matemática;1;10:20-11:05;6;pronto_para_conferencia;ENCONTRO 05 — 2º MA — 01/10/2026 | Área lateral e área total do cone
+2026-10-01;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 04 — 3º MA — 01/10/2026 | Investigação prática e registro de dados — números complexos
+2026-10-02;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;7, 8;pronto_para_conferencia;"ENCONTRO 06 — 2º MA — 02/10/2026 | Volume do cone; Cone: problemas de semelhança e aplicações"
+2026-10-02;sexta-feira;1MB;Matemática;1;09:15-10:00;7, 8;revisao_pedagogica;"ENCONTRO 06 — 1º MB — 02/10/2026 | Imagem da função quadrática; Otimização: problemas de lucro, área e receita"
+2026-10-02;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 04 — 3º MB — 02/10/2026 | Investigação prática e registro de dados — números complexos
+2026-10-02;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 02 — 2º MB — 02/10/2026 | Estratégias de resolução e comparação de caminhos — cilindro, cone e esfera
+2026-10-05;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;9;pronto_para_conferencia;"ENCONTRO 07 — 2º MB — 05/10/2026 | Tronco de cone: semelhança e volume; Retomada e exercícios: Tronco de cone: semelhança e volume"
+2026-10-05;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;10, 11, 12, 13, 14;revisao_pedagogica;"ENCONTRO 03 — 1º MA — 05/10/2026 | Estudo de sinal: ideia e representação na reta; Estudo de sinal com duas raízes reais; Estudo de sinal nos casos Δ="
+2026-10-05;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;9;pronto_para_conferencia;"ENCONTRO 07 — 3º MA — 05/10/2026 | Plano complexo: representação geométrica; Retomada e exercícios: Plano complexo: representação geométrica"
+2026-10-05;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 05 — 1º MA — 05/10/2026 | Conjecturas, exemplos e contraexemplos — função quadrática e transformações geométricas
+2026-10-06;terça-feira;1MB;Matemática;1;07:00-07:45;9;pronto_para_conferencia;ENCONTRO 07 — 1º MB — 06/10/2026 | Otimização por diferentes estratégias
+2026-10-06;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 03 — 1º MB — 06/10/2026 | Revisão ENEM — interpretação e modelagem — função quadrática e transformações geométricas
+2026-10-06;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 06 — 1º MA — 06/10/2026 | Trabalho colaborativo: padrões e regularidades — função quadrática e transformações geométricas
+2026-10-06;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 03 — 2º MA — 06/10/2026 | Módulo 9 — leitura comparativa de argumentos
+2026-10-06;terça-feira;2MB;Matemática;1;10:20-11:05;10;pronto_para_conferencia;ENCONTRO 08 — 2º MB — 06/10/2026 | Tronco de cone: área lateral e reservatórios
+2026-10-06;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;8, 9;pronto_para_conferencia;"ENCONTRO 05 — 3º MB — 06/10/2026 | Propriedades de potências em complexos; Plano complexo: representação geométrica"
+2026-10-07;quarta-feira;1MB;Matemática;1;07:45-08:30;10;pronto_para_conferencia;ENCONTRO 08 — 1º MB — 07/10/2026 | Estudo de sinal: ideia e representação na reta
+2026-10-07;quarta-feira;2MB;Matemática;1;08:30-09:15;11;pronto_para_conferencia;ENCONTRO 09 — 2º MB — 07/10/2026 | Esfera: definição e volume
+2026-10-07;quarta-feira;3MA;Matemática;1;09:15-10:00;10;pronto_para_conferencia;ENCONTRO 08 — 3º MA — 07/10/2026 | Módulo de um número complexo
+2026-10-07;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 05 — 3º MA — 07/10/2026 | Conjecturas, exemplos e contraexemplos — números complexos
+2026-10-07;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 05 — 3º MB — 07/10/2026 | Conjecturas, exemplos e contraexemplos — números complexos
+2026-10-07;quarta-feira;2MA;Matemática;1;11:50-12:30;9;pronto_para_conferencia;ENCONTRO 07 — 2º MA — 07/10/2026 | Tronco de cone: semelhança e volume
+2026-10-08;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 03 — 2º MB — 08/10/2026 | Módulo 9 — leitura comparativa de argumentos
+2026-10-08;quinta-feira;3MA;Matemática;1;07:45-08:30;11;pronto_para_conferencia;ENCONTRO 09 — 3º MA — 08/10/2026 | Propriedades do módulo
+2026-10-08;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;10;pronto_para_conferencia;"ENCONTRO 06 — 3º MB — 08/10/2026 | Retomada e exercícios: Plano complexo: representação geométrica; Módulo de um número complexo"
+2026-10-08;quinta-feira;2MA;Matemática;1;10:20-11:05;;pronto_para_conferencia;ENCONTRO 08 — 2º MA — 08/10/2026 | Retomada e exercícios: Tronco de cone: semelhança e volume
+2026-10-08;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 06 — 3º MA — 08/10/2026 | Trabalho colaborativo: padrões e regularidades — números complexos
+2026-10-09;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;10, 11;pronto_para_conferencia;"ENCONTRO 09 — 2º MA — 09/10/2026 | Tronco de cone: área lateral e reservatórios; Esfera: definição e volume"
+2026-10-09;sexta-feira;1MB;Matemática;1;09:15-10:00;11;pronto_para_conferencia;ENCONTRO 09 — 1º MB — 09/10/2026 | Estudo de sinal com duas raízes reais
+2026-10-09;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 06 — 3º MB — 09/10/2026 | Trabalho colaborativo: padrões e regularidades — números complexos
+2026-10-09;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 03 — 2º MB — 09/10/2026 | Revisão ENEM — interpretação e modelagem — cilindro, cone e esfera
+2026-10-13;terça-feira;1MB;Matemática;1;07:00-07:45;12;pronto_para_conferencia;ENCONTRO 10 — 1º MB — 13/10/2026 | Estudo de sinal nos casos Δ=0 e Δ<0
+2026-10-13;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 04 — 1º MB — 13/10/2026 | Investigação prática e registro de dados — função quadrática e transformações geométricas
+2026-10-13;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 07 — 1º MA — 13/10/2026 | Revisão ENEM — resolução orientada — função quadrática e transformações geométricas
+2026-10-13;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 04 — 2º MA — 13/10/2026 | Produção textual em sala 1 — módulos 8 e 9
+2026-10-13;terça-feira;2MB;Matemática;1;10:20-11:05;12;pronto_para_conferencia;ENCONTRO 10 — 2º MB — 13/10/2026 | Área da superfície esférica
+2026-10-13;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;11, 12;pronto_para_conferencia;"ENCONTRO 07 — 3º MB — 13/10/2026 | Propriedades do módulo; Argumento do número complexo"
+2026-10-14;quarta-feira;1MB;Matemática;1;07:45-08:30;13, 14;revisao_pedagogica;"ENCONTRO 11 — 1º MB — 14/10/2026 | Inequações do 2º grau: casos simples; Inequações-produto"
+2026-10-14;quarta-feira;2MB;Matemática;1;08:30-09:15;13;pronto_para_conferencia;ENCONTRO 11 — 2º MB — 14/10/2026 | Esfera e princípio de Arquimedes    Histórico-prático
+2026-10-14;quarta-feira;3MA;Matemática;1;09:15-10:00;12;pronto_para_conferencia;ENCONTRO 10 — 3º MA — 14/10/2026 | Argumento do número complexo
+2026-10-14;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 07 — 3º MA — 14/10/2026 | Revisão ENEM — resolução orientada — números complexos
+2026-10-14;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 07 — 3º MB — 14/10/2026 | Revisão ENEM — resolução orientada — números complexos
+2026-10-14;quarta-feira;2MA;Matemática;1;11:50-12:30;12;pronto_para_conferencia;ENCONTRO 10 — 2º MA — 14/10/2026 | Área da superfície esférica
+2026-10-15;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 04 — 2º MB — 15/10/2026 | Produção textual em sala 1 — módulos 8 e 9
+2026-10-15;quinta-feira;3MA;Matemática;1;07:45-08:30;13;pronto_para_conferencia;ENCONTRO 11 — 3º MA — 15/10/2026 | Forma trigonométrica: da algébrica para a trigonométrica
+2026-10-15;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;13, 14;pronto_para_conferencia;"ENCONTRO 08 — 3º MB — 15/10/2026 | Forma trigonométrica: da algébrica para a trigonométrica; Forma trigonométrica: da trigonométrica para a algébrica"
+2026-10-15;quinta-feira;2MA;Matemática;1;10:20-11:05;13;pronto_para_conferencia;ENCONTRO 11 — 2º MA — 15/10/2026 | Esfera e princípio de Arquimedes    Histórico-prático
+2026-10-15;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 08 — 3º MA — 15/10/2026 | Comunicação dos resultados da investigação — números complexos
+2026-10-16;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;14, 15;pronto_para_conferencia;"ENCONTRO 12 — 2º MA — 16/10/2026 | Partes da esfera: fuso, cunha, seção e calota; Corpos redondos: problemas integrados"
+2026-10-16;sexta-feira;1MB;Matemática;1;09:15-10:00;15;pronto_para_conferencia;ENCONTRO 12 — 1º MB — 16/10/2026 | Inequações-quociente
+2026-10-16;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 08 — 3º MB — 16/10/2026 | Comunicação dos resultados da investigação — números complexos
+2026-10-16;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 04 — 2º MB — 16/10/2026 | Investigação prática e registro de dados — cilindro, cone e esfera
+2026-10-19;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;14, 15;pronto_para_conferencia;"ENCONTRO 12 — 2º MB — 19/10/2026 | Partes da esfera: fuso, cunha, seção e calota; Corpos redondos: problemas integrados"
+2026-10-19;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;15, 16, 19;revisao_pedagogica;"ENCONTRO 04 — 1º MA — 19/10/2026 | Inequações-quociente; Inequações simultâneas; SIMULADO DO TESTE — 30 questões"
+2026-10-19;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;14, 15;pronto_para_conferencia;"ENCONTRO 12 — 3º MA — 19/10/2026 | Forma trigonométrica: da trigonométrica para a algébrica; Aplicações em circuitos elétricos: impedância"
+2026-10-19;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 08 — 1º MA — 19/10/2026 | Comunicação dos resultados da investigação — função quadrática e transformações geométricas
+2026-10-20;terça-feira;1MB;Matemática;1;07:00-07:45;16;pronto_para_conferencia;ENCONTRO 13 — 1º MB — 20/10/2026 | Inequações simultâneas
+2026-10-20;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 05 — 1º MB — 20/10/2026 | Conjecturas, exemplos e contraexemplos — função quadrática e transformações geométricas
+2026-10-20;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 09 — 1º MA — 20/10/2026 | Oficina de revisão ENEM — diagnóstico e correção — função quadrática e transformações geométricas
+2026-10-20;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 05 — 2º MA — 20/10/2026 | Módulo 10 — leitura, interpretação e discussão
+2026-10-20;terça-feira;2MB;Matemática;1;10:20-11:05;16;pronto_para_conferencia;ENCONTRO 13 — 2º MB — 20/10/2026 | Questões ENEM e vestibulares sobre corpos redondos
+2026-10-20;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;15;pronto_para_conferencia;"ENCONTRO 09 — 3º MB — 20/10/2026 | Retomada e exercícios: Forma trigonométrica: da trigonométrica para a algébrica; Aplicações em circuitos elétricos:"
+2026-10-21;quarta-feira;1MB;Matemática;1;07:45-08:30;17;pronto_para_conferencia;ENCONTRO 14 — 1º MB — 21/10/2026 | Transformações geométricas: translação e reflexão
+2026-10-21;quarta-feira;2MB;Matemática;1;08:30-09:15;17;pronto_para_conferencia;ENCONTRO 14 — 2º MB — 21/10/2026 | Lista I: correção e aprofundamento
+2026-10-21;quarta-feira;3MA;Matemática;1;09:15-10:00;16;pronto_para_conferencia;ENCONTRO 13 — 3º MA — 21/10/2026 | Circuitos em paralelo e lei de Ohm com complexos
+2026-10-21;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 09 — 3º MA — 21/10/2026 | Oficina de revisão ENEM — diagnóstico e correção — números complexos
+2026-10-21;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 09 — 3º MB — 21/10/2026 | Oficina de revisão ENEM — diagnóstico e correção — números complexos
+2026-10-21;quarta-feira;2MA;Matemática;1;11:50-12:30;16;pronto_para_conferencia;ENCONTRO 13 — 2º MA — 21/10/2026 | Questões ENEM e vestibulares sobre corpos redondos
+2026-10-22;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 05 — 2º MB — 22/10/2026 | Módulo 10 — leitura, interpretação e discussão
+2026-10-22;quinta-feira;3MA;Matemática;1;07:45-08:30;17;pronto_para_conferencia;ENCONTRO 14 — 3º MA — 22/10/2026 | Lista I: revisão de números complexos
+2026-10-22;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;16, 17;pronto_para_conferencia;"ENCONTRO 10 — 3º MB — 22/10/2026 | Circuitos em paralelo e lei de Ohm com complexos; Lista I: revisão de números complexos"
+2026-10-22;quinta-feira;2MA;Matemática;1;10:20-11:05;17;pronto_para_conferencia;ENCONTRO 14 — 2º MA — 22/10/2026 | Lista I: correção e aprofundamento
+2026-10-22;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 10 — 3º MA — 22/10/2026 | Síntese investigativa e autoavaliação — números complexos
+2026-10-23;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;18;pronto_para_conferencia;"ENCONTRO 15 — 2º MA — 23/10/2026 | SIMULADO DO TESTE — 30 questões; Retomada e exercícios: SIMULADO DO TESTE — 30 questões"
+2026-10-23;sexta-feira;1MB;Matemática;1;09:15-10:00;18;pronto_para_conferencia;ENCONTRO 15 — 1º MB — 23/10/2026 | Rotação, homotetia e composição de transformações
+2026-10-23;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 10 — 3º MB — 23/10/2026 | Síntese investigativa e autoavaliação — números complexos
+2026-10-23;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 05 — 2º MB — 23/10/2026 | Conjecturas, exemplos e contraexemplos — cilindro, cone e esfera
+2026-10-26;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;18;pronto_para_conferencia;"ENCONTRO 15 — 2º MB — 26/10/2026 | SIMULADO DO TESTE — 30 questões; Retomada e exercícios: SIMULADO DO TESTE — 30 questões"
+2026-10-26;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;17, 18, 20;revisao_pedagogica;"ENCONTRO 05 — 1º MA — 26/10/2026 | Transformações geométricas: translação e reflexão; Rotação, homotetia e composição de transformações; TESTE DE MATE"
+2026-10-26;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;18;pronto_para_conferencia;"ENCONTRO 15 — 3º MA — 26/10/2026 | SIMULADO DO TESTE — 30 questões; Retomada e exercícios: SIMULADO DO TESTE — 30 questões"
+2026-10-26;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 10 — 1º MA — 26/10/2026 | Síntese investigativa e autoavaliação — função quadrática e transformações geométricas
+2026-10-27;terça-feira;1MB;Matemática;1;07:00-07:45;19;pronto_para_conferencia;ENCONTRO 16 — 1º MB — 27/10/2026 | SIMULADO DO TESTE — 30 questões
+2026-10-27;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 06 — 1º MB — 27/10/2026 | Trabalho colaborativo: padrões e regularidades — função quadrática e transformações geométricas
+2026-10-27;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 11 — 1º MA — 27/10/2026 | Questão de investigação e formulação de hipóteses — função quadrática e transformações geométricas
+2026-10-27;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 06 — 2º MA — 27/10/2026 | Revisão para o teste — módulos 8 a 10
+2026-10-27;terça-feira;2MB;Matemática;1;10:20-11:05;19;pronto_para_conferencia;ENCONTRO 16 — 2º MB — 27/10/2026 | Revisão final: corpos redondos    Revisão
+2026-10-27;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;18, 19;pronto_para_conferencia;"ENCONTRO 11 — 3º MB — 27/10/2026 | SIMULADO DO TESTE — 30 questões; Revisão final: números complexos    Revisão"
+2026-10-28;quarta-feira;1MB;Matemática;1;07:45-08:30;20;pronto_para_conferencia;ENCONTRO 17 — 1º MB — 28/10/2026 | TESTE DE MATEMÁTICA — 15 questões
+2026-10-28;quarta-feira;2MB;Matemática;1;08:30-09:15;20;pronto_para_conferencia;ENCONTRO 17 — 2º MB — 28/10/2026 | TESTE DE MATEMÁTICA — 15 questões
+2026-10-28;quarta-feira;3MA;Matemática;1;09:15-10:00;19;pronto_para_conferencia;ENCONTRO 16 — 3º MA — 28/10/2026 | Revisão final: números complexos    Revisão
+2026-10-28;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 11 — 3º MA — 28/10/2026 | Questão de investigação e formulação de hipóteses — números complexos
+2026-10-28;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 11 — 3º MB — 28/10/2026 | Questão de investigação e formulação de hipóteses — números complexos
+2026-10-28;quarta-feira;2MA;Matemática;1;11:50-12:30;19;pronto_para_conferencia;ENCONTRO 16 — 2º MA — 28/10/2026 | Revisão final: corpos redondos    Revisão
+2026-10-29;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 06 — 2º MB — 29/10/2026 | Revisão para o teste — módulos 8 a 10
+2026-10-29;quinta-feira;3MA;Matemática;1;07:45-08:30;20;pronto_para_conferencia;ENCONTRO 17 — 3º MA — 29/10/2026 | TESTE DE MATEMÁTICA — 15 questões
+2026-10-29;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;20;pronto_para_conferencia;"ENCONTRO 12 — 3º MB — 29/10/2026 | Retomada e exercícios: SIMULADO DO TESTE — 30 questões; TESTE DE MATEMÁTICA — 15 questões"
+2026-10-29;quinta-feira;2MA;Matemática;1;10:20-11:05;20;pronto_para_conferencia;ENCONTRO 17 — 2º MA — 29/10/2026 | TESTE DE MATEMÁTICA — 15 questões
+2026-10-29;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 12 — 3º MA — 29/10/2026 | Estratégias de resolução e comparação de caminhos — números complexos
+2026-11-03;terça-feira;1MB;Matemática;1;07:00-07:45;21, 22;revisao_pedagogica;"ENCONTRO 18 — 1º MB — 03/11/2026 | Medidas de variabilidade: amplitude e desvio médio; Variância e desvio-padrão"
+2026-11-03;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 07 — 1º MB — 03/11/2026 | Revisão ENEM — resolução orientada — estatística e análise de dados
+2026-11-03;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 12 — 1º MA — 03/11/2026 | Estratégias de resolução e comparação de caminhos — estatística e análise de dados
+2026-11-03;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 07 — 2º MA — 03/11/2026 | Teste de Filosofia — módulos 8 a 10
+2026-11-03;terça-feira;2MB;Matemática;1;10:20-11:05;21;pronto_para_conferencia;ENCONTRO 18 — 2º MB — 03/11/2026 | Quadriláteros notáveis e áreas
+2026-11-03;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;21, 22;pronto_para_conferencia;"ENCONTRO 13 — 3º MB — 03/11/2026 | Polinômios: definição, grau e valor numérico; Identidade e polinômio nulo"
+2026-11-04;quarta-feira;1MB;Matemática;1;07:45-08:30;23;pronto_para_conferencia;ENCONTRO 19 — 1º MB — 04/11/2026 | Fórmulas com frequências
+2026-11-04;quarta-feira;2MB;Matemática;1;08:30-09:15;22;pronto_para_conferencia;ENCONTRO 19 — 2º MB — 04/11/2026 | Paralelogramos e casos particulares
+2026-11-04;quarta-feira;3MA;Matemática;1;09:15-10:00;21;pronto_para_conferencia;ENCONTRO 18 — 3º MA — 04/11/2026 | Polinômios: definição, grau e valor numérico
+2026-11-04;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 13 — 3º MA — 04/11/2026 | Revisão ENEM — interpretação e modelagem — polinômios e suas raízes
+2026-11-04;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 12 — 3º MB — 04/11/2026 | Estratégias de resolução e comparação de caminhos — polinômios e suas raízes
+2026-11-04;quarta-feira;2MA;Matemática;1;11:50-12:30;21;pronto_para_conferencia;ENCONTRO 18 — 2º MA — 04/11/2026 | Quadriláteros notáveis e áreas
+2026-11-05;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 07 — 2º MB — 05/11/2026 | Teste de Filosofia — módulos 8 a 10
+2026-11-05;quinta-feira;3MA;Matemática;1;07:45-08:30;22;pronto_para_conferencia;ENCONTRO 19 — 3º MA — 05/11/2026 | Identidade e polinômio nulo
+2026-11-05;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;23, 24;pronto_para_conferencia;"ENCONTRO 14 — 3º MB — 05/11/2026 | Adição e subtração de polinômios; Multiplicação de polinômios"
+2026-11-05;quinta-feira;2MA;Matemática;1;10:20-11:05;22;pronto_para_conferencia;ENCONTRO 19 — 2º MA — 05/11/2026 | Paralelogramos e casos particulares
+2026-11-05;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 14 — 3º MA — 05/11/2026 | Investigação prática e registro de dados — polinômios e suas raízes
+2026-11-06;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;23, 24;pronto_para_conferencia;"ENCONTRO 20 — 2º MA — 06/11/2026 | Trapézios e área; Congruência de triângulos: critérios"
+2026-11-06;sexta-feira;1MB;Matemática;1;09:15-10:00;24;pronto_para_conferencia;ENCONTRO 20 — 1º MB — 06/11/2026 | Aplicações das medidas de variabilidade
+2026-11-06;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 13 — 3º MB — 06/11/2026 | Revisão ENEM — interpretação e modelagem — polinômios e suas raízes
+2026-11-06;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 06 — 2º MB — 06/11/2026 | Trabalho colaborativo: padrões e regularidades — geometria e relações espaciais
+2026-11-09;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;23, 24;pronto_para_conferencia;"ENCONTRO 20 — 2º MB — 09/11/2026 | Trapézios e área; Congruência de triângulos: critérios"
+2026-11-09;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;21, 22, 23, 24, 25;revisao_pedagogica;"ENCONTRO 06 — 1º MA — 09/11/2026 | Medidas de variabilidade: amplitude e desvio médio; Variância e desvio-padrão; Fórmulas com frequências; Aplicações"
+2026-11-09;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;23, 24;pronto_para_conferencia;"ENCONTRO 20 — 3º MA — 09/11/2026 | Adição e subtração de polinômios; Multiplicação de polinômios"
+2026-11-09;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 13 — 1º MA — 09/11/2026 | Revisão ENEM — interpretação e modelagem — estatística e análise de dados
+2026-11-10;terça-feira;1MB;Matemática;1;07:00-07:45;25;pronto_para_conferencia;ENCONTRO 21 — 1º MB — 10/11/2026 | Representação gráfica: diagrama de ramos e folhas
+2026-11-10;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 08 — 1º MB — 10/11/2026 | Comunicação dos resultados da investigação — estatística e análise de dados
+2026-11-10;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 14 — 1º MA — 10/11/2026 | Investigação prática e registro de dados — estatística e análise de dados
+2026-11-10;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 08 — 2º MA — 10/11/2026 | Módulo 11 — conceitos e problemas filosóficos
+2026-11-10;terça-feira;2MB;Matemática;1;10:20-11:05;25;pronto_para_conferencia;ENCONTRO 21 — 2º MB — 10/11/2026 | Congruência: aplicações e problemas
+2026-11-10;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;25;pronto_para_conferencia;"ENCONTRO 15 — 3º MB — 10/11/2026 | Divisão de polinômios: algoritmo da chave; Retomada e exercícios: Divisão de polinômios: algoritmo da chave"
+2026-11-11;quarta-feira;1MB;Matemática;1;07:45-08:30;26;pronto_para_conferencia;ENCONTRO 22 — 1º MB — 11/11/2026 | Quartis, mediana e boxplot
+2026-11-11;quarta-feira;2MB;Matemática;1;08:30-09:15;26;pronto_para_conferencia;ENCONTRO 22 — 2º MB — 11/11/2026 | Semelhança de triângulos: razão de semelhança
+2026-11-11;quarta-feira;3MA;Matemática;1;09:15-10:00;25;pronto_para_conferencia;ENCONTRO 21 — 3º MA — 11/11/2026 | Divisão de polinômios: algoritmo da chave
+2026-11-11;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 15 — 3º MA — 11/11/2026 | Conjecturas, exemplos e contraexemplos — polinômios e suas raízes
+2026-11-11;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 14 — 3º MB — 11/11/2026 | Investigação prática e registro de dados — polinômios e suas raízes
+2026-11-11;quarta-feira;2MA;Matemática;1;11:50-12:30;25;pronto_para_conferencia;ENCONTRO 21 — 2º MA — 11/11/2026 | Congruência: aplicações e problemas
+2026-11-12;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 08 — 2º MB — 12/11/2026 | Módulo 11 — conceitos e problemas filosóficos
+2026-11-12;quinta-feira;3MA;Matemática;1;07:45-08:30;26;pronto_para_conferencia;ENCONTRO 22 — 3º MA — 12/11/2026 | Briot-Ruffini
+2026-11-12;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;26, 27;pronto_para_conferencia;"ENCONTRO 16 — 3º MB — 12/11/2026 | Briot-Ruffini; Problemas de divisão e determinação de polinômios"
+2026-11-12;quinta-feira;2MA;Matemática;1;10:20-11:05;26;pronto_para_conferencia;ENCONTRO 22 — 2º MA — 12/11/2026 | Semelhança de triângulos: razão de semelhança
+2026-11-12;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 16 — 3º MA — 12/11/2026 | Trabalho colaborativo: padrões e regularidades — polinômios e suas raízes
+2026-11-13;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;27, 28;pronto_para_conferencia;"ENCONTRO 23 — 2º MA — 13/11/2026 | Semelhança: aplicações geométricas; Relações métricas no triângulo retângulo"
+2026-11-13;sexta-feira;1MB;Matemática;1;09:15-10:00;27, 28;revisao_pedagogica;"ENCONTRO 23 — 1º MB — 13/11/2026 | Intervalo interquartil e valores atípicos; Estatística integrada: boxplot, outliers e interpretação"
+2026-11-13;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 15 — 3º MB — 13/11/2026 | Conjecturas, exemplos e contraexemplos — polinômios e suas raízes
+2026-11-13;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 07 — 2º MB — 13/11/2026 | Revisão ENEM — resolução orientada — geometria e relações espaciais
+2026-11-16;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;27, 28;pronto_para_conferencia;"ENCONTRO 23 — 2º MB — 16/11/2026 | Semelhança: aplicações geométricas; Relações métricas no triângulo retângulo"
+2026-11-16;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;26, 27, 28, 29;revisao_pedagogica;"ENCONTRO 07 — 1º MA — 16/11/2026 | Quartis, mediana e boxplot; Intervalo interquartil e valores atípicos; Estatística integrada: boxplot, outliers e i"
+2026-11-16;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;27, 28;pronto_para_conferencia;"ENCONTRO 23 — 3º MA — 16/11/2026 | Problemas de divisão e determinação de polinômios; Divisibilidade, raiz e teorema do resto"
+2026-11-16;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 15 — 1º MA — 16/11/2026 | Conjecturas, exemplos e contraexemplos — estatística e análise de dados
+2026-11-17;terça-feira;1MB;Matemática;1;07:00-07:45;29;pronto_para_conferencia;ENCONTRO 24 — 1º MB — 17/11/2026 | Geometria analítica: alinhamento de três pontos
+2026-11-17;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 09 — 1º MB — 17/11/2026 | Oficina de revisão ENEM — diagnóstico e correção — estatística e análise de dados
+2026-11-17;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 16 — 1º MA — 17/11/2026 | Trabalho colaborativo: padrões e regularidades — estatística e análise de dados
+2026-11-17;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 09 — 2º MA — 17/11/2026 | Produção textual em sala 2 — módulo 11
+2026-11-17;terça-feira;2MB;Matemática;1;10:20-11:05;29;pronto_para_conferencia;ENCONTRO 24 — 2º MB — 17/11/2026 | Relações métricas: problemas e circunferência
+2026-11-17;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;28, 29;pronto_para_conferencia;"ENCONTRO 17 — 3º MB — 17/11/2026 | Divisibilidade, raiz e teorema do resto; Teorema de D'Alembert"
+2026-11-18;quarta-feira;1MB;Matemática;1;07:45-08:30;30;pronto_para_conferencia;ENCONTRO 25 — 1º MB — 18/11/2026 | Equação geral da reta
+2026-11-18;quarta-feira;2MB;Matemática;1;08:30-09:15;;pronto_para_conferencia;ENCONTRO 25 — 2º MB — 18/11/2026 | Retomada e exercícios: Relações métricas: problemas e circunferência
+2026-11-18;quarta-feira;3MA;Matemática;1;09:15-10:00;29;pronto_para_conferencia;ENCONTRO 24 — 3º MA — 18/11/2026 | Teorema de D'Alembert
+2026-11-18;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 17 — 3º MA — 18/11/2026 | Revisão ENEM — resolução orientada — polinômios e suas raízes
+2026-11-18;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 16 — 3º MB — 18/11/2026 | Trabalho colaborativo: padrões e regularidades — polinômios e suas raízes
+2026-11-18;quarta-feira;2MA;Matemática;1;11:50-12:30;29;pronto_para_conferencia;ENCONTRO 24 — 2º MA — 18/11/2026 | Relações métricas: problemas e circunferência
+2026-11-19;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 09 — 2º MB — 19/11/2026 | Produção textual em sala 2 — módulo 11
+2026-11-19;quinta-feira;3MA;Matemática;1;07:45-08:30;;pronto_para_conferencia;ENCONTRO 25 — 3º MA — 19/11/2026 | Retomada e exercícios: Teorema de D'Alembert
+2026-11-19;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;30;pronto_para_conferencia;"ENCONTRO 18 — 3º MB — 19/11/2026 | Retomada e exercícios: Teorema de D'Alembert; Equações algébricas e Teorema Fundamental da Álgebra"
+2026-11-19;quinta-feira;2MA;Matemática;1;10:20-11:05;;pronto_para_conferencia;ENCONTRO 25 — 2º MA — 19/11/2026 | Retomada e exercícios: Relações métricas: problemas e circunferência
+2026-11-19;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 18 — 3º MA — 19/11/2026 | Comunicação dos resultados da investigação — polinômios e suas raízes
+2026-11-23;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;30, 31;pronto_para_conferencia;"ENCONTRO 26 — 2º MB — 23/11/2026 | Teorema de Tales; Retas e circunferência: secante e tangente"
+2026-11-23;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;30, 31, 32, 33, 34;revisao_pedagogica;"ENCONTRO 08 — 1º MA — 23/11/2026 | Equação geral da reta; Inclinação e coeficiente angular; Equação reduzida da reta; Retas paralelas, coincidentes e "
+2026-11-23;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;30, 31;pronto_para_conferencia;"ENCONTRO 26 — 3º MA — 23/11/2026 | Equações algébricas e Teorema Fundamental da Álgebra; Raízes, multiplicidade e conjugados"
+2026-11-23;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 17 — 1º MA — 23/11/2026 | Revisão ENEM — resolução orientada — estatística e análise de dados
+2026-11-24;terça-feira;1MB;Matemática;1;07:00-07:45;31;pronto_para_conferencia;ENCONTRO 26 — 1º MB — 24/11/2026 | Inclinação e coeficiente angular
+2026-11-24;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 10 — 1º MB — 24/11/2026 | Síntese investigativa e autoavaliação — estatística e análise de dados
+2026-11-24;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 18 — 1º MA — 24/11/2026 | Comunicação dos resultados da investigação — estatística e análise de dados
+2026-11-24;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 10 — 2º MA — 24/11/2026 | Módulo 12 — leitura crítica e confronto de perspectivas
+2026-11-24;terça-feira;2MB;Matemática;1;10:20-11:05;32;pronto_para_conferencia;ENCONTRO 27 — 2º MB — 24/11/2026 | Arcos, ângulos e potência de ponto
+2026-11-24;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;31, 32;pronto_para_conferencia;"ENCONTRO 19 — 3º MB — 24/11/2026 | Raízes, multiplicidade e conjugados; Lista II: revisão de polinômios"
+2026-11-25;quarta-feira;1MB;Matemática;1;07:45-08:30;32;pronto_para_conferencia;ENCONTRO 27 — 1º MB — 25/11/2026 | Equação reduzida da reta
+2026-11-25;quarta-feira;2MB;Matemática;1;08:30-09:15;33;pronto_para_conferencia;ENCONTRO 28 — 2º MB — 25/11/2026 | Trigonometria no triângulo retângulo
+2026-11-25;quarta-feira;3MA;Matemática;1;09:15-10:00;32;pronto_para_conferencia;ENCONTRO 27 — 3º MA — 25/11/2026 | Lista II: revisão de polinômios
+2026-11-25;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 19 — 3º MA — 25/11/2026 | Oficina de revisão ENEM — diagnóstico e correção — polinômios e suas raízes
+2026-11-25;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 17 — 3º MB — 25/11/2026 | Revisão ENEM — resolução orientada — polinômios e suas raízes
+2026-11-25;quarta-feira;2MA;Matemática;1;11:50-12:30;30;pronto_para_conferencia;ENCONTRO 26 — 2º MA — 25/11/2026 | Teorema de Tales
+2026-11-26;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 10 — 2º MB — 26/11/2026 | Módulo 12 — leitura crítica e confronto de perspectivas
+2026-11-26;quinta-feira;3MA;Matemática;1;07:45-08:30;33;pronto_para_conferencia;ENCONTRO 28 — 3º MA — 26/11/2026 | Cálculo de raízes: panorama e relações de Girard
+2026-11-26;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;33, 34;pronto_para_conferencia;"ENCONTRO 20 — 3º MB — 26/11/2026 | Cálculo de raízes: panorama e relações de Girard; Girard: aplicações e reconstrução de equações"
+2026-11-26;quinta-feira;2MA;Matemática;1;10:20-11:05;31;pronto_para_conferencia;ENCONTRO 27 — 2º MA — 26/11/2026 | Retas e circunferência: secante e tangente
+2026-11-26;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 20 — 3º MA — 26/11/2026 | Síntese investigativa e autoavaliação — polinômios e suas raízes
+2026-11-27;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;32, 33;pronto_para_conferencia;"ENCONTRO 28 — 2º MA — 27/11/2026 | Arcos, ângulos e potência de ponto; Trigonometria no triângulo retângulo"
+2026-11-27;sexta-feira;1MB;Matemática;1;09:15-10:00;33, 34;revisao_pedagogica;"ENCONTRO 28 — 1º MB — 27/11/2026 | Retas paralelas, coincidentes e concorrentes; Ponto de interseção entre retas"
+2026-11-27;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 18 — 3º MB — 27/11/2026 | Comunicação dos resultados da investigação — polinômios e suas raízes
+2026-11-27;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 08 — 2º MB — 27/11/2026 | Comunicação dos resultados da investigação — geometria e relações espaciais
+2026-11-30;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;34, 35;pronto_para_conferencia;"ENCONTRO 29 — 2º MB — 30/11/2026 | Ângulos notáveis de 30°, 45° e 60°; Aplicações trigonométricas: alturas e distâncias"
+2026-11-30;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;35, 36, 39;revisao_pedagogica;"ENCONTRO 09 — 1º MA — 30/11/2026 | Retas perpendiculares; Circunferência: forma reduzida; SIMULADO DA PROVA — 40 questões"
+2026-11-30;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;34, 35;pronto_para_conferencia;"ENCONTRO 29 — 3º MA — 30/11/2026 | Girard: aplicações e reconstrução de equações; Raízes racionais"
+2026-11-30;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 19 — 1º MA — 30/11/2026 | Oficina de revisão ENEM — diagnóstico e correção — estatística e análise de dados
+2026-12-01;terça-feira;1MB;Matemática;1;07:00-07:45;35;pronto_para_conferencia;ENCONTRO 29 — 1º MB — 01/12/2026 | Retas perpendiculares
+2026-12-01;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 11 — 1º MB — 01/12/2026 | Questão de investigação e formulação de hipóteses — estatística e análise de dados
+2026-12-01;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 20 — 1º MA — 01/12/2026 | Síntese investigativa e autoavaliação — estatística e análise de dados
+2026-12-01;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 11 — 2º MA — 01/12/2026 | Produção textual em sala 3 e revisão para a prova
+2026-12-01;terça-feira;2MB;Matemática;1;10:20-11:05;36;pronto_para_conferencia;ENCONTRO 30 — 2º MB — 01/12/2026 | Lei dos senos
+2026-12-01;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;35;pronto_para_conferencia;"ENCONTRO 21 — 3º MB — 01/12/2026 | Retomada e exercícios: Girard: aplicações e reconstrução de equações; Raízes racionais"
+2026-12-02;quarta-feira;1MB;Matemática;1;07:45-08:30;36;pronto_para_conferencia;ENCONTRO 30 — 1º MB — 02/12/2026 | Circunferência: forma reduzida
+2026-12-02;quarta-feira;2MB;Matemática;1;08:30-09:15;37;pronto_para_conferencia;ENCONTRO 31 — 2º MB — 02/12/2026 | Lei dos cossenos
+2026-12-02;quarta-feira;3MA;Matemática;1;09:15-10:00;36;pronto_para_conferencia;ENCONTRO 30 — 3º MA — 02/12/2026 | Raízes racionais e fatoração completa
+2026-12-02;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 21 — 3º MA — 02/12/2026 | Questão de investigação e formulação de hipóteses — polinômios e suas raízes
+2026-12-02;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 19 — 3º MB — 02/12/2026 | Oficina de revisão ENEM — diagnóstico e correção — polinômios e suas raízes
+2026-12-02;quarta-feira;2MA;Matemática;1;11:50-12:30;34;pronto_para_conferencia;ENCONTRO 29 — 2º MA — 02/12/2026 | Ângulos notáveis de 30°, 45° e 60°
+2026-12-03;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 11 — 2º MB — 03/12/2026 | Produção textual em sala 3 e revisão para a prova
+2026-12-03;quinta-feira;3MA;Matemática;1;07:45-08:30;37;pronto_para_conferencia;ENCONTRO 31 — 3º MA — 03/12/2026 | Outros métodos: interpretação gráfica e localização de raízes
+2026-12-03;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;36, 37;pronto_para_conferencia;"ENCONTRO 22 — 3º MB — 03/12/2026 | Raízes racionais e fatoração completa; Outros métodos: interpretação gráfica e localização de raízes"
+2026-12-03;quinta-feira;2MA;Matemática;1;10:20-11:05;35;pronto_para_conferencia;ENCONTRO 30 — 2º MA — 03/12/2026 | Aplicações trigonométricas: alturas e distâncias
+2026-12-03;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 22 — 3º MA — 03/12/2026 | Estratégias de resolução e comparação de caminhos — polinômios e suas raízes
+2026-12-04;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;36, 37;pronto_para_conferencia;"ENCONTRO 31 — 2º MA — 04/12/2026 | Lei dos senos; Lei dos cossenos"
+2026-12-04;sexta-feira;1MB;Matemática;1;09:15-10:00;37;pronto_para_conferencia;ENCONTRO 31 — 1º MB — 04/12/2026 | Circunferência: forma geral e reconhecimento
+2026-12-04;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 20 — 3º MB — 04/12/2026 | Síntese investigativa e autoavaliação — polinômios e suas raízes
+2026-12-04;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 09 — 2º MB — 04/12/2026 | Oficina de revisão ENEM — diagnóstico e correção — geometria e relações espaciais
+2026-12-07;segunda-feira;2MB;Matemática;2;07:00-07:45, 07:45-08:30;38;pronto_para_conferencia;"ENCONTRO 32 — 2º MB — 07/12/2026 | Teorema das áreas; Retomada e exercícios: Teorema das áreas"
+2026-12-07;segunda-feira;1MA;Matemática;2;08:30-09:15, 09:15-10:00;37, 38, 40;revisao_pedagogica;"ENCONTRO 10 — 1º MA — 07/12/2026 | Circunferência: forma geral e reconhecimento; Lista II: revisão integrada de Estatística e Geometria Analítica; PRO"
+2026-12-07;segunda-feira;3MA;Matemática;2;10:20-11:05, 11:05-11:50;38;pronto_para_conferencia;"ENCONTRO 32 — 3º MA — 07/12/2026 | Método da bisseção; Retomada e exercícios: Método da bisseção"
+2026-12-07;segunda-feira;1MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 21 — 1º MA — 07/12/2026 | Questão de investigação e formulação de hipóteses — estatística e análise de dados
+2026-12-08;terça-feira;1MB;Matemática;1;07:00-07:45;38;pronto_para_conferencia;ENCONTRO 32 — 1º MB — 08/12/2026 | Lista II: revisão integrada de Estatística e Geometria Analítica
+2026-12-08;terça-feira;1MB;Investigação Matemática;1;07:45-08:30;;proposta_para_aprovacao;ENCONTRO 12 — 1º MB — 08/12/2026 | Estratégias de resolução e comparação de caminhos — estatística e análise de dados
+2026-12-08;terça-feira;1MA;Investigação Matemática;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 22 — 1º MA — 08/12/2026 | Estratégias de resolução e comparação de caminhos — estatística e análise de dados
+2026-12-08;terça-feira;2MA;Filosofia;1;09:15-10:00;;proposta_para_aprovacao;ENCONTRO 12 — 2º MA — 08/12/2026 | Prova de Filosofia — módulos 11 e 12
+2026-12-08;terça-feira;2MB;Matemática;1;10:20-11:05;39;pronto_para_conferencia;ENCONTRO 33 — 2º MB — 08/12/2026 | SIMULADO DA PROVA — 40 questões
+2026-12-08;terça-feira;3MB;Matemática;2;11:05-11:50, 11:50-12:30;38, 39;pronto_para_conferencia;"ENCONTRO 23 — 3º MB — 08/12/2026 | Método da bisseção; SIMULADO DA PROVA — 40 questões"
+2026-12-09;quarta-feira;1MB;Matemática;1;07:45-08:30;39;pronto_para_conferencia;ENCONTRO 33 — 1º MB — 09/12/2026 | SIMULADO DA PROVA — 40 questões
+2026-12-09;quarta-feira;2MB;Matemática;1;08:30-09:15;40;pronto_para_conferencia;ENCONTRO 34 — 2º MB — 09/12/2026 | PROVA DE MATEMÁTICA — 20 questões
+2026-12-09;quarta-feira;3MA;Matemática;1;09:15-10:00;39;pronto_para_conferencia;ENCONTRO 33 — 3º MA — 09/12/2026 | SIMULADO DA PROVA — 40 questões
+2026-12-09;quarta-feira;3MA;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 23 — 3º MA — 09/12/2026 | Revisão ENEM — interpretação e modelagem — polinômios e suas raízes
+2026-12-09;quarta-feira;3MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 21 — 3º MB — 09/12/2026 | Questão de investigação e formulação de hipóteses — polinômios e suas raízes
+2026-12-09;quarta-feira;2MA;Matemática;1;11:50-12:30;38;pronto_para_conferencia;ENCONTRO 32 — 2º MA — 09/12/2026 | Teorema das áreas
+2026-12-10;quinta-feira;2MB;Filosofia;1;07:00-07:45;;proposta_para_aprovacao;ENCONTRO 12 — 2º MB — 10/12/2026 | Prova de Filosofia — módulos 11 e 12
+2026-12-10;quinta-feira;3MA;Matemática;1;07:45-08:30;40;pronto_para_conferencia;ENCONTRO 34 — 3º MA — 10/12/2026 | PROVA DE MATEMÁTICA — 20 questões
+2026-12-10;quinta-feira;3MB;Matemática;2;08:30-09:15, 09:15-10:00;40;pronto_para_conferencia;"ENCONTRO 24 — 3º MB — 10/12/2026 | Retomada e exercícios: Método da bisseção; PROVA DE MATEMÁTICA — 20 questões"
+2026-12-10;quinta-feira;2MA;Matemática;1;10:20-11:05;39;pronto_para_conferencia;ENCONTRO 33 — 2º MA — 10/12/2026 | SIMULADO DA PROVA — 40 questões
+2026-12-10;quinta-feira;3MA;Investigação Matemática;1;11:50-12:30;;proposta_para_aprovacao;ENCONTRO 24 — 3º MA — 10/12/2026 | Investigação prática e registro de dados — polinômios e suas raízes
+2026-12-11;sexta-feira;2MA;Matemática;2;07:00-07:45, 07:45-08:30;40;pronto_para_conferencia;"ENCONTRO 34 — 2º MA — 11/12/2026 | Retomada e exercícios: Teorema das áreas; PROVA DE MATEMÁTICA — 20 questões"
+2026-12-11;sexta-feira;1MB;Matemática;1;09:15-10:00;40;pronto_para_conferencia;ENCONTRO 34 — 1º MB — 11/12/2026 | PROVA DE MATEMÁTICA — 20 questões
+2026-12-11;sexta-feira;3MB;Investigação Matemática;1;10:20-11:05;;proposta_para_aprovacao;ENCONTRO 22 — 3º MB — 11/12/2026 | Estratégias de resolução e comparação de caminhos — polinômios e suas raízes
+2026-12-11;sexta-feira;2MB;Investigação Matemática;1;11:05-11:50;;proposta_para_aprovacao;ENCONTRO 10 — 2º MB — 11/12/2026 | Síntese investigativa e autoavaliação — geometria e relações espaciais
