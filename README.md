@@ -1,3 +1,11 @@
+## Versão 1.0.10 — Filosofia (7Edu)
+
+O 7Edu usa uma sequência própria para Filosofia nas turmas 2MA e 2MB, com os **módulos 8 a 12**, alternando **aulas expositivas e práticas de exercícios**. São **12 encontros na 2MA** (5 expositivos / 7 práticos) e **11 na 2MB** (5 expositivos / 6 práticos), com propostas detalhadas e exercícios. Datas ainda não abertas permanecem projetadas e bloqueadas. Não foi atribuída prova ou teste a uma data sem confirmação.
+
+Fontes: `extension/data/plano_filosofia_7edu_2026.json`, `relatorios/plano_filosofia_7edu_modulos_8_12.md` e `CORRECAO_v1.0.10_FILOSOFIA_7EDU.md`. O E-Class original e as demais disciplinas do 7Edu foram preservados. Atualize os arquivos da extensão instalada sem excluir a pasta nem seu armazenamento local. Confirme o conteúdo já ministrado antes de qualquer lançamento.
+
+---
+
 ## Versão 1.0.8 — Mapeamento auditado do 7Edu (19/11/2026)
 
 - Mantém o arquivo E-Class original `extension/data/aulas_4bim_2026.json` (**284 postagens**) sem alterações.
@@ -7,15 +15,15 @@
 - Exportação `.md` continua disponível para coletar novos dias abertos pelo 7Edu.
 - Detalhes em `CORRECAO_v1.0.8_REMAPEAMENTO_7EDU.md` e `relatorios/auditoria_remapeamento_7edu_2026.md`.
 
-> **Versão atual: 1.0.7 (19/11/2026).** Correção de segurança e calendário do 7Edu: exportação `.md` por disciplina ou de todas as disciplinas, com data, número de aulas, horários e situação. O 7Edu passa a pré-validar todo o lote antes da primeira gravação. O calendário do E-Class segue **independente**. Leia [`CORRECAO_v1.0.7_CALENDARIO_7EDU.md`](CORRECAO_v1.0.7_CALENDARIO_7EDU.md).
+> **Histórico: 1.0.7 (19/11/2026).** Correção de segurança e calendário do 7Edu: exportação `.md` por disciplina ou de todas as disciplinas, com data, número de aulas, horários e situação. O 7Edu passa a pré-validar todo o lote antes da primeira gravação. O calendário do E-Class segue **independente**. Leia [`CORRECAO_v1.0.7_CALENDARIO_7EDU.md`](CORRECAO_v1.0.7_CALENDARIO_7EDU.md).
 
 > **Histórico: 1.0.6 (19/11/2026).** A extensão agora lança aulas no E-Class **e** no 7Edu. O E-Class manteve seu fluxo; o 7Edu usa o diário de "Aulas Ministradas" e o formato de gravação identificado no HAR. **Leia `CORRECAO_v1.0.6_7EDU.md` para instalar, testar e conhecer as limitações.** Os parágrafos abaixo descrevem a origem e o histórico da versão 1.0.4/1.0.5.
 
-> **Versão atual: 1.0.4 (17/11/2026).** A extensão agora tenta renovar o Bearer por uma rota oficial do portal se uma consulta GET receber 401. O refresh é feito apenas na aba autenticada; o token não é salvo na extensão. Não há repetição automática de POST. Consulte `CORRECAO_v1.0.4.md`. Informações sobre autenticação de versões anteriores abaixo são históricas e não descrevem integralmente a v1.0.4.
+> **Histórico: 1.0.4 (17/11/2026).** A extensão agora tenta renovar o Bearer por uma rota oficial do portal se uma consulta GET receber 401. O refresh é feito apenas na aba autenticada; o token não é salvo na extensão. Não há repetição automática de POST. Consulte `CORRECAO_v1.0.4.md`. Informações sobre autenticação de versões anteriores abaixo são históricas e não descrevem integralmente a v1.0.4.
 
 > **Atualização 1.0.3:** a extensão agora usa o token da sessão do próprio portal exclusivamente no contexto da página. Consulte `CORRECAO_v1.0.3.md` para a explicação e precauções.
 
-# Aulas do 4º bimestre de 2026 — E-Class + 7Edu (extensão v1.0.7)
+# Aulas do 4º bimestre de 2026 — E-Class + 7Edu (extensão v1.0.10)
 
 **Colégio Adventista de Itabuna · Prof. Miquéias Amorim · 21/09 a 11/12/2026**
 

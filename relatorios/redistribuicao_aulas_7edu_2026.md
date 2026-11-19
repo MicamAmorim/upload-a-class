@@ -5,7 +5,7 @@
 - Calendário oficial consultado em: **19/11/2026**
 - Datas no calendário exportado: **221**
 - Datas projetadas por recorrência semanal até 11/12/2026: **78**, SEM confirmação do 7Edu
-- O E-Class original não foi alterado. Tópicos de Matemática vêm dos 40 planos individuais por série; demais disciplinas usam propostas do pacote E-Class, identificadas para aprovação.
+- O E-Class original não foi alterado. Matemática usa 40 planos individuais por série; Investigação Matemática mantém propostas do E-Class; Filosofia usa cinco módulos informados pelo professor, com expositivas e práticas de exercícios.
 - 2MA / Investigação Matemática recebe **proposta adaptada** da sequência 2MB e exige aprovação expressa.
 - Registros anteriores consomem posições na sequência apenas **como hipótese**, não como demonstração de conteúdo efetivamente ministrado. Verifique o histórico antes de publicar aulas subsequentes.
 - Cada período recebe até duas unidades do plano; encontros com duas unidades em um período exigem aprovação de condensação.
@@ -22,7 +22,7 @@
 | 2MA / Filosofia | 12 | 9 | 3 | 0 |
 | 2MA / Investigação Matemática | 10 | 7 | 3 | 0 |
 | 2MA / Matemática | 40 | 31 | 12 | 0 |
-| 2MB / Filosofia | 12 | 8 | 3 | 0 |
+| 2MB / Filosofia | 11 | 8 | 3 | 0 |
 | 2MB / Investigação Matemática | 10 | 7 | 3 | 0 |
 | 2MB / Matemática | 40 | 30 | 12 | 0 |
 | 3MA / Investigação Matemática | 24 | 17 | 6 | 0 |
@@ -114,19 +114,19 @@
 | 1MB / Matemática | 2026-12-08 | 1 | projecao_nao_aberta | PLANO_1_37; PLANO_1_38 — Circunferência: forma geral e reconhecimento; Lista II: revisão integrada de Estatística e Geometria Analítica |
 | 1MB / Matemática | 2026-12-09 | 1 | projecao_nao_aberta | PLANO_1_39 — SIMULADO DA PROVA — 40 questões |
 | 1MB / Matemática | 2026-12-11 | 1 | projecao_nao_aberta | PLANO_1_40 — PROVA DE MATEMÁTICA — 20 questões |
-| 2MA / Filosofia | 2026-09-22 | 1 | proposta_para_aprovacao | 2026-09-22_2MA_FIL — Módulo 8 — leitura guiada e levantamento de questões |
+| 2MA / Filosofia | 2026-09-22 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_01_M08-E — Aula expositiva — Filosofia ética — fundamentos da reflexão moral |
 | 2MA / Filosofia | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 2MA / Filosofia | 2026-09-29 | 1 | proposta_para_aprovacao | 2026-09-29_2MA_FIL — Módulo 8 — situações-problema e argumentação |
-| 2MA / Filosofia | 2026-10-06 | 1 | proposta_para_aprovacao | 2026-10-06_2MA_FIL — Módulo 9 — leitura comparativa de argumentos |
-| 2MA / Filosofia | 2026-10-13 | 1 | proposta_para_aprovacao | 2026-10-13_2MA_FIL — Produção textual em sala 1 — módulos 8 e 9 |
-| 2MA / Filosofia | 2026-10-20 | 1 | proposta_para_aprovacao | 2026-10-20_2MA_FIL — Módulo 10 — leitura, interpretação e discussão |
-| 2MA / Filosofia | 2026-10-27 | 1 | proposta_para_aprovacao | 2026-10-27_2MA_FIL — Revisão para o teste — módulos 8 a 10 |
-| 2MA / Filosofia | 2026-11-03 | 1 | proposta_para_aprovacao | 2026-11-03_2MA_FIL — Teste de Filosofia — módulos 8 a 10 |
-| 2MA / Filosofia | 2026-11-10 | 1 | proposta_para_aprovacao | 2026-11-10_2MA_FIL — Módulo 11 — conceitos e problemas filosóficos |
-| 2MA / Filosofia | 2026-11-17 | 1 | proposta_para_aprovacao | 2026-11-17_2MA_FIL — Produção textual em sala 2 — módulo 11 |
-| 2MA / Filosofia | 2026-11-24 | 1 | projecao_nao_aberta | 2026-11-24_2MA_FIL — Módulo 12 — leitura crítica e confronto de perspectivas |
-| 2MA / Filosofia | 2026-12-01 | 1 | projecao_nao_aberta | 2026-12-01_2MA_FIL — Produção textual em sala 3 e revisão para a prova |
-| 2MA / Filosofia | 2026-12-08 | 1 | projecao_nao_aberta | 2026-12-08_2MA_FIL — Prova de Filosofia — módulos 11 e 12 |
+| 2MA / Filosofia | 2026-09-29 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_02_M08-P — Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais |
+| 2MA / Filosofia | 2026-10-06 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_03_M09-E — Aula expositiva — Filosofia política — poder, Estado e justiça |
+| 2MA / Filosofia | 2026-10-13 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_04_M09-P — Aula prática de exercícios — Filosofia política — estudo de caso e argumentação |
+| 2MA / Filosofia | 2026-10-20 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_05_M10-E — Aula expositiva — Ideologia — conceitos e interpretação crítica |
+| 2MA / Filosofia | 2026-10-27 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_06_M10-P — Aula prática de exercícios — Ideologia — leitura crítica de mensagens |
+| 2MA / Filosofia | 2026-11-03 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_07_M11-E — Aula expositiva — Filosofia da ciência — conhecimento, método e evidências |
+| 2MA / Filosofia | 2026-11-10 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_08_M11-P — Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências |
+| 2MA / Filosofia | 2026-11-17 | 1 | proposta_para_aprovacao | FIL_7EDU_2MA_09_M12-E — Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade |
+| 2MA / Filosofia | 2026-11-24 | 1 | projecao_nao_aberta | FIL_7EDU_2MA_10_M12-P — Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios |
+| 2MA / Filosofia | 2026-12-01 | 1 | projecao_nao_aberta | FIL_7EDU_2MA_11_SINT-P1 — Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho |
+| 2MA / Filosofia | 2026-12-08 | 1 | projecao_nao_aberta | FIL_7EDU_2MA_12_SINT-P2 — Aula prática de exercícios — Oficina de revisão final — argumentação filosófica e resolução de exercícios |
 | 2MA / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_2MB_INV — Questão de investigação e formulação de hipóteses — cilindro, cone e esfera |
 | 2MA / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
 | 2MA / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_2MB_INV — Estratégias de resolução e comparação de caminhos — cilindro, cone e esfera |
@@ -172,18 +172,18 @@
 | 2MA / Matemática | 2026-12-09 | 1 | projecao_nao_aberta | PLANO_2_40 — PROVA DE MATEMÁTICA — 20 questões |
 | 2MA / Matemática | 2026-12-10 | 1 | projecao_nao_aberta | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
 | 2MA / Matemática | 2026-12-11 | 2 | projecao_nao_aberta | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 2MB / Filosofia | 2026-09-24 | 1 | proposta_para_aprovacao | 2026-09-24_2MB_FIL — Módulo 8 — leitura guiada e levantamento de questões |
+| 2MB / Filosofia | 2026-09-24 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_01_M08-E — Aula expositiva — Filosofia ética — fundamentos da reflexão moral |
 | 2MB / Filosofia | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
-| 2MB / Filosofia | 2026-10-01 | 1 | proposta_para_aprovacao | 2026-10-01_2MB_FIL — Módulo 8 — situações-problema e argumentação |
-| 2MB / Filosofia | 2026-10-08 | 1 | proposta_para_aprovacao | 2026-10-08_2MB_FIL — Módulo 9 — leitura comparativa de argumentos |
-| 2MB / Filosofia | 2026-10-22 | 1 | proposta_para_aprovacao | 2026-10-15_2MB_FIL — Produção textual em sala 1 — módulos 8 e 9 |
-| 2MB / Filosofia | 2026-10-29 | 1 | revisao_pedagogica | 2026-10-22_2MB_FIL; 2026-10-29_2MB_FIL — Módulo 10 — leitura, interpretação e discussão; Revisão para o teste — módulos 8 a 10 |
-| 2MB / Filosofia | 2026-11-05 | 1 | proposta_para_aprovacao | 2026-11-05_2MB_FIL — Teste de Filosofia — módulos 8 a 10 |
-| 2MB / Filosofia | 2026-11-12 | 1 | proposta_para_aprovacao | 2026-11-12_2MB_FIL — Módulo 11 — conceitos e problemas filosóficos |
-| 2MB / Filosofia | 2026-11-19 | 1 | proposta_para_aprovacao | 2026-11-19_2MB_FIL — Produção textual em sala 2 — módulo 11 |
-| 2MB / Filosofia | 2026-11-26 | 1 | projecao_nao_aberta | 2026-11-26_2MB_FIL — Módulo 12 — leitura crítica e confronto de perspectivas |
-| 2MB / Filosofia | 2026-12-03 | 1 | projecao_nao_aberta | 2026-12-03_2MB_FIL — Produção textual em sala 3 e revisão para a prova |
-| 2MB / Filosofia | 2026-12-10 | 1 | projecao_nao_aberta | 2026-12-10_2MB_FIL — Prova de Filosofia — módulos 11 e 12 |
+| 2MB / Filosofia | 2026-10-01 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_02_M08-P — Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais |
+| 2MB / Filosofia | 2026-10-08 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_03_M09-E — Aula expositiva — Filosofia política — poder, Estado e justiça |
+| 2MB / Filosofia | 2026-10-22 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_04_M09-P — Aula prática de exercícios — Filosofia política — estudo de caso e argumentação |
+| 2MB / Filosofia | 2026-10-29 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_05_M10-E — Aula expositiva — Ideologia — conceitos e interpretação crítica |
+| 2MB / Filosofia | 2026-11-05 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_06_M10-P — Aula prática de exercícios — Ideologia — leitura crítica de mensagens |
+| 2MB / Filosofia | 2026-11-12 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_07_M11-E — Aula expositiva — Filosofia da ciência — conhecimento, método e evidências |
+| 2MB / Filosofia | 2026-11-19 | 1 | proposta_para_aprovacao | FIL_7EDU_2MB_08_M11-P — Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências |
+| 2MB / Filosofia | 2026-11-26 | 1 | projecao_nao_aberta | FIL_7EDU_2MB_09_M12-E — Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade |
+| 2MB / Filosofia | 2026-12-03 | 1 | projecao_nao_aberta | FIL_7EDU_2MB_10_M12-P — Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios |
+| 2MB / Filosofia | 2026-12-10 | 1 | projecao_nao_aberta | FIL_7EDU_2MB_11_SINT-P1 — Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho |
 | 2MB / Investigação Matemática | 2026-09-25 | 1 | proposta_para_aprovacao | 2026-09-25_2MB_INV — Questão de investigação e formulação de hipóteses — cilindro, cone e esfera |
 | 2MB / Investigação Matemática | 2026-09-27 | 2 | domingo_atipico | SEM CONTEÚDO — [SEM CONTEÚDO DEFINIDO] |
 | 2MB / Investigação Matemática | 2026-10-02 | 1 | proposta_para_aprovacao | 2026-10-02_2MB_INV — Estratégias de resolução e comparação de caminhos — cilindro, cone e esfera |

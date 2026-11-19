@@ -1,5 +1,5 @@
 {
-  "versao": "1.0.9",
+  "versao": "1.0.10",
   "sistema": "7edu",
   "ano": 2026,
   "periodo": "4º bimestre",
@@ -9,15 +9,15 @@
     "projecoes_nao_oficiais": true,
     "requer_nova_exportacao_antes_de_publicar": true
   },
-  "metodologia": "Redistribuição cronológica de unidades dos planos DOCX e propostas E-Class, por períodos reais; previsões futuras sem autorização de postagem. Datas registradas não comprovam conteúdos.",
+  "metodologia": "Redistribuição cronológica de unidades dos planos DOCX e propostas de Investigação Matemática do E-Class; Filosofia usa os módulos 8 a 12 fornecidos pelo docente, alternando aulas expositivas e práticas de exercícios. Projeções sem autorização de postagem; registros anteriores não comprovam conteúdo.",
   "estatisticas": {
     "por_situacao": {
-      "revisao_pedagogica": 14,
+      "revisao_pedagogica": 13,
       "domingo_atipico": 14,
       "projecao_nao_aberta": 78,
       "registrado_7edu": 18,
       "pronto_para_conferencia": 102,
-      "proposta_para_aprovacao": 68,
+      "proposta_para_aprovacao": 69,
       "feriado_a_conferir": 5
     },
     "datas_reais": 221,
@@ -135,15 +135,14 @@
     {
       "turma": "2MB",
       "disciplina": "Filosofia",
-      "unidades_fonte": 12,
+      "unidades_fonte": 11,
       "periodos_disponiveis_na_fotografia": 8,
       "periodos_projetados_nao_abertos": 3,
-      "unidades_reservadas": 12,
+      "unidades_reservadas": 11,
       "unidades_aguardando_data": 0,
       "situacoes": {
-        "proposta_para_aprovacao": 7,
+        "proposta_para_aprovacao": 8,
         "domingo_atipico": 1,
-        "revisao_pedagogica": 1,
         "projecao_nao_aberta": 3
       }
     },
@@ -4716,14 +4715,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-09-22_2MA_FIL"
+        "FIL_7EDU_2MA_01_M08-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 22/09/2026 · Módulo 8 — leitura guiada e levantamento de questões",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 22/09/2026</strong></p>\n<p>Data do 7Edu: 22/09/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Módulo 8 — leitura guiada e levantamento de questões</strong></p>\n<p>📖 Leitura prévia: Ler o início do módulo 8 e selecionar dois conceitos para discussão.<br>🧠 Em classe:<br>09:15–10:00 — Retomar conceitos centrais do módulo 8; formular perguntas filosóficas e registrar argumentos.<br>✏️ Preparação do aluno: Registrar definições e duas perguntas filosóficas.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 22/09/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Módulo 8 — leitura guiada e levantamento de questões\n📖 Leitura prévia: Ler o início do módulo 8 e selecionar dois conceitos para discussão.\n🧠 Em classe:\n09:15–10:00 — Retomar conceitos centrais do módulo 8; formular perguntas filosóficas e registrar argumentos.\n✏️ Preparação do aluno: Registrar definições e duas perguntas filosóficas.",
+      "titulo": "2MA · Filosofia · 22/09/2026 · Aula expositiva — Filosofia ética — fundamentos da reflexão moral",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 22/09/2026</strong></p>\n<p>Data do 7Edu: 22/09/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia ética — fundamentos da reflexão moral</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 8<br>Objetivo: Diferenciar ética e moral e compreender liberdade, escolhas, responsabilidade e justificativas de uma ação.<br>Roteiro (45 min): Abertura com pergunta-problema (5 min); explicação e exemplos sobre ética, moral, valores e responsabilidade (25 min); síntese e perguntas da turma (15 min).<br>Exercícios de aprendizagem:<br>1. Explique com suas palavras a diferença entre ética e moral.<br>2. Apresente uma escolha cotidiana que envolva responsabilidade e justifique uma decisão.<br>Registro/atividade: Registro dos conceitos centrais e de um exemplo argumentado.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 22/09/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula expositiva — Filosofia ética — fundamentos da reflexão moral\nTipo de aula: Aula expositiva\nMódulo(s): 8\nObjetivo: Diferenciar ética e moral e compreender liberdade, escolhas, responsabilidade e justificativas de uma ação.\nRoteiro (45 min): Abertura com pergunta-problema (5 min); explicação e exemplos sobre ética, moral, valores e responsabilidade (25 min); síntese e perguntas da turma (15 min).\nExercícios de aprendizagem:\n1. Explique com suas palavras a diferença entre ética e moral.\n2. Apresente uma escolha cotidiana que envolva responsabilidade e justifique uma decisão.\nRegistro/atividade: Registro dos conceitos centrais e de um exemplo argumentado.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -4732,11 +4734,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-09-22_2MA_FIL"
+          "FIL_7EDU_2MA_01_M08-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-09-22_2MA_FIL"
+            "FIL_7EDU_2MA_01_M08-E"
           ]
         ],
         "requer": {
@@ -4773,7 +4775,8 @@
       "quantidade_periodos": 2,
       "planos_originais": [],
       "fonte_unidades": [],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [],
       "status": "domingo_atipico",
       "observacao": "Dia atípico: domingo, requer conferência. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
       "titulo": "2MA · Filosofia · 27/09/2026 · [SEM CONTEÚDO DEFINIDO]",
@@ -4820,14 +4823,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-09-29_2MA_FIL"
+        "FIL_7EDU_2MA_02_M08-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 29/09/2026 · Módulo 8 — situações-problema e argumentação",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 29/09/2026</strong></p>\n<p>Data do 7Edu: 29/09/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Módulo 8 — situações-problema e argumentação</strong></p>\n<p>📖 Leitura prévia: Rever os conceitos do módulo 8 e destacar exemplos relevantes.<br>🧠 Em classe:<br>09:15–10:00 — Debater situações-problema, identificar premissas e justificar posições com argumentos.<br>✏️ Preparação do aluno: Escrever um parágrafo argumentativo com tese e justificativa.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 29/09/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Módulo 8 — situações-problema e argumentação\n📖 Leitura prévia: Rever os conceitos do módulo 8 e destacar exemplos relevantes.\n🧠 Em classe:\n09:15–10:00 — Debater situações-problema, identificar premissas e justificar posições com argumentos.\n✏️ Preparação do aluno: Escrever um parágrafo argumentativo com tese e justificativa.",
+      "titulo": "2MA · Filosofia · 29/09/2026 · Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 29/09/2026</strong></p>\n<p>Data do 7Edu: 29/09/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 8<br>Objetivo: Aplicar conceitos éticos para justificar decisões em situações concretas, reconhecendo argumentos diferentes.<br>Roteiro (45 min): Revisão rápida (5 min); resolução individual ou em duplas de três situações-problema (30 min); correção dialogada (10 min).<br>Exercícios de aprendizagem:<br>1. Em um conflito entre interesse pessoal e dever coletivo, identifique valores em jogo e proponha uma decisão justificada.<br>2. Compare duas respostas possíveis ao mesmo dilema e avalie seus argumentos.<br>3. Reescreva uma opinião moral como argumento composto de premissas e conclusão.<br>Registro/atividade: Resolução escrita dos exercícios com justificativas.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 29/09/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais\nTipo de aula: Aula prática de exercícios\nMódulo(s): 8\nObjetivo: Aplicar conceitos éticos para justificar decisões em situações concretas, reconhecendo argumentos diferentes.\nRoteiro (45 min): Revisão rápida (5 min); resolução individual ou em duplas de três situações-problema (30 min); correção dialogada (10 min).\nExercícios de aprendizagem:\n1. Em um conflito entre interesse pessoal e dever coletivo, identifique valores em jogo e proponha uma decisão justificada.\n2. Compare duas respostas possíveis ao mesmo dilema e avalie seus argumentos.\n3. Reescreva uma opinião moral como argumento composto de premissas e conclusão.\nRegistro/atividade: Resolução escrita dos exercícios com justificativas.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -4836,11 +4842,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-09-29_2MA_FIL"
+          "FIL_7EDU_2MA_02_M08-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-09-29_2MA_FIL"
+            "FIL_7EDU_2MA_02_M08-P"
           ]
         ],
         "requer": {
@@ -4872,14 +4878,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-06_2MA_FIL"
+        "FIL_7EDU_2MA_03_M09-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 06/10/2026 · Módulo 9 — leitura comparativa de argumentos",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 06/10/2026</strong></p>\n<p>Data do 7Edu: 06/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Módulo 9 — leitura comparativa de argumentos</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 9 e anotar sua questão principal.<br>🧠 Em classe:<br>09:15–10:00 — Comparar argumentos encontrados no módulo 9; organizar quadro de teses, fundamentos e objeções.<br>✏️ Preparação do aluno: Preparar uma pergunta e uma objeção fundamentada.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 06/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Módulo 9 — leitura comparativa de argumentos\n📖 Leitura prévia: Ler o módulo 9 e anotar sua questão principal.\n🧠 Em classe:\n09:15–10:00 — Comparar argumentos encontrados no módulo 9; organizar quadro de teses, fundamentos e objeções.\n✏️ Preparação do aluno: Preparar uma pergunta e uma objeção fundamentada.",
+      "titulo": "2MA · Filosofia · 06/10/2026 · Aula expositiva — Filosofia política — poder, Estado e justiça",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 06/10/2026</strong></p>\n<p>Data do 7Edu: 06/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia política — poder, Estado e justiça</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 9<br>Objetivo: Identificar problemas centrais da filosofia política: legitimidade do poder, cidadania, direitos, deveres e justiça.<br>Roteiro (45 min): Problematização sobre decisões coletivas (5 min); exposição com conceitos de poder, Estado, legitimidade e justiça (25 min); mapa conceitual coletivo (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie poder e legitimidade em um exemplo hipotético.<br>2. Indique um dilema de justiça envolvendo direitos e deveres.<br>Registro/atividade: Mapa conceitual sobre poder, cidadania e justiça.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 06/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula expositiva — Filosofia política — poder, Estado e justiça\nTipo de aula: Aula expositiva\nMódulo(s): 9\nObjetivo: Identificar problemas centrais da filosofia política: legitimidade do poder, cidadania, direitos, deveres e justiça.\nRoteiro (45 min): Problematização sobre decisões coletivas (5 min); exposição com conceitos de poder, Estado, legitimidade e justiça (25 min); mapa conceitual coletivo (15 min).\nExercícios de aprendizagem:\n1. Diferencie poder e legitimidade em um exemplo hipotético.\n2. Indique um dilema de justiça envolvendo direitos e deveres.\nRegistro/atividade: Mapa conceitual sobre poder, cidadania e justiça.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -4888,11 +4897,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-06_2MA_FIL"
+          "FIL_7EDU_2MA_03_M09-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-06_2MA_FIL"
+            "FIL_7EDU_2MA_03_M09-E"
           ]
         ],
         "requer": {
@@ -4924,14 +4933,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-13_2MA_FIL"
+        "FIL_7EDU_2MA_04_M09-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 13/10/2026 · Produção textual em sala 1 — módulos 8 e 9",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 13/10/2026</strong></p>\n<p>Data do 7Edu: 13/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Produção textual em sala 1 — módulos 8 e 9</strong></p>\n<p>📖 Leitura prévia: Revisar as anotações dos módulos 8 e 9.<br>🧠 Em classe:<br>09:15–10:00 — Planejar e produzir em classe um texto argumentativo relacionado aos conceitos estudados.<br>✏️ Preparação do aluno: Revisar a coesão, clareza e fundamentação do texto.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 13/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Produção textual em sala 1 — módulos 8 e 9\n📖 Leitura prévia: Revisar as anotações dos módulos 8 e 9.\n🧠 Em classe:\n09:15–10:00 — Planejar e produzir em classe um texto argumentativo relacionado aos conceitos estudados.\n✏️ Preparação do aluno: Revisar a coesão, clareza e fundamentação do texto.",
+      "titulo": "2MA · Filosofia · 13/10/2026 · Aula prática de exercícios — Filosofia política — estudo de caso e argumentação",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 13/10/2026</strong></p>\n<p>Data do 7Edu: 13/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia política — estudo de caso e argumentação</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 9<br>Objetivo: Analisar uma decisão pública hipotética, distinguindo fatos, argumentos e critérios de justiça.<br>Roteiro (45 min): Apresentação de estudo de caso (5 min); exercícios em grupos com diferentes perspectivas (30 min); socialização e correção (10 min).<br>Exercícios de aprendizagem:<br>1. Uma escola precisa decidir o uso compartilhado de um espaço: identifique os interessados e seus direitos.<br>2. Formule duas propostas de decisão e apresente uma justificativa para cada.<br>3. Indique critérios de justiça e cidadania que permitam comparar as propostas.<br>Registro/atividade: Quadro comparativo com argumentos e conclusão fundamentada.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 13/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula prática de exercícios — Filosofia política — estudo de caso e argumentação\nTipo de aula: Aula prática de exercícios\nMódulo(s): 9\nObjetivo: Analisar uma decisão pública hipotética, distinguindo fatos, argumentos e critérios de justiça.\nRoteiro (45 min): Apresentação de estudo de caso (5 min); exercícios em grupos com diferentes perspectivas (30 min); socialização e correção (10 min).\nExercícios de aprendizagem:\n1. Uma escola precisa decidir o uso compartilhado de um espaço: identifique os interessados e seus direitos.\n2. Formule duas propostas de decisão e apresente uma justificativa para cada.\n3. Indique critérios de justiça e cidadania que permitam comparar as propostas.\nRegistro/atividade: Quadro comparativo com argumentos e conclusão fundamentada.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -4940,11 +4952,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-13_2MA_FIL"
+          "FIL_7EDU_2MA_04_M09-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-13_2MA_FIL"
+            "FIL_7EDU_2MA_04_M09-P"
           ]
         ],
         "requer": {
@@ -4976,14 +4988,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-20_2MA_FIL"
+        "FIL_7EDU_2MA_05_M10-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 20/10/2026 · Módulo 10 — leitura, interpretação e discussão",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 20/10/2026</strong></p>\n<p>Data do 7Edu: 20/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Módulo 10 — leitura, interpretação e discussão</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 10; localizar os conceitos e as principais teses.<br>🧠 Em classe:<br>09:15–10:00 — Analisar trechos do módulo 10 e confrontar argumentos; construir síntese da etapa pré-teste.<br>✏️ Preparação do aluno: Produzir resumo esquemático do módulo 10.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 20/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Módulo 10 — leitura, interpretação e discussão\n📖 Leitura prévia: Ler o módulo 10; localizar os conceitos e as principais teses.\n🧠 Em classe:\n09:15–10:00 — Analisar trechos do módulo 10 e confrontar argumentos; construir síntese da etapa pré-teste.\n✏️ Preparação do aluno: Produzir resumo esquemático do módulo 10.",
+      "titulo": "2MA · Filosofia · 20/10/2026 · Aula expositiva — Ideologia — conceitos e interpretação crítica",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 20/10/2026</strong></p>\n<p>Data do 7Edu: 20/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Ideologia — conceitos e interpretação crítica</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 10<br>Objetivo: Compreender ideologia como conjunto de ideias e representações sociais, distinguindo descrição, valor e interesse.<br>Roteiro (45 min): Pergunta inicial sobre formação de opiniões (5 min); exposição de conceitos, contexto social e funções das ideologias (25 min); exemplos e síntese (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie uma afirmação factual de um juízo de valor.<br>2. Explique como uma representação social pode influenciar interpretações da realidade.<br>Registro/atividade: Esquema com conceitos e exemplos, sem atribuição partidária.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 20/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula expositiva — Ideologia — conceitos e interpretação crítica\nTipo de aula: Aula expositiva\nMódulo(s): 10\nObjetivo: Compreender ideologia como conjunto de ideias e representações sociais, distinguindo descrição, valor e interesse.\nRoteiro (45 min): Pergunta inicial sobre formação de opiniões (5 min); exposição de conceitos, contexto social e funções das ideologias (25 min); exemplos e síntese (15 min).\nExercícios de aprendizagem:\n1. Diferencie uma afirmação factual de um juízo de valor.\n2. Explique como uma representação social pode influenciar interpretações da realidade.\nRegistro/atividade: Esquema com conceitos e exemplos, sem atribuição partidária.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -4992,11 +5007,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-20_2MA_FIL"
+          "FIL_7EDU_2MA_05_M10-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-20_2MA_FIL"
+            "FIL_7EDU_2MA_05_M10-E"
           ]
         ],
         "requer": {
@@ -5028,14 +5043,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-27_2MA_FIL"
+        "FIL_7EDU_2MA_06_M10-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 27/10/2026 · Revisão para o teste — módulos 8 a 10",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 27/10/2026</strong></p>\n<p>Data do 7Edu: 27/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Revisão para o teste — módulos 8 a 10</strong></p>\n<p>📖 Leitura prévia: Revisar exercícios, anotações e textos dos módulos 8, 9 e 10.<br>🧠 Em classe:<br>09:15–10:00 — Realizar revisão dialogada, questões de interpretação e organização dos conceitos para o teste.<br>✏️ Preparação do aluno: Elaborar roteiro de estudo e corrigir questões já discutidas.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 27/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Revisão para o teste — módulos 8 a 10\n📖 Leitura prévia: Revisar exercícios, anotações e textos dos módulos 8, 9 e 10.\n🧠 Em classe:\n09:15–10:00 — Realizar revisão dialogada, questões de interpretação e organização dos conceitos para o teste.\n✏️ Preparação do aluno: Elaborar roteiro de estudo e corrigir questões já discutidas.",
+      "titulo": "2MA · Filosofia · 27/10/2026 · Aula prática de exercícios — Ideologia — leitura crítica de mensagens",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 27/10/2026</strong></p>\n<p>Data do 7Edu: 27/10/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Ideologia — leitura crítica de mensagens</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 10<br>Objetivo: Reconhecer pressupostos, interesses, argumentos e evidências em textos e campanhas hipotéticas.<br>Roteiro (45 min): Orientação sobre análise de linguagem (5 min); exercícios em duplas com textos curtos ou anúncios fictícios (30 min); correção comparada (10 min).<br>Exercícios de aprendizagem:<br>1. Separe fatos verificáveis e opiniões em uma mensagem fictícia.<br>2. Identifique pressupostos e interesses possíveis, explicando os indícios textuais.<br>3. Reescreva a mensagem de forma mais precisa e argumentativamente responsável.<br>Registro/atividade: Ficha de análise crítica com trechos e justificativas.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 27/10/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula prática de exercícios — Ideologia — leitura crítica de mensagens\nTipo de aula: Aula prática de exercícios\nMódulo(s): 10\nObjetivo: Reconhecer pressupostos, interesses, argumentos e evidências em textos e campanhas hipotéticas.\nRoteiro (45 min): Orientação sobre análise de linguagem (5 min); exercícios em duplas com textos curtos ou anúncios fictícios (30 min); correção comparada (10 min).\nExercícios de aprendizagem:\n1. Separe fatos verificáveis e opiniões em uma mensagem fictícia.\n2. Identifique pressupostos e interesses possíveis, explicando os indícios textuais.\n3. Reescreva a mensagem de forma mais precisa e argumentativamente responsável.\nRegistro/atividade: Ficha de análise crítica com trechos e justificativas.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -5044,11 +5062,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-27_2MA_FIL"
+          "FIL_7EDU_2MA_06_M10-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-27_2MA_FIL"
+            "FIL_7EDU_2MA_06_M10-P"
           ]
         ],
         "requer": {
@@ -5080,15 +5098,18 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-03_2MA_FIL"
+        "FIL_7EDU_2MA_07_M11-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 03/11/2026 · Teste de Filosofia — módulos 8 a 10",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 03/11/2026</strong></p>\n<p>Data do 7Edu: 03/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Teste de Filosofia — módulos 8 a 10</strong></p>\n<p>📖 Leitura prévia: Revisar integralmente os módulos 8, 9 e 10.<br>🧠 Em classe:<br>09:15–10:00 — Realização do teste sobre os módulos 8–10, conforme organização pedagógica da escola.<br>✏️ Preparação do aluno: Após a devolutiva, registrar dúvidas e pontos a aprofundar.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 03/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Teste de Filosofia — módulos 8 a 10\n📖 Leitura prévia: Revisar integralmente os módulos 8, 9 e 10.\n🧠 Em classe:\n09:15–10:00 — Realização do teste sobre os módulos 8–10, conforme organização pedagógica da escola.\n✏️ Preparação do aluno: Após a devolutiva, registrar dúvidas e pontos a aprofundar.",
-      "avaliacao": true,
+      "titulo": "2MA · Filosofia · 03/11/2026 · Aula expositiva — Filosofia da ciência — conhecimento, método e evidências",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 03/11/2026</strong></p>\n<p>Data do 7Edu: 03/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia da ciência — conhecimento, método e evidências</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 11<br>Objetivo: Discutir hipóteses, observação, explicações científicas, testes, evidências e limites do conhecimento científico.<br>Roteiro (45 min): Problema sobre como validar uma afirmação (5 min); exposição sobre hipóteses, métodos, evidências e revisão crítica (25 min); exercício demonstrativo (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie hipótese e evidência em um exemplo simples.<br>2. Indique que observações poderiam apoiar ou contrariar uma hipótese.<br>Registro/atividade: Esquema hipótese–teste–evidência–conclusão provisória.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 03/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula expositiva — Filosofia da ciência — conhecimento, método e evidências\nTipo de aula: Aula expositiva\nMódulo(s): 11\nObjetivo: Discutir hipóteses, observação, explicações científicas, testes, evidências e limites do conhecimento científico.\nRoteiro (45 min): Problema sobre como validar uma afirmação (5 min); exposição sobre hipóteses, métodos, evidências e revisão crítica (25 min); exercício demonstrativo (15 min).\nExercícios de aprendizagem:\n1. Diferencie hipótese e evidência em um exemplo simples.\n2. Indique que observações poderiam apoiar ou contrariar uma hipótese.\nRegistro/atividade: Esquema hipótese–teste–evidência–conclusão provisória.",
+      "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
       "7edu": {
@@ -5096,11 +5117,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-11-03_2MA_FIL"
+          "FIL_7EDU_2MA_07_M11-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-03_2MA_FIL"
+            "FIL_7EDU_2MA_07_M11-E"
           ]
         ],
         "requer": {
@@ -5108,7 +5129,7 @@
           "proposta": true,
           "historico": false,
           "adaptacao_outra_turma": false,
-          "avaliacao_data": true
+          "avaliacao_data": false
         },
         "projecao_nao_confirmada": false,
         "bloqueio": null
@@ -5132,14 +5153,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-10_2MA_FIL"
+        "FIL_7EDU_2MA_08_M11-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 10/11/2026 · Módulo 11 — conceitos e problemas filosóficos",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 10/11/2026</strong></p>\n<p>Data do 7Edu: 10/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Módulo 11 — conceitos e problemas filosóficos</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 11; sublinhar conceitos, definições e questões propostas.<br>🧠 Em classe:<br>09:15–10:00 — Interpretar conceitos do módulo 11 e construir argumentos com base no texto do material.<br>✏️ Preparação do aluno: Elaborar quadro com conceitos, teses e exemplos.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 10/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Módulo 11 — conceitos e problemas filosóficos\n📖 Leitura prévia: Ler o módulo 11; sublinhar conceitos, definições e questões propostas.\n🧠 Em classe:\n09:15–10:00 — Interpretar conceitos do módulo 11 e construir argumentos com base no texto do material.\n✏️ Preparação do aluno: Elaborar quadro com conceitos, teses e exemplos.",
+      "titulo": "2MA · Filosofia · 10/11/2026 · Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 10/11/2026</strong></p>\n<p>Data do 7Edu: 10/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 11<br>Objetivo: Avaliar argumentos que afirmam resultados científicos e formular testes simples e verificáveis.<br>Roteiro (45 min): Retomada dos conceitos (5 min); exercícios escritos em grupos (30 min); discussão de soluções e limitações (10 min).<br>Exercícios de aprendizagem:<br>1. Formule uma hipótese testável para um fenômeno cotidiano e indique variáveis relevantes.<br>2. Descreva dados que poderiam refutar a hipótese.<br>3. Examine uma manchete fictícia: diferencie correlação de causalidade e cite uma limitação.<br>Registro/atividade: Respostas com justificativas metodológicas.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 10/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências\nTipo de aula: Aula prática de exercícios\nMódulo(s): 11\nObjetivo: Avaliar argumentos que afirmam resultados científicos e formular testes simples e verificáveis.\nRoteiro (45 min): Retomada dos conceitos (5 min); exercícios escritos em grupos (30 min); discussão de soluções e limitações (10 min).\nExercícios de aprendizagem:\n1. Formule uma hipótese testável para um fenômeno cotidiano e indique variáveis relevantes.\n2. Descreva dados que poderiam refutar a hipótese.\n3. Examine uma manchete fictícia: diferencie correlação de causalidade e cite uma limitação.\nRegistro/atividade: Respostas com justificativas metodológicas.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -5148,11 +5172,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-11-10_2MA_FIL"
+          "FIL_7EDU_2MA_08_M11-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-10_2MA_FIL"
+            "FIL_7EDU_2MA_08_M11-P"
           ]
         ],
         "requer": {
@@ -5184,14 +5208,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-17_2MA_FIL"
+        "FIL_7EDU_2MA_09_M12-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 17/11/2026 · Produção textual em sala 2 — módulo 11",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 17/11/2026</strong></p>\n<p>Data do 7Edu: 17/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Produção textual em sala 2 — módulo 11</strong></p>\n<p>📖 Leitura prévia: Revisar o módulo 11 e selecionar uma questão para desenvolver.<br>🧠 Em classe:<br>09:15–10:00 — Construir texto argumentativo com tese, argumentos, contra-argumento e conclusão.<br>✏️ Preparação do aluno: Revisar o texto observando consistência e clareza argumentativa.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 17/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Produção textual em sala 2 — módulo 11\n📖 Leitura prévia: Revisar o módulo 11 e selecionar uma questão para desenvolver.\n🧠 Em classe:\n09:15–10:00 — Construir texto argumentativo com tese, argumentos, contra-argumento e conclusão.\n✏️ Preparação do aluno: Revisar o texto observando consistência e clareza argumentativa.",
+      "titulo": "2MA · Filosofia · 17/11/2026 · Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 17/11/2026</strong></p>\n<p>Data do 7Edu: 17/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 12<br>Objetivo: Refletir sobre os sentidos do trabalho, divisão de tarefas, relações sociais, tecnologia e dignidade humana.<br>Roteiro (45 min): Problematização sobre trabalho e identidade (5 min); exposição dos principais conceitos e transformações no mundo do trabalho (25 min); organização de síntese (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie trabalho, emprego e atividade produtiva.<br>2. Discuta uma vantagem e um desafio da automação para trabalhadores.<br>Registro/atividade: Síntese escrita dos conceitos e de uma questão para debate.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 17/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade\nTipo de aula: Aula expositiva\nMódulo(s): 12\nObjetivo: Refletir sobre os sentidos do trabalho, divisão de tarefas, relações sociais, tecnologia e dignidade humana.\nRoteiro (45 min): Problematização sobre trabalho e identidade (5 min); exposição dos principais conceitos e transformações no mundo do trabalho (25 min); organização de síntese (15 min).\nExercícios de aprendizagem:\n1. Diferencie trabalho, emprego e atividade produtiva.\n2. Discuta uma vantagem e um desafio da automação para trabalhadores.\nRegistro/atividade: Síntese escrita dos conceitos e de uma questão para debate.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -5200,11 +5227,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-11-17_2MA_FIL"
+          "FIL_7EDU_2MA_09_M12-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-17_2MA_FIL"
+            "FIL_7EDU_2MA_09_M12-E"
           ]
         ],
         "requer": {
@@ -5236,14 +5263,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-24_2MA_FIL"
+        "FIL_7EDU_2MA_10_M12-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "projecao_nao_aberta",
       "observacao": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 24/11/2026 · Módulo 12 — leitura crítica e confronto de perspectivas",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 24/11/2026</strong></p>\n<p>Data do 7Edu: 24/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Módulo 12 — leitura crítica e confronto de perspectivas</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 12 e registrar pontos que exigem esclarecimento.<br>🧠 Em classe:<br>09:15–10:00 — Comparar perspectivas filosóficas estudadas; discutir fundamentos e implicações.<br>✏️ Preparação do aluno: Responder às questões de síntese do módulo 12.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 24/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Módulo 12 — leitura crítica e confronto de perspectivas\n📖 Leitura prévia: Ler o módulo 12 e registrar pontos que exigem esclarecimento.\n🧠 Em classe:\n09:15–10:00 — Comparar perspectivas filosóficas estudadas; discutir fundamentos e implicações.\n✏️ Preparação do aluno: Responder às questões de síntese do módulo 12.",
+      "titulo": "2MA · Filosofia · 24/11/2026 · Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 24/11/2026</strong></p>\n<p>Data do 7Edu: 24/11/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 12<br>Objetivo: Aplicar conceitos sobre trabalho e tecnologia a problemas hipotéticos, examinando consequências éticas e sociais.<br>Roteiro (45 min): Apresentação de caso (5 min); resolução individual ou em duplas (30 min); discussão e correção (10 min).<br>Exercícios de aprendizagem:<br>1. Analise uma situação fictícia de automação e identifique benefícios e riscos.<br>2. Apresente duas medidas possíveis para proteger a dignidade no trabalho e justifique-as.<br>3. Relacione uma decisão sobre tecnologia a um conceito de ética ou justiça.<br>Registro/atividade: Resolução dos exercícios com argumentos fundamentados.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 24/11/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios\nTipo de aula: Aula prática de exercícios\nMódulo(s): 12\nObjetivo: Aplicar conceitos sobre trabalho e tecnologia a problemas hipotéticos, examinando consequências éticas e sociais.\nRoteiro (45 min): Apresentação de caso (5 min); resolução individual ou em duplas (30 min); discussão e correção (10 min).\nExercícios de aprendizagem:\n1. Analise uma situação fictícia de automação e identifique benefícios e riscos.\n2. Apresente duas medidas possíveis para proteger a dignidade no trabalho e justifique-as.\n3. Relacione uma decisão sobre tecnologia a um conceito de ética ou justiça.\nRegistro/atividade: Resolução dos exercícios com argumentos fundamentados.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -5252,11 +5282,11 @@
         "situacao_portal": "Não disponível",
         "mapeamento": "projecao",
         "fonte_unidades": [
-          "2026-11-24_2MA_FIL"
+          "FIL_7EDU_2MA_10_M12-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-24_2MA_FIL"
+            "FIL_7EDU_2MA_10_M12-P"
           ]
         ],
         "requer": {
@@ -5288,14 +5318,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-12-01_2MA_FIL"
+        "FIL_7EDU_2MA_11_SINT-P1"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "projecao_nao_aberta",
       "observacao": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 01/12/2026 · Produção textual em sala 3 e revisão para a prova",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 01/12/2026</strong></p>\n<p>Data do 7Edu: 01/12/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Produção textual em sala 3 e revisão para a prova</strong></p>\n<p>📖 Leitura prévia: Revisar os módulos 11 e 12 e textos produzidos.<br>🧠 Em classe:<br>09:15–10:00 — Produção textual em sala 3, seguida de retomada dos conceitos para a prova.<br>✏️ Preparação do aluno: Revisar o resumo final e preparar dúvidas para avaliação.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 01/12/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Produção textual em sala 3 e revisão para a prova\n📖 Leitura prévia: Revisar os módulos 11 e 12 e textos produzidos.\n🧠 Em classe:\n09:15–10:00 — Produção textual em sala 3, seguida de retomada dos conceitos para a prova.\n✏️ Preparação do aluno: Revisar o resumo final e preparar dúvidas para avaliação.",
+      "titulo": "2MA · Filosofia · 01/12/2026 · Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 01/12/2026</strong></p>\n<p>Data do 7Edu: 01/12/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 8, 9, 10, 11, 12<br>Objetivo: Revisar as relações entre os módulos 8 a 12 por meio de questões integradas.<br>Roteiro (45 min): Organização de cinco estações de exercícios (5 min); resolução em grupos (30 min); correção de critérios (10 min).<br>Exercícios de aprendizagem:<br>1. Explique um problema de trabalho que envolva simultaneamente ética e justiça.<br>2. Analise uma afirmação sobre tecnologia distinguindo evidência e pressuposto ideológico.<br>3. Elabore um argumento que relacione cidadania e responsabilidade coletiva.<br>Registro/atividade: Lista de exercícios integradores corrigida.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 01/12/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho\nTipo de aula: Aula prática de exercícios\nMódulo(s): 8, 9, 10, 11, 12\nObjetivo: Revisar as relações entre os módulos 8 a 12 por meio de questões integradas.\nRoteiro (45 min): Organização de cinco estações de exercícios (5 min); resolução em grupos (30 min); correção de critérios (10 min).\nExercícios de aprendizagem:\n1. Explique um problema de trabalho que envolva simultaneamente ética e justiça.\n2. Analise uma afirmação sobre tecnologia distinguindo evidência e pressuposto ideológico.\n3. Elabore um argumento que relacione cidadania e responsabilidade coletiva.\nRegistro/atividade: Lista de exercícios integradores corrigida.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -5304,11 +5337,11 @@
         "situacao_portal": "Não disponível",
         "mapeamento": "projecao",
         "fonte_unidades": [
-          "2026-12-01_2MA_FIL"
+          "FIL_7EDU_2MA_11_SINT-P1"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-12-01_2MA_FIL"
+            "FIL_7EDU_2MA_11_SINT-P1"
           ]
         ],
         "requer": {
@@ -5340,15 +5373,18 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-12-08_2MA_FIL"
+        "FIL_7EDU_2MA_12_SINT-P2"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "projecao_nao_aberta",
       "observacao": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MA · Filosofia · 08/12/2026 · Prova de Filosofia — módulos 11 e 12",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 08/12/2026</strong></p>\n<p>Data do 7Edu: 08/12/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Prova de Filosofia — módulos 11 e 12</strong></p>\n<p>📖 Leitura prévia: Revisar o conteúdo dos módulos 11 e 12.<br>🧠 Em classe:<br>09:15–10:00 — Realização da prova sobre os módulos 11 e 12, conforme organização pedagógica da escola.<br>✏️ Preparação do aluno: Organizar o material para devolutiva e recuperação da aprendizagem.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 08/12/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Prova de Filosofia — módulos 11 e 12\n📖 Leitura prévia: Revisar o conteúdo dos módulos 11 e 12.\n🧠 Em classe:\n09:15–10:00 — Realização da prova sobre os módulos 11 e 12, conforme organização pedagógica da escola.\n✏️ Preparação do aluno: Organizar o material para devolutiva e recuperação da aprendizagem.",
-      "avaliacao": true,
+      "titulo": "2MA · Filosofia · 08/12/2026 · Aula prática de exercícios — Oficina de revisão final — argumentação filosófica e resolução de exercícios",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MA / Filosofia — 08/12/2026</strong></p>\n<p>Data do 7Edu: 08/12/2026. 1 período(s).</p>\n<p><strong>4º período — 09:15–10:00</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Oficina de revisão final — argumentação filosófica e resolução de exercícios</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 8, 9, 10, 11, 12<br>Objetivo: Consolidar conceitos dos cinco módulos com leitura, escrita e correção coletiva de questões.<br>Roteiro (45 min): Revisão de dúvidas (5 min); exercícios discursivos de integração (30 min); revisão de respostas e autoavaliação (10 min).<br>Exercícios de aprendizagem:<br>1. Produza um parágrafo argumentativo sobre a relação entre liberdade e responsabilidade.<br>2. Compare argumentos político e científico sobre um problema hipotético, distinguindo critérios utilizados.<br>3. Analise uma transformação do trabalho articulando ética, ideologia e evidência.<br>Registro/atividade: Respostas discursivas e autoavaliação dos pontos a revisar.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MA / Filosofia\nData 7Edu: 08/12/2026 · 1 período(s)\n\n4º período — 09:15–10:00\n\nConteúdo: Aula prática de exercícios — Oficina de revisão final — argumentação filosófica e resolução de exercícios\nTipo de aula: Aula prática de exercícios\nMódulo(s): 8, 9, 10, 11, 12\nObjetivo: Consolidar conceitos dos cinco módulos com leitura, escrita e correção coletiva de questões.\nRoteiro (45 min): Revisão de dúvidas (5 min); exercícios discursivos de integração (30 min); revisão de respostas e autoavaliação (10 min).\nExercícios de aprendizagem:\n1. Produza um parágrafo argumentativo sobre a relação entre liberdade e responsabilidade.\n2. Compare argumentos político e científico sobre um problema hipotético, distinguindo critérios utilizados.\n3. Analise uma transformação do trabalho articulando ética, ideologia e evidência.\nRegistro/atividade: Respostas discursivas e autoavaliação dos pontos a revisar.",
+      "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
       "7edu": {
@@ -5356,11 +5392,11 @@
         "situacao_portal": "Não disponível",
         "mapeamento": "projecao",
         "fonte_unidades": [
-          "2026-12-08_2MA_FIL"
+          "FIL_7EDU_2MA_12_SINT-P2"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-12-08_2MA_FIL"
+            "FIL_7EDU_2MA_12_SINT-P2"
           ]
         ],
         "requer": {
@@ -5368,7 +5404,7 @@
           "proposta": true,
           "historico": false,
           "adaptacao_outra_turma": false,
-          "avaliacao_data": true
+          "avaliacao_data": false
         },
         "projecao_nao_confirmada": true,
         "bloqueio": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado)."
@@ -7887,14 +7923,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-09-24_2MB_FIL"
+        "FIL_7EDU_2MB_01_M08-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 24/09/2026 · Módulo 8 — leitura guiada e levantamento de questões",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 24/09/2026</strong></p>\n<p>Data do 7Edu: 24/09/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Módulo 8 — leitura guiada e levantamento de questões</strong></p>\n<p>📖 Leitura prévia: Ler o início do módulo 8 e selecionar dois conceitos para discussão.<br>🧠 Em classe:<br>07:00–07:45 — Retomar conceitos centrais do módulo 8; formular perguntas filosóficas e registrar argumentos.<br>✏️ Preparação do aluno: Registrar definições e duas perguntas filosóficas.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 24/09/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Módulo 8 — leitura guiada e levantamento de questões\n📖 Leitura prévia: Ler o início do módulo 8 e selecionar dois conceitos para discussão.\n🧠 Em classe:\n07:00–07:45 — Retomar conceitos centrais do módulo 8; formular perguntas filosóficas e registrar argumentos.\n✏️ Preparação do aluno: Registrar definições e duas perguntas filosóficas.",
+      "titulo": "2MB · Filosofia · 24/09/2026 · Aula expositiva — Filosofia ética — fundamentos da reflexão moral",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 24/09/2026</strong></p>\n<p>Data do 7Edu: 24/09/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia ética — fundamentos da reflexão moral</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 8<br>Objetivo: Diferenciar ética e moral e compreender liberdade, escolhas, responsabilidade e justificativas de uma ação.<br>Roteiro (45 min): Abertura com pergunta-problema (5 min); explicação e exemplos sobre ética, moral, valores e responsabilidade (25 min); síntese e perguntas da turma (15 min).<br>Exercícios de aprendizagem:<br>1. Explique com suas palavras a diferença entre ética e moral.<br>2. Apresente uma escolha cotidiana que envolva responsabilidade e justifique uma decisão.<br>Registro/atividade: Registro dos conceitos centrais e de um exemplo argumentado.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 24/09/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula expositiva — Filosofia ética — fundamentos da reflexão moral\nTipo de aula: Aula expositiva\nMódulo(s): 8\nObjetivo: Diferenciar ética e moral e compreender liberdade, escolhas, responsabilidade e justificativas de uma ação.\nRoteiro (45 min): Abertura com pergunta-problema (5 min); explicação e exemplos sobre ética, moral, valores e responsabilidade (25 min); síntese e perguntas da turma (15 min).\nExercícios de aprendizagem:\n1. Explique com suas palavras a diferença entre ética e moral.\n2. Apresente uma escolha cotidiana que envolva responsabilidade e justifique uma decisão.\nRegistro/atividade: Registro dos conceitos centrais e de um exemplo argumentado.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -7903,11 +7942,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-09-24_2MB_FIL"
+          "FIL_7EDU_2MB_01_M08-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-09-24_2MB_FIL"
+            "FIL_7EDU_2MB_01_M08-E"
           ]
         ],
         "requer": {
@@ -7944,7 +7983,8 @@
       "quantidade_periodos": 2,
       "planos_originais": [],
       "fonte_unidades": [],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [],
       "status": "domingo_atipico",
       "observacao": "Dia atípico: domingo, requer conferência. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
       "titulo": "2MB · Filosofia · 27/09/2026 · [SEM CONTEÚDO DEFINIDO]",
@@ -7991,14 +8031,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-01_2MB_FIL"
+        "FIL_7EDU_2MB_02_M08-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 01/10/2026 · Módulo 8 — situações-problema e argumentação",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 01/10/2026</strong></p>\n<p>Data do 7Edu: 01/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Módulo 8 — situações-problema e argumentação</strong></p>\n<p>📖 Leitura prévia: Rever os conceitos do módulo 8 e destacar exemplos relevantes.<br>🧠 Em classe:<br>07:00–07:45 — Debater situações-problema, identificar premissas e justificar posições com argumentos.<br>✏️ Preparação do aluno: Escrever um parágrafo argumentativo com tese e justificativa.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 01/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Módulo 8 — situações-problema e argumentação\n📖 Leitura prévia: Rever os conceitos do módulo 8 e destacar exemplos relevantes.\n🧠 Em classe:\n07:00–07:45 — Debater situações-problema, identificar premissas e justificar posições com argumentos.\n✏️ Preparação do aluno: Escrever um parágrafo argumentativo com tese e justificativa.",
+      "titulo": "2MB · Filosofia · 01/10/2026 · Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 01/10/2026</strong></p>\n<p>Data do 7Edu: 01/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 8<br>Objetivo: Aplicar conceitos éticos para justificar decisões em situações concretas, reconhecendo argumentos diferentes.<br>Roteiro (45 min): Revisão rápida (5 min); resolução individual ou em duplas de três situações-problema (30 min); correção dialogada (10 min).<br>Exercícios de aprendizagem:<br>1. Em um conflito entre interesse pessoal e dever coletivo, identifique valores em jogo e proponha uma decisão justificada.<br>2. Compare duas respostas possíveis ao mesmo dilema e avalie seus argumentos.<br>3. Reescreva uma opinião moral como argumento composto de premissas e conclusão.<br>Registro/atividade: Resolução escrita dos exercícios com justificativas.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 01/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula prática de exercícios — Filosofia ética — exercícios com dilemas morais\nTipo de aula: Aula prática de exercícios\nMódulo(s): 8\nObjetivo: Aplicar conceitos éticos para justificar decisões em situações concretas, reconhecendo argumentos diferentes.\nRoteiro (45 min): Revisão rápida (5 min); resolução individual ou em duplas de três situações-problema (30 min); correção dialogada (10 min).\nExercícios de aprendizagem:\n1. Em um conflito entre interesse pessoal e dever coletivo, identifique valores em jogo e proponha uma decisão justificada.\n2. Compare duas respostas possíveis ao mesmo dilema e avalie seus argumentos.\n3. Reescreva uma opinião moral como argumento composto de premissas e conclusão.\nRegistro/atividade: Resolução escrita dos exercícios com justificativas.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -8007,11 +8050,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-01_2MB_FIL"
+          "FIL_7EDU_2MB_02_M08-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-01_2MB_FIL"
+            "FIL_7EDU_2MB_02_M08-P"
           ]
         ],
         "requer": {
@@ -8043,14 +8086,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-08_2MB_FIL"
+        "FIL_7EDU_2MB_03_M09-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 08/10/2026 · Módulo 9 — leitura comparativa de argumentos",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 08/10/2026</strong></p>\n<p>Data do 7Edu: 08/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Módulo 9 — leitura comparativa de argumentos</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 9 e anotar sua questão principal.<br>🧠 Em classe:<br>07:00–07:45 — Comparar argumentos encontrados no módulo 9; organizar quadro de teses, fundamentos e objeções.<br>✏️ Preparação do aluno: Preparar uma pergunta e uma objeção fundamentada.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 08/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Módulo 9 — leitura comparativa de argumentos\n📖 Leitura prévia: Ler o módulo 9 e anotar sua questão principal.\n🧠 Em classe:\n07:00–07:45 — Comparar argumentos encontrados no módulo 9; organizar quadro de teses, fundamentos e objeções.\n✏️ Preparação do aluno: Preparar uma pergunta e uma objeção fundamentada.",
+      "titulo": "2MB · Filosofia · 08/10/2026 · Aula expositiva — Filosofia política — poder, Estado e justiça",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 08/10/2026</strong></p>\n<p>Data do 7Edu: 08/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia política — poder, Estado e justiça</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 9<br>Objetivo: Identificar problemas centrais da filosofia política: legitimidade do poder, cidadania, direitos, deveres e justiça.<br>Roteiro (45 min): Problematização sobre decisões coletivas (5 min); exposição com conceitos de poder, Estado, legitimidade e justiça (25 min); mapa conceitual coletivo (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie poder e legitimidade em um exemplo hipotético.<br>2. Indique um dilema de justiça envolvendo direitos e deveres.<br>Registro/atividade: Mapa conceitual sobre poder, cidadania e justiça.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 08/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula expositiva — Filosofia política — poder, Estado e justiça\nTipo de aula: Aula expositiva\nMódulo(s): 9\nObjetivo: Identificar problemas centrais da filosofia política: legitimidade do poder, cidadania, direitos, deveres e justiça.\nRoteiro (45 min): Problematização sobre decisões coletivas (5 min); exposição com conceitos de poder, Estado, legitimidade e justiça (25 min); mapa conceitual coletivo (15 min).\nExercícios de aprendizagem:\n1. Diferencie poder e legitimidade em um exemplo hipotético.\n2. Indique um dilema de justiça envolvendo direitos e deveres.\nRegistro/atividade: Mapa conceitual sobre poder, cidadania e justiça.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -8059,11 +8105,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-08_2MB_FIL"
+          "FIL_7EDU_2MB_03_M09-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-08_2MB_FIL"
+            "FIL_7EDU_2MB_03_M09-E"
           ]
         ],
         "requer": {
@@ -8095,14 +8141,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-15_2MB_FIL"
+        "FIL_7EDU_2MB_04_M09-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 22/10/2026 · Produção textual em sala 1 — módulos 8 e 9",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 22/10/2026</strong></p>\n<p>Data do 7Edu: 22/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Produção textual em sala 1 — módulos 8 e 9</strong></p>\n<p>📖 Leitura prévia: Revisar as anotações dos módulos 8 e 9.<br>🧠 Em classe:<br>07:00–07:45 — Planejar e produzir em classe um texto argumentativo relacionado aos conceitos estudados.<br>✏️ Preparação do aluno: Revisar a coesão, clareza e fundamentação do texto.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 22/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Produção textual em sala 1 — módulos 8 e 9\n📖 Leitura prévia: Revisar as anotações dos módulos 8 e 9.\n🧠 Em classe:\n07:00–07:45 — Planejar e produzir em classe um texto argumentativo relacionado aos conceitos estudados.\n✏️ Preparação do aluno: Revisar a coesão, clareza e fundamentação do texto.",
+      "titulo": "2MB · Filosofia · 22/10/2026 · Aula prática de exercícios — Filosofia política — estudo de caso e argumentação",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 22/10/2026</strong></p>\n<p>Data do 7Edu: 22/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia política — estudo de caso e argumentação</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 9<br>Objetivo: Analisar uma decisão pública hipotética, distinguindo fatos, argumentos e critérios de justiça.<br>Roteiro (45 min): Apresentação de estudo de caso (5 min); exercícios em grupos com diferentes perspectivas (30 min); socialização e correção (10 min).<br>Exercícios de aprendizagem:<br>1. Uma escola precisa decidir o uso compartilhado de um espaço: identifique os interessados e seus direitos.<br>2. Formule duas propostas de decisão e apresente uma justificativa para cada.<br>3. Indique critérios de justiça e cidadania que permitam comparar as propostas.<br>Registro/atividade: Quadro comparativo com argumentos e conclusão fundamentada.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 22/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula prática de exercícios — Filosofia política — estudo de caso e argumentação\nTipo de aula: Aula prática de exercícios\nMódulo(s): 9\nObjetivo: Analisar uma decisão pública hipotética, distinguindo fatos, argumentos e critérios de justiça.\nRoteiro (45 min): Apresentação de estudo de caso (5 min); exercícios em grupos com diferentes perspectivas (30 min); socialização e correção (10 min).\nExercícios de aprendizagem:\n1. Uma escola precisa decidir o uso compartilhado de um espaço: identifique os interessados e seus direitos.\n2. Formule duas propostas de decisão e apresente uma justificativa para cada.\n3. Indique critérios de justiça e cidadania que permitam comparar as propostas.\nRegistro/atividade: Quadro comparativo com argumentos e conclusão fundamentada.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -8111,11 +8160,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-15_2MB_FIL"
+          "FIL_7EDU_2MB_04_M09-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-15_2MB_FIL"
+            "FIL_7EDU_2MB_04_M09-P"
           ]
         ],
         "requer": {
@@ -8147,34 +8196,34 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-10-22_2MB_FIL",
-        "2026-10-29_2MB_FIL"
+        "FIL_7EDU_2MB_05_M10-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
-      "status": "revisao_pedagogica",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
+      "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 29/10/2026 · Módulo 10 — leitura, interpretação e discussão; Revisão para o teste — módulos 8 a 10",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 29/10/2026</strong></p>\n<p>Data do 7Edu: 29/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Módulo 10 — leitura, interpretação e discussão</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 10; localizar os conceitos e as principais teses.<br>🧠 Em classe:<br>07:00–07:45 — Analisar trechos do módulo 10 e confrontar argumentos; construir síntese da etapa pré-teste.<br>✏️ Preparação do aluno: Produzir resumo esquemático do módulo 10.</p>\n<p><strong>Conteúdo: Revisão para o teste — módulos 8 a 10</strong></p>\n<p>📖 Leitura prévia: Revisar exercícios, anotações e textos dos módulos 8, 9 e 10.<br>🧠 Em classe:<br>07:00–07:45 — Realizar revisão dialogada, questões de interpretação e organização dos conceitos para o teste.<br>✏️ Preparação do aluno: Elaborar roteiro de estudo e corrigir questões já discutidas.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 29/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Módulo 10 — leitura, interpretação e discussão\n📖 Leitura prévia: Ler o módulo 10; localizar os conceitos e as principais teses.\n🧠 Em classe:\n07:00–07:45 — Analisar trechos do módulo 10 e confrontar argumentos; construir síntese da etapa pré-teste.\n✏️ Preparação do aluno: Produzir resumo esquemático do módulo 10.\n\nConteúdo: Revisão para o teste — módulos 8 a 10\n📖 Leitura prévia: Revisar exercícios, anotações e textos dos módulos 8, 9 e 10.\n🧠 Em classe:\n07:00–07:45 — Realizar revisão dialogada, questões de interpretação e organização dos conceitos para o teste.\n✏️ Preparação do aluno: Elaborar roteiro de estudo e corrigir questões já discutidas.",
+      "titulo": "2MB · Filosofia · 29/10/2026 · Aula expositiva — Ideologia — conceitos e interpretação crítica",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 29/10/2026</strong></p>\n<p>Data do 7Edu: 29/10/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Ideologia — conceitos e interpretação crítica</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 10<br>Objetivo: Compreender ideologia como conjunto de ideias e representações sociais, distinguindo descrição, valor e interesse.<br>Roteiro (45 min): Pergunta inicial sobre formação de opiniões (5 min); exposição de conceitos, contexto social e funções das ideologias (25 min); exemplos e síntese (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie uma afirmação factual de um juízo de valor.<br>2. Explique como uma representação social pode influenciar interpretações da realidade.<br>Registro/atividade: Esquema com conceitos e exemplos, sem atribuição partidária.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 29/10/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula expositiva — Ideologia — conceitos e interpretação crítica\nTipo de aula: Aula expositiva\nMódulo(s): 10\nObjetivo: Compreender ideologia como conjunto de ideias e representações sociais, distinguindo descrição, valor e interesse.\nRoteiro (45 min): Pergunta inicial sobre formação de opiniões (5 min); exposição de conceitos, contexto social e funções das ideologias (25 min); exemplos e síntese (15 min).\nExercícios de aprendizagem:\n1. Diferencie uma afirmação factual de um juízo de valor.\n2. Explique como uma representação social pode influenciar interpretações da realidade.\nRegistro/atividade: Esquema com conceitos e exemplos, sem atribuição partidária.",
       "avaliacao": false,
       "aula_complementar": false,
-      "condensacao": true,
+      "condensacao": false,
       "7edu": {
         "consultado_em": "2026-11-19",
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-10-22_2MB_FIL",
-          "2026-10-29_2MB_FIL"
+          "FIL_7EDU_2MB_05_M10-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-10-22_2MB_FIL",
-            "2026-10-29_2MB_FIL"
+            "FIL_7EDU_2MB_05_M10-E"
           ]
         ],
         "requer": {
-          "condensacao": true,
+          "condensacao": false,
           "proposta": true,
           "historico": false,
           "adaptacao_outra_turma": false,
@@ -8202,15 +8251,18 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-05_2MB_FIL"
+        "FIL_7EDU_2MB_06_M10-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 05/11/2026 · Teste de Filosofia — módulos 8 a 10",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 05/11/2026</strong></p>\n<p>Data do 7Edu: 05/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Teste de Filosofia — módulos 8 a 10</strong></p>\n<p>📖 Leitura prévia: Revisar integralmente os módulos 8, 9 e 10.<br>🧠 Em classe:<br>07:00–07:45 — Realização do teste sobre os módulos 8–10, conforme organização pedagógica da escola.<br>✏️ Preparação do aluno: Após a devolutiva, registrar dúvidas e pontos a aprofundar.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 05/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Teste de Filosofia — módulos 8 a 10\n📖 Leitura prévia: Revisar integralmente os módulos 8, 9 e 10.\n🧠 Em classe:\n07:00–07:45 — Realização do teste sobre os módulos 8–10, conforme organização pedagógica da escola.\n✏️ Preparação do aluno: Após a devolutiva, registrar dúvidas e pontos a aprofundar.",
-      "avaliacao": true,
+      "titulo": "2MB · Filosofia · 05/11/2026 · Aula prática de exercícios — Ideologia — leitura crítica de mensagens",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 05/11/2026</strong></p>\n<p>Data do 7Edu: 05/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Ideologia — leitura crítica de mensagens</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 10<br>Objetivo: Reconhecer pressupostos, interesses, argumentos e evidências em textos e campanhas hipotéticas.<br>Roteiro (45 min): Orientação sobre análise de linguagem (5 min); exercícios em duplas com textos curtos ou anúncios fictícios (30 min); correção comparada (10 min).<br>Exercícios de aprendizagem:<br>1. Separe fatos verificáveis e opiniões em uma mensagem fictícia.<br>2. Identifique pressupostos e interesses possíveis, explicando os indícios textuais.<br>3. Reescreva a mensagem de forma mais precisa e argumentativamente responsável.<br>Registro/atividade: Ficha de análise crítica com trechos e justificativas.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 05/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula prática de exercícios — Ideologia — leitura crítica de mensagens\nTipo de aula: Aula prática de exercícios\nMódulo(s): 10\nObjetivo: Reconhecer pressupostos, interesses, argumentos e evidências em textos e campanhas hipotéticas.\nRoteiro (45 min): Orientação sobre análise de linguagem (5 min); exercícios em duplas com textos curtos ou anúncios fictícios (30 min); correção comparada (10 min).\nExercícios de aprendizagem:\n1. Separe fatos verificáveis e opiniões em uma mensagem fictícia.\n2. Identifique pressupostos e interesses possíveis, explicando os indícios textuais.\n3. Reescreva a mensagem de forma mais precisa e argumentativamente responsável.\nRegistro/atividade: Ficha de análise crítica com trechos e justificativas.",
+      "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
       "7edu": {
@@ -8218,11 +8270,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-11-05_2MB_FIL"
+          "FIL_7EDU_2MB_06_M10-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-05_2MB_FIL"
+            "FIL_7EDU_2MB_06_M10-P"
           ]
         ],
         "requer": {
@@ -8230,7 +8282,7 @@
           "proposta": true,
           "historico": false,
           "adaptacao_outra_turma": false,
-          "avaliacao_data": true
+          "avaliacao_data": false
         },
         "projecao_nao_confirmada": false,
         "bloqueio": null
@@ -8254,14 +8306,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-12_2MB_FIL"
+        "FIL_7EDU_2MB_07_M11-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 12/11/2026 · Módulo 11 — conceitos e problemas filosóficos",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 12/11/2026</strong></p>\n<p>Data do 7Edu: 12/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Módulo 11 — conceitos e problemas filosóficos</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 11; sublinhar conceitos, definições e questões propostas.<br>🧠 Em classe:<br>07:00–07:45 — Interpretar conceitos do módulo 11 e construir argumentos com base no texto do material.<br>✏️ Preparação do aluno: Elaborar quadro com conceitos, teses e exemplos.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 12/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Módulo 11 — conceitos e problemas filosóficos\n📖 Leitura prévia: Ler o módulo 11; sublinhar conceitos, definições e questões propostas.\n🧠 Em classe:\n07:00–07:45 — Interpretar conceitos do módulo 11 e construir argumentos com base no texto do material.\n✏️ Preparação do aluno: Elaborar quadro com conceitos, teses e exemplos.",
+      "titulo": "2MB · Filosofia · 12/11/2026 · Aula expositiva — Filosofia da ciência — conhecimento, método e evidências",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 12/11/2026</strong></p>\n<p>Data do 7Edu: 12/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia da ciência — conhecimento, método e evidências</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 11<br>Objetivo: Discutir hipóteses, observação, explicações científicas, testes, evidências e limites do conhecimento científico.<br>Roteiro (45 min): Problema sobre como validar uma afirmação (5 min); exposição sobre hipóteses, métodos, evidências e revisão crítica (25 min); exercício demonstrativo (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie hipótese e evidência em um exemplo simples.<br>2. Indique que observações poderiam apoiar ou contrariar uma hipótese.<br>Registro/atividade: Esquema hipótese–teste–evidência–conclusão provisória.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 12/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula expositiva — Filosofia da ciência — conhecimento, método e evidências\nTipo de aula: Aula expositiva\nMódulo(s): 11\nObjetivo: Discutir hipóteses, observação, explicações científicas, testes, evidências e limites do conhecimento científico.\nRoteiro (45 min): Problema sobre como validar uma afirmação (5 min); exposição sobre hipóteses, métodos, evidências e revisão crítica (25 min); exercício demonstrativo (15 min).\nExercícios de aprendizagem:\n1. Diferencie hipótese e evidência em um exemplo simples.\n2. Indique que observações poderiam apoiar ou contrariar uma hipótese.\nRegistro/atividade: Esquema hipótese–teste–evidência–conclusão provisória.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -8270,11 +8325,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-11-12_2MB_FIL"
+          "FIL_7EDU_2MB_07_M11-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-12_2MB_FIL"
+            "FIL_7EDU_2MB_07_M11-E"
           ]
         ],
         "requer": {
@@ -8306,14 +8361,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-19_2MB_FIL"
+        "FIL_7EDU_2MB_08_M11-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "proposta_para_aprovacao",
       "observacao": "Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 19/11/2026 · Produção textual em sala 2 — módulo 11",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 19/11/2026</strong></p>\n<p>Data do 7Edu: 19/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Produção textual em sala 2 — módulo 11</strong></p>\n<p>📖 Leitura prévia: Revisar o módulo 11 e selecionar uma questão para desenvolver.<br>🧠 Em classe:<br>07:00–07:45 — Construir texto argumentativo com tese, argumentos, contra-argumento e conclusão.<br>✏️ Preparação do aluno: Revisar o texto observando consistência e clareza argumentativa.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 19/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Produção textual em sala 2 — módulo 11\n📖 Leitura prévia: Revisar o módulo 11 e selecionar uma questão para desenvolver.\n🧠 Em classe:\n07:00–07:45 — Construir texto argumentativo com tese, argumentos, contra-argumento e conclusão.\n✏️ Preparação do aluno: Revisar o texto observando consistência e clareza argumentativa.",
+      "titulo": "2MB · Filosofia · 19/11/2026 · Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 19/11/2026</strong></p>\n<p>Data do 7Edu: 19/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 11<br>Objetivo: Avaliar argumentos que afirmam resultados científicos e formular testes simples e verificáveis.<br>Roteiro (45 min): Retomada dos conceitos (5 min); exercícios escritos em grupos (30 min); discussão de soluções e limitações (10 min).<br>Exercícios de aprendizagem:<br>1. Formule uma hipótese testável para um fenômeno cotidiano e indique variáveis relevantes.<br>2. Descreva dados que poderiam refutar a hipótese.<br>3. Examine uma manchete fictícia: diferencie correlação de causalidade e cite uma limitação.<br>Registro/atividade: Respostas com justificativas metodológicas.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 19/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula prática de exercícios — Filosofia da ciência — exercícios sobre hipóteses e evidências\nTipo de aula: Aula prática de exercícios\nMódulo(s): 11\nObjetivo: Avaliar argumentos que afirmam resultados científicos e formular testes simples e verificáveis.\nRoteiro (45 min): Retomada dos conceitos (5 min); exercícios escritos em grupos (30 min); discussão de soluções e limitações (10 min).\nExercícios de aprendizagem:\n1. Formule uma hipótese testável para um fenômeno cotidiano e indique variáveis relevantes.\n2. Descreva dados que poderiam refutar a hipótese.\n3. Examine uma manchete fictícia: diferencie correlação de causalidade e cite uma limitação.\nRegistro/atividade: Respostas com justificativas metodológicas.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -8322,11 +8380,11 @@
         "situacao_portal": "Pendente",
         "mapeamento": "redistribuido",
         "fonte_unidades": [
-          "2026-11-19_2MB_FIL"
+          "FIL_7EDU_2MB_08_M11-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-19_2MB_FIL"
+            "FIL_7EDU_2MB_08_M11-P"
           ]
         ],
         "requer": {
@@ -8358,14 +8416,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-11-26_2MB_FIL"
+        "FIL_7EDU_2MB_09_M12-E"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "expositiva"
+      ],
       "status": "projecao_nao_aberta",
       "observacao": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 26/11/2026 · Módulo 12 — leitura crítica e confronto de perspectivas",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 26/11/2026</strong></p>\n<p>Data do 7Edu: 26/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Módulo 12 — leitura crítica e confronto de perspectivas</strong></p>\n<p>📖 Leitura prévia: Ler o módulo 12 e registrar pontos que exigem esclarecimento.<br>🧠 Em classe:<br>07:00–07:45 — Comparar perspectivas filosóficas estudadas; discutir fundamentos e implicações.<br>✏️ Preparação do aluno: Responder às questões de síntese do módulo 12.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 26/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Módulo 12 — leitura crítica e confronto de perspectivas\n📖 Leitura prévia: Ler o módulo 12 e registrar pontos que exigem esclarecimento.\n🧠 Em classe:\n07:00–07:45 — Comparar perspectivas filosóficas estudadas; discutir fundamentos e implicações.\n✏️ Preparação do aluno: Responder às questões de síntese do módulo 12.",
+      "titulo": "2MB · Filosofia · 26/11/2026 · Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 26/11/2026</strong></p>\n<p>Data do 7Edu: 26/11/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade</strong></p>\n<p>Tipo de aula: Aula expositiva<br>Módulo(s): 12<br>Objetivo: Refletir sobre os sentidos do trabalho, divisão de tarefas, relações sociais, tecnologia e dignidade humana.<br>Roteiro (45 min): Problematização sobre trabalho e identidade (5 min); exposição dos principais conceitos e transformações no mundo do trabalho (25 min); organização de síntese (15 min).<br>Exercícios de aprendizagem:<br>1. Diferencie trabalho, emprego e atividade produtiva.<br>2. Discuta uma vantagem e um desafio da automação para trabalhadores.<br>Registro/atividade: Síntese escrita dos conceitos e de uma questão para debate.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 26/11/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula expositiva — Filosofia do trabalho — sentidos, técnica e sociedade\nTipo de aula: Aula expositiva\nMódulo(s): 12\nObjetivo: Refletir sobre os sentidos do trabalho, divisão de tarefas, relações sociais, tecnologia e dignidade humana.\nRoteiro (45 min): Problematização sobre trabalho e identidade (5 min); exposição dos principais conceitos e transformações no mundo do trabalho (25 min); organização de síntese (15 min).\nExercícios de aprendizagem:\n1. Diferencie trabalho, emprego e atividade produtiva.\n2. Discuta uma vantagem e um desafio da automação para trabalhadores.\nRegistro/atividade: Síntese escrita dos conceitos e de uma questão para debate.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -8374,11 +8435,11 @@
         "situacao_portal": "Não disponível",
         "mapeamento": "projecao",
         "fonte_unidades": [
-          "2026-11-26_2MB_FIL"
+          "FIL_7EDU_2MB_09_M12-E"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-11-26_2MB_FIL"
+            "FIL_7EDU_2MB_09_M12-E"
           ]
         ],
         "requer": {
@@ -8410,14 +8471,17 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-12-03_2MB_FIL"
+        "FIL_7EDU_2MB_10_M12-P"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "projecao_nao_aberta",
       "observacao": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 03/12/2026 · Produção textual em sala 3 e revisão para a prova",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 03/12/2026</strong></p>\n<p>Data do 7Edu: 03/12/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Produção textual em sala 3 e revisão para a prova</strong></p>\n<p>📖 Leitura prévia: Revisar os módulos 11 e 12 e textos produzidos.<br>🧠 Em classe:<br>07:00–07:45 — Produção textual em sala 3, seguida de retomada dos conceitos para a prova.<br>✏️ Preparação do aluno: Revisar o resumo final e preparar dúvidas para avaliação.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 03/12/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Produção textual em sala 3 e revisão para a prova\n📖 Leitura prévia: Revisar os módulos 11 e 12 e textos produzidos.\n🧠 Em classe:\n07:00–07:45 — Produção textual em sala 3, seguida de retomada dos conceitos para a prova.\n✏️ Preparação do aluno: Revisar o resumo final e preparar dúvidas para avaliação.",
+      "titulo": "2MB · Filosofia · 03/12/2026 · Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 03/12/2026</strong></p>\n<p>Data do 7Edu: 03/12/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 12<br>Objetivo: Aplicar conceitos sobre trabalho e tecnologia a problemas hipotéticos, examinando consequências éticas e sociais.<br>Roteiro (45 min): Apresentação de caso (5 min); resolução individual ou em duplas (30 min); discussão e correção (10 min).<br>Exercícios de aprendizagem:<br>1. Analise uma situação fictícia de automação e identifique benefícios e riscos.<br>2. Apresente duas medidas possíveis para proteger a dignidade no trabalho e justifique-as.<br>3. Relacione uma decisão sobre tecnologia a um conceito de ética ou justiça.<br>Registro/atividade: Resolução dos exercícios com argumentos fundamentados.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 03/12/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula prática de exercícios — Filosofia do trabalho — situações-problema e exercícios\nTipo de aula: Aula prática de exercícios\nMódulo(s): 12\nObjetivo: Aplicar conceitos sobre trabalho e tecnologia a problemas hipotéticos, examinando consequências éticas e sociais.\nRoteiro (45 min): Apresentação de caso (5 min); resolução individual ou em duplas (30 min); discussão e correção (10 min).\nExercícios de aprendizagem:\n1. Analise uma situação fictícia de automação e identifique benefícios e riscos.\n2. Apresente duas medidas possíveis para proteger a dignidade no trabalho e justifique-as.\n3. Relacione uma decisão sobre tecnologia a um conceito de ética ou justiça.\nRegistro/atividade: Resolução dos exercícios com argumentos fundamentados.",
       "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
@@ -8426,11 +8490,11 @@
         "situacao_portal": "Não disponível",
         "mapeamento": "projecao",
         "fonte_unidades": [
-          "2026-12-03_2MB_FIL"
+          "FIL_7EDU_2MB_10_M12-P"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-12-03_2MB_FIL"
+            "FIL_7EDU_2MB_10_M12-P"
           ]
         ],
         "requer": {
@@ -8462,15 +8526,18 @@
       "quantidade_periodos": 1,
       "planos_originais": [],
       "fonte_unidades": [
-        "2026-12-10_2MB_FIL"
+        "FIL_7EDU_2MB_11_SINT-P1"
       ],
-      "origem": "redistribuicao_sequencial_7edu_v109",
+      "origem": "filosofia_modulos_8_a_12_v110",
+      "tipos_aula": [
+        "pratica_exercicios"
+      ],
       "status": "projecao_nao_aberta",
       "observacao": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado).",
-      "titulo": "2MB · Filosofia · 10/12/2026 · Prova de Filosofia — módulos 11 e 12",
-      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 10/12/2026</strong></p>\n<p>Data do 7Edu: 10/12/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Prova de Filosofia — módulos 11 e 12</strong></p>\n<p>📖 Leitura prévia: Revisar o conteúdo dos módulos 11 e 12.<br>🧠 Em classe:<br>07:00–07:45 — Realização da prova sobre os módulos 11 e 12, conforme organização pedagógica da escola.<br>✏️ Preparação do aluno: Organizar o material para devolutiva e recuperação da aprendizagem.</p>",
-      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 10/12/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Prova de Filosofia — módulos 11 e 12\n📖 Leitura prévia: Revisar o conteúdo dos módulos 11 e 12.\n🧠 Em classe:\n07:00–07:45 — Realização da prova sobre os módulos 11 e 12, conforme organização pedagógica da escola.\n✏️ Preparação do aluno: Organizar o material para devolutiva e recuperação da aprendizagem.",
-      "avaliacao": true,
+      "titulo": "2MB · Filosofia · 10/12/2026 · Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho",
+      "html": "<p><strong>PLANEJAMENTO PARA CONFERÊNCIA — 2MB / Filosofia — 10/12/2026</strong></p>\n<p>Data do 7Edu: 10/12/2026. 1 período(s).</p>\n<p><strong>1º período — 07:00–07:45</strong></p>\n<p><strong>Conteúdo: Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho</strong></p>\n<p>Tipo de aula: Aula prática de exercícios<br>Módulo(s): 8, 9, 10, 11, 12<br>Objetivo: Revisar as relações entre os módulos 8 a 12 por meio de questões integradas.<br>Roteiro (45 min): Organização de cinco estações de exercícios (5 min); resolução em grupos (30 min); correção de critérios (10 min).<br>Exercícios de aprendizagem:<br>1. Explique um problema de trabalho que envolva simultaneamente ética e justiça.<br>2. Analise uma afirmação sobre tecnologia distinguindo evidência e pressuposto ideológico.<br>3. Elabore um argumento que relacione cidadania e responsabilidade coletiva.<br>Registro/atividade: Lista de exercícios integradores corrigida.</p>",
+      "conteudo_7edu": "Planejamento para conferência — 2MB / Filosofia\nData 7Edu: 10/12/2026 · 1 período(s)\n\n1º período — 07:00–07:45\n\nConteúdo: Aula prática de exercícios — Exercícios integradores — ética, política, ideologia, ciência e trabalho\nTipo de aula: Aula prática de exercícios\nMódulo(s): 8, 9, 10, 11, 12\nObjetivo: Revisar as relações entre os módulos 8 a 12 por meio de questões integradas.\nRoteiro (45 min): Organização de cinco estações de exercícios (5 min); resolução em grupos (30 min); correção de critérios (10 min).\nExercícios de aprendizagem:\n1. Explique um problema de trabalho que envolva simultaneamente ética e justiça.\n2. Analise uma afirmação sobre tecnologia distinguindo evidência e pressuposto ideológico.\n3. Elabore um argumento que relacione cidadania e responsabilidade coletiva.\nRegistro/atividade: Lista de exercícios integradores corrigida.",
+      "avaliacao": false,
       "aula_complementar": false,
       "condensacao": false,
       "7edu": {
@@ -8478,11 +8545,11 @@
         "situacao_portal": "Não disponível",
         "mapeamento": "projecao",
         "fonte_unidades": [
-          "2026-12-10_2MB_FIL"
+          "FIL_7EDU_2MB_11_SINT-P1"
         ],
         "alocacao_por_periodo": [
           [
-            "2026-12-10_2MB_FIL"
+            "FIL_7EDU_2MB_11_SINT-P1"
           ]
         ],
         "requer": {
@@ -8490,7 +8557,7 @@
           "proposta": true,
           "historico": false,
           "adaptacao_outra_turma": false,
-          "avaliacao_data": true
+          "avaliacao_data": false
         },
         "projecao_nao_confirmada": true,
         "bloqueio": "Data projetada, NÃO aberta no portal. Planejamento associado à data real (não necessariamente efetivamente ministrado)."

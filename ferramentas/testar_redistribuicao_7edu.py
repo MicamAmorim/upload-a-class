@@ -12,7 +12,7 @@ sys.path.insert(0,str(ROOT/'ferramentas'))
 import redistribuir_aulas_7edu as gen
 units=gen.make_units(parent,json.loads(base.read_text()))
 assert len(parent['postagens'])==284
-assert out['versao']=='1.0.9'
+assert out['versao']=='1.0.10'
 assert out['estatisticas']['datas_reais']==221
 assert out['estatisticas']['periodos_reais']==277
 assert out['estatisticas']['datas_projetadas']>0

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Aulas — E-Class + 7Edu · 4º Bimestre 2026",
-  "version": "1.0.9",
-  "description": "Planejamento independente 7Edu com redistribuição cronológica dos conteúdos, previsões de datas bloqueadas e conferência de histórico; E-Class preservado.",
+  "version": "1.0.10",
+  "description": "Planejamento independente 7Edu, agora com Filosofia (módulos 8 a 12) em aulas expositivas e exercícios, sujeito a aprovação e datas oficiais.",
   "permissions": [
     "storage",
     "tabs",

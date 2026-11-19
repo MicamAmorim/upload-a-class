@@ -1,0 +1,219 @@
+{
+  "versao": "1.0.10",
+  "status": "proposta_pedagogica_para_aprovacao",
+  "fonte_modulos": "Títulos informados pelo professor nesta conversa (19/11/2026)",
+  "observacao": "Roteiros e exercícios elaborados como sugestões didáticas; não substituem as páginas oficiais de material didático nem comprovam aulas ministradas. Datas e períodos vêm do calendário 7Edu; projeções não são publicáveis. Não há provas/testes datados confirmados neste plano.",
+  "modulos": {
+    "8": "Filosofia ética",
+    "9": "Filosofia política",
+    "10": "Ideologia",
+    "11": "Filosofia da ciência",
+    "12": "Filosofia do trabalho"
+  },
+  "sequencia_base": [
+    {
+      "codigo": "M08-E",
+      "modulos": [
+        8
+      ],
+      "tipo": "expositiva",
+      "tema": "Filosofia ética — fundamentos da reflexão moral",
+      "objetivo": "Diferenciar ética e moral e compreender liberdade, escolhas, responsabilidade e justificativas de uma ação.",
+      "roteiro": "Abertura com pergunta-problema (5 min); explicação e exemplos sobre ética, moral, valores e responsabilidade (25 min); síntese e perguntas da turma (15 min).",
+      "exercicios": [
+        "Explique com suas palavras a diferença entre ética e moral.",
+        "Apresente uma escolha cotidiana que envolva responsabilidade e justifique uma decisão."
+      ],
+      "produto": "Registro dos conceitos centrais e de um exemplo argumentado."
+    },
+    {
+      "codigo": "M08-P",
+      "modulos": [
+        8
+      ],
+      "tipo": "pratica_exercicios",
+      "tema": "Filosofia ética — exercícios com dilemas morais",
+      "objetivo": "Aplicar conceitos éticos para justificar decisões em situações concretas, reconhecendo argumentos diferentes.",
+      "roteiro": "Revisão rápida (5 min); resolução individual ou em duplas de três situações-problema (30 min); correção dialogada (10 min).",
+      "exercicios": [
+        "Em um conflito entre interesse pessoal e dever coletivo, identifique valores em jogo e proponha uma decisão justificada.",
+        "Compare duas respostas possíveis ao mesmo dilema e avalie seus argumentos.",
+        "Reescreva uma opinião moral como argumento composto de premissas e conclusão."
+      ],
+      "produto": "Resolução escrita dos exercícios com justificativas."
+    },
+    {
+      "codigo": "M09-E",
+      "modulos": [
+        9
+      ],
+      "tipo": "expositiva",
+      "tema": "Filosofia política — poder, Estado e justiça",
+      "objetivo": "Identificar problemas centrais da filosofia política: legitimidade do poder, cidadania, direitos, deveres e justiça.",
+      "roteiro": "Problematização sobre decisões coletivas (5 min); exposição com conceitos de poder, Estado, legitimidade e justiça (25 min); mapa conceitual coletivo (15 min).",
+      "exercicios": [
+        "Diferencie poder e legitimidade em um exemplo hipotético.",
+        "Indique um dilema de justiça envolvendo direitos e deveres."
+      ],
+      "produto": "Mapa conceitual sobre poder, cidadania e justiça."
+    },
+    {
+      "codigo": "M09-P",
+      "modulos": [
+        9
+      ],
+      "tipo": "pratica_exercicios",
+      "tema": "Filosofia política — estudo de caso e argumentação",
+      "objetivo": "Analisar uma decisão pública hipotética, distinguindo fatos, argumentos e critérios de justiça.",
+      "roteiro": "Apresentação de estudo de caso (5 min); exercícios em grupos com diferentes perspectivas (30 min); socialização e correção (10 min).",
+      "exercicios": [
+        "Uma escola precisa decidir o uso compartilhado de um espaço: identifique os interessados e seus direitos.",
+        "Formule duas propostas de decisão e apresente uma justificativa para cada.",
+        "Indique critérios de justiça e cidadania que permitam comparar as propostas."
+      ],
+      "produto": "Quadro comparativo com argumentos e conclusão fundamentada."
+    },
+    {
+      "codigo": "M10-E",
+      "modulos": [
+        10
+      ],
+      "tipo": "expositiva",
+      "tema": "Ideologia — conceitos e interpretação crítica",
+      "objetivo": "Compreender ideologia como conjunto de ideias e representações sociais, distinguindo descrição, valor e interesse.",
+      "roteiro": "Pergunta inicial sobre formação de opiniões (5 min); exposição de conceitos, contexto social e funções das ideologias (25 min); exemplos e síntese (15 min).",
+      "exercicios": [
+        "Diferencie uma afirmação factual de um juízo de valor.",
+        "Explique como uma representação social pode influenciar interpretações da realidade."
+      ],
+      "produto": "Esquema com conceitos e exemplos, sem atribuição partidária."
+    },
+    {
+      "codigo": "M10-P",
+      "modulos": [
+        10
+      ],
+      "tipo": "pratica_exercicios",
+      "tema": "Ideologia — leitura crítica de mensagens",
+      "objetivo": "Reconhecer pressupostos, interesses, argumentos e evidências em textos e campanhas hipotéticas.",
+      "roteiro": "Orientação sobre análise de linguagem (5 min); exercícios em duplas com textos curtos ou anúncios fictícios (30 min); correção comparada (10 min).",
+      "exercicios": [
+        "Separe fatos verificáveis e opiniões em uma mensagem fictícia.",
+        "Identifique pressupostos e interesses possíveis, explicando os indícios textuais.",
+        "Reescreva a mensagem de forma mais precisa e argumentativamente responsável."
+      ],
+      "produto": "Ficha de análise crítica com trechos e justificativas."
+    },
+    {
+      "codigo": "M11-E",
+      "modulos": [
+        11
+      ],
+      "tipo": "expositiva",
+      "tema": "Filosofia da ciência — conhecimento, método e evidências",
+      "objetivo": "Discutir hipóteses, observação, explicações científicas, testes, evidências e limites do conhecimento científico.",
+      "roteiro": "Problema sobre como validar uma afirmação (5 min); exposição sobre hipóteses, métodos, evidências e revisão crítica (25 min); exercício demonstrativo (15 min).",
+      "exercicios": [
+        "Diferencie hipótese e evidência em um exemplo simples.",
+        "Indique que observações poderiam apoiar ou contrariar uma hipótese."
+      ],
+      "produto": "Esquema hipótese–teste–evidência–conclusão provisória."
+    },
+    {
+      "codigo": "M11-P",
+      "modulos": [
+        11
+      ],
+      "tipo": "pratica_exercicios",
+      "tema": "Filosofia da ciência — exercícios sobre hipóteses e evidências",
+      "objetivo": "Avaliar argumentos que afirmam resultados científicos e formular testes simples e verificáveis.",
+      "roteiro": "Retomada dos conceitos (5 min); exercícios escritos em grupos (30 min); discussão de soluções e limitações (10 min).",
+      "exercicios": [
+        "Formule uma hipótese testável para um fenômeno cotidiano e indique variáveis relevantes.",
+        "Descreva dados que poderiam refutar a hipótese.",
+        "Examine uma manchete fictícia: diferencie correlação de causalidade e cite uma limitação."
+      ],
+      "produto": "Respostas com justificativas metodológicas."
+    },
+    {
+      "codigo": "M12-E",
+      "modulos": [
+        12
+      ],
+      "tipo": "expositiva",
+      "tema": "Filosofia do trabalho — sentidos, técnica e sociedade",
+      "objetivo": "Refletir sobre os sentidos do trabalho, divisão de tarefas, relações sociais, tecnologia e dignidade humana.",
+      "roteiro": "Problematização sobre trabalho e identidade (5 min); exposição dos principais conceitos e transformações no mundo do trabalho (25 min); organização de síntese (15 min).",
+      "exercicios": [
+        "Diferencie trabalho, emprego e atividade produtiva.",
+        "Discuta uma vantagem e um desafio da automação para trabalhadores."
+      ],
+      "produto": "Síntese escrita dos conceitos e de uma questão para debate."
+    },
+    {
+      "codigo": "M12-P",
+      "modulos": [
+        12
+      ],
+      "tipo": "pratica_exercicios",
+      "tema": "Filosofia do trabalho — situações-problema e exercícios",
+      "objetivo": "Aplicar conceitos sobre trabalho e tecnologia a problemas hipotéticos, examinando consequências éticas e sociais.",
+      "roteiro": "Apresentação de caso (5 min); resolução individual ou em duplas (30 min); discussão e correção (10 min).",
+      "exercicios": [
+        "Analise uma situação fictícia de automação e identifique benefícios e riscos.",
+        "Apresente duas medidas possíveis para proteger a dignidade no trabalho e justifique-as.",
+        "Relacione uma decisão sobre tecnologia a um conceito de ética ou justiça."
+      ],
+      "produto": "Resolução dos exercícios com argumentos fundamentados."
+    },
+    {
+      "codigo": "SINT-P1",
+      "modulos": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "tipo": "pratica_exercicios",
+      "tema": "Exercícios integradores — ética, política, ideologia, ciência e trabalho",
+      "objetivo": "Revisar as relações entre os módulos 8 a 12 por meio de questões integradas.",
+      "roteiro": "Organização de cinco estações de exercícios (5 min); resolução em grupos (30 min); correção de critérios (10 min).",
+      "exercicios": [
+        "Explique um problema de trabalho que envolva simultaneamente ética e justiça.",
+        "Analise uma afirmação sobre tecnologia distinguindo evidência e pressuposto ideológico.",
+        "Elabore um argumento que relacione cidadania e responsabilidade coletiva."
+      ],
+      "produto": "Lista de exercícios integradores corrigida."
+    }
+  ],
+  "extras_por_turma": {
+    "2MA": [
+      {
+        "codigo": "SINT-P2",
+        "modulos": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "tipo": "pratica_exercicios",
+        "tema": "Oficina de revisão final — argumentação filosófica e resolução de exercícios",
+        "objetivo": "Consolidar conceitos dos cinco módulos com leitura, escrita e correção coletiva de questões.",
+        "roteiro": "Revisão de dúvidas (5 min); exercícios discursivos de integração (30 min); revisão de respostas e autoavaliação (10 min).",
+        "exercicios": [
+          "Produza um parágrafo argumentativo sobre a relação entre liberdade e responsabilidade.",
+          "Compare argumentos político e científico sobre um problema hipotético, distinguindo critérios utilizados.",
+          "Analise uma transformação do trabalho articulando ética, ideologia e evidência."
+        ],
+        "produto": "Respostas discursivas e autoavaliação dos pontos a revisar."
+      }
+    ],
+    "2MB": []
+  },
+  "turmas": [
+    "2MA",
+    "2MB"
+  ]
+}

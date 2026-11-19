@@ -41,16 +41,45 @@ def content_from_source(src):
     if not wanted: wanted=['Atividade de origem: '+src['titulo'].split('|')[-1].strip()]
     return '\n'.join(wanted)
 
+def load_filosofia_units(path=None):
+    """Carrega a proposta explícita 7Edu sem alterar os dados-fonte do E-Class."""
+    path=Path(path) if path else Path(__file__).resolve().parents[1]/'extension/data/plano_filosofia_7edu_2026.json'
+    if not path.exists():
+        raise FileNotFoundError(f'Plano específico de Filosofia ausente: {path}')
+    config=json.loads(path.read_text(encoding='utf8'))
+    assert set(config['modulos'])=={'8','9','10','11','12'}
+    result={}
+    for turma in config['turmas']:
+        seq=config['sequencia_base']+config.get('extras_por_turma',{}).get(turma,[])
+        result[turma]=[]
+        for i,s in enumerate(seq,1):
+            assert s['tipo'] in {'expositiva','pratica_exercicios'},s
+            label='Aula expositiva' if s['tipo']=='expositiva' else 'Aula prática de exercícios'
+            texto='\n'.join([f'Tipo de aula: {label}',f'Módulo(s): {", ".join(str(m) for m in s["modulos"])}',
+                f'Objetivo: {s["objetivo"]}',f'Roteiro ({"45 min"}): {s["roteiro"]}',
+                'Exercícios de aprendizagem:']+[f'{idx}. {ex}' for idx,ex in enumerate(s['exercicios'],1)]+
+                [f'Registro/atividade: {s["produto"]}'])
+            result[turma].append({'id':f'FIL_7EDU_{turma}_{i:02d}_{s["codigo"]}',
+                'tipo_fonte':'plano_filosofia_7edu','ordem':i,
+                'tema':f'{label} — {s["tema"]}','texto':texto,
+                'modulos':s['modulos'],'tipo_aula':s['tipo'],'etapa':'proposta',
+                'avaliacao':False,'proposta':True,'adaptado_de_turma':None})
+    return result
+
 def make_units(source, originals):
     grouped=collections.defaultdict(list)
     for x in source['postagens']:
         grouped[(x['turma'],x['disciplina'])].append(x)
     for key in grouped:grouped[key].sort(key=lambda z:(z['data'],z['id']))
+    filosofia=load_filosofia_units()
     units={}
     for turma in ('1MA','1MB','2MA','2MB','3MA','3MB'):
         serie=turma[0]
         for disc in ALLOWED:
             key=(turma,disc)
+            if disc=='Filosofia':
+                if turma in filosofia: units[key]=filosofia[turma]
+                continue
             if disc=='Matemática':
                 units[key]=[
                     {'id':f'PLANO_{serie}_{int(p["numero"]):02d}','tipo_fonte':'docx_plano_individual',
@@ -195,7 +224,8 @@ def generated_post(row,parts,consulted,history_before=False,holidays=None):
       'turma':turma,'disciplina':disc,'data':date,'dia_semana':row['dia_semana'],
       'entity_id':None,'group_id_sugerido':None,'horario':row['horario'],'quantidade_periodos':qty,
       'planos_originais':[u['ordem'] for u in all_units if u['tipo_fonte']=='docx_plano_individual'],
-      'fonte_unidades':source_ids,'origem':'redistribuicao_sequencial_7edu_v109',
+      'fonte_unidades':source_ids,'origem':'filosofia_modulos_8_a_12_v110' if disc=='Filosofia' else 'redistribuicao_sequencial_7edu_v109',
+      **({'tipos_aula':[u['tipo_aula'] for u in all_units if u.get('tipo_aula')]} if disc=='Filosofia' else {}),
       'status':status,'observacao':note,'titulo':title,'html':'\n'.join(htmlparts),
       'conteudo_7edu':plain,'avaliacao':any(u.get('avaliacao') for u in all_units),
       'aula_complementar':False,'condensacao':is_condensed,
@@ -241,10 +271,10 @@ def generate(calendar,sourcefile,individualsfile,output,report):
           'unidades_reservadas':nplanned,'unidades_aguardando_data':len(remainder),
           'situacoes':dict(kind)})
         stats.update(kind)
-    archive={'versao':'1.0.9','sistema':'7edu','ano':2026,'periodo':'4º bimestre',
+    archive={'versao':'1.0.10','sistema':'7edu','ano':2026,'periodo':'4º bimestre',
       'fonte_consulta':{'data':consulted.isoformat(),'sha256_markdown':sha,
         'projecoes_nao_oficiais':True,'requer_nova_exportacao_antes_de_publicar':True},
-      'metodologia':'Redistribuição cronológica de unidades dos planos DOCX e propostas E-Class, por períodos reais; previsões futuras sem autorização de postagem. Datas registradas não comprovam conteúdos.',
+      'metodologia':'Redistribuição cronológica de unidades dos planos DOCX e propostas de Investigação Matemática do E-Class; Filosofia usa os módulos 8 a 12 fornecidos pelo docente, alternando aulas expositivas e práticas de exercícios. Projeções sem autorização de postagem; registros anteriores não comprovam conteúdo.',
       'estatisticas':{'por_situacao':dict(stats),'datas_reais':len(real),
         'datas_projetadas':len(forecast),'periodos_reais':sum(r['quantidade_periodos'] for r in real),
         'periodos_projetados':sum(r['quantidade_periodos'] for r in forecast)},
@@ -257,7 +287,7 @@ def generate(calendar,sourcefile,individualsfile,output,report):
       '> **PLANEJAMENTO PROPOSTO, NÃO COMPROVANTE DE AULAS MINISTRADAS.** As linhas registradas são bloqueadas e seu conteúdo verdadeiro precisa ser conferido no diário.',
       '',f'- Calendário oficial consultado em: **{consulted.strftime("%d/%m/%Y")}**',
       f'- Datas no calendário exportado: **{len(real)}**',f'- Datas projetadas por recorrência semanal até {end.strftime("%d/%m/%Y")}: **{len(forecast)}**, SEM confirmação do 7Edu',
-      '- O E-Class original não foi alterado. Tópicos de Matemática vêm dos 40 planos individuais por série; demais disciplinas usam propostas do pacote E-Class, identificadas para aprovação.',
+      '- O E-Class original não foi alterado. Matemática usa 40 planos individuais por série; Investigação Matemática mantém propostas do E-Class; Filosofia usa cinco módulos informados pelo professor, com expositivas e práticas de exercícios.',
       '- 2MA / Investigação Matemática recebe **proposta adaptada** da sequência 2MB e exige aprovação expressa.',
       '- Registros anteriores consomem posições na sequência apenas **como hipótese**, não como demonstração de conteúdo efetivamente ministrado. Verifique o histórico antes de publicar aulas subsequentes.',
       '- Cada período recebe até duas unidades do plano; encontros com duas unidades em um período exigem aprovação de condensação.',
